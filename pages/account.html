@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+    <title>HOMIE - 會員中心</title>
+  </head>
+  <body>
+      <!-- title -->
+      <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
+        <h2 class="fs-6 mb-0 text-center">
+          會員中心
+        </h2>
+        <a class="icon-right" href="info_list.html">
+          <!-- 若有未讀訊息 class 添加 has-msg 才會有紅色點點 -->
+          <div class="message-icon has-msg"></div>
+        </a>
+      </div>
+      <!-- title end -->
+
+      <div class="">
+        <!-- VIP Level & 帳號 -->
+        <div class="row mb-4 mx-1 mt-2" style="height: 60px;">
+          <div class="col-3">
+            <img class="rounded-pill" style="width:60px;height:60px" class="w-100" src="https://fakeimg.pl/60x60/" alt="">
+          </div>
+          <a class="col-9 d-block d-flex flex-row align-items-center text-decoration-none ps-0" href="account_detail.html">
+            <div class="me-auto d-flex flex-column justify-content-center">
+              <div class="fw-bold d-flex align-items-center">
+                <div>帳號名稱</div>
+                <img class="mx-1" src="../assets/img/level-icon-1.svg" alt="" srcset="">
+              </div>
+              <div class="text-muted fs-8">account1234</div>
+            </div>
+            <img class="rotateY" src="../assets/img/arrow_right_gray.svg" alt="arrow_right_white">
+          </a>
+        </div>
+        <!-- VIP Level & 帳號 end-->
+
+        <!-- vip info -->
+        <div class="vip-info-wrap mb-1">
+          <div class="info-header">
+            <div class="header-title">VIP等級</div>
+            <div>
+              <a class="d-block"  href="account_detail.html" style="height: 27px;width: 68px;position: absolute;"></a>
+              <div>
+                <img src="../assets/img/vip-header-detail.svg" class="header-detail" alt="">
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="info-progress">
+            <div class="now-level">
+              <img class="mx-1" src="../assets/img/level-icon-1.svg" alt="" srcset="">
+            </div>
+            <div class="vip-progress-bar">
+              <!-- 這邊設定進度條％數 -->
+              <div class="progress-persent" style="width: 37%;"></div>
+            </div>
+            <div class="next-level">
+              <img class="mx-1" src="../assets/img/level-icon-2.svg" alt="" srcset="">
+            </div>
+          </div>
+          <div class="bet-info-wrap mb-0">
+            <div class="bet-header">
+              <div class="month-bet">本月投注金額 : 3243</div>
+              <div class="month-recharge">本月儲值金額 : 3003</div>
+            </div>
+          </div>
+          <div class="wallet-info-wrap">
+            <div class="wallet-top">
+              <div class="pig-icon"></div>
+              <div>會員錢包 : </div>
+              <div class="text-primary fs-6 fw-bold">$ 1,234,567.00</div>
+            </div>
+            <div class="wallet-bottom">
+              <div class="money-icon"></div>
+              <div>總洗碼量 : </div>
+              <div class="me-3">1.25</div>
+              <div class="money-icon"></div>
+              <div>會員紅利 : </div>
+              <div >1.25</div>
+            </div>
+          </div>
+
+          <div class="pb-2 mb-2 actions-btns-wrap">
+            <div class="row mx-2">
+              <a class="d-block col-3 d-flex flex-column align-items-center text-secondary text-decoration-none" href="add_value.html">
+                <div><img class="w-100" src="../assets/img/recharge_icon.svg" alt=""></div>
+                <div class="fs-7 text-nowrap btn-txt">儲值</div>
+              </a>
+              <a class="d-block col-3 d-flex flex-column align-items-center text-secondary text-decoration-none" href="auction.html">
+                <div><img class="w-100" src="../assets/img/auction_icon.svg" alt=""></div>
+                <div class="fs-7 text-nowrap btn-txt">提款</div>
+              </a>
+              <a class="d-block col-3 d-flex flex-column align-items-center text-secondary text-decoration-none" href="transe_point.html">
+                <div><img class="w-100" src="../assets/img/trans_icon.svg" alt=""></div>
+                <div class="fs-7 text-nowrap btn-txt">轉點</div>
+              </a>
+              <a class="d-block col-3 d-flex flex-column align-items-center text-secondary text-decoration-none" href="bank_account.html">
+                <div><img class="w-100" src="../assets/img/wallet_icon.svg" alt="wallet"></div>
+                <div class="fs-7 text-nowrap btn-txt">帳戶管理</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- vip info end -->
+        <div class="container account-list-container">
+          <div class=" card w-100" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="vip_level.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-member-leve.png" alt="">
+                <div class="account-list-txt me-auto">會員等級</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="game_record_history.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-promo.png" alt="">
+                <div class="account-list-txt me-auto">優惠專區</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="container account-list-container">
+          <div class=" card w-100" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="game_record_history.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-trans.png" alt="">
+                <div class="account-list-txt me-auto">交易紀錄</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="game_record_history.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-game.png" alt="">
+                <div class="account-list-txt me-auto">遊戲紀錄</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container account-list-container">
+          <div class=" card w-100" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="game_record_history.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-feedback.png" alt="">
+                <div class="account-list-txt me-auto">消息反饋</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container account-list-container">
+          <div class=" card w-100" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="game_record_history.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-child.png" alt="">
+                <div class="account-list-txt me-auto">新手幫助</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="game_record_history.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-brain.png" alt="">
+                <div class="account-list-txt me-auto">理性博彩</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="game_record_history.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-rule.png" alt="">
+                <div class="account-list-txt me-auto">規則與條款</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+              <a class="d-block text-secondary text-decoration-none list-group-item d-flex flex-row align-items-center justify-content-start mx-3 border-bottom border-light " href="game_record_history.html">
+                <img class="account-list-icon me-2" src="../assets/img/icon-pol.png" alt="">
+                <div class="account-list-txt me-auto">隱私及政策</div>
+                <img src="../assets/img/arrow-right.svg" alt="">
+              </a>
+            </ul>
+          </div>
+        </div>
+        
+        
+       
+      </div>
+      <div class="mb-nav-bottom"></div>
+
+      <!-- 下方功能列 -->
+      <nav class="navbar navbar-expand fixed-bottom bg-white ">
+        <div class="container-fluid px-4">
+          <div class="navbar-nav w-100 justify-content-between">
+            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center" href="/">
+              <img src="/assets/img/home_icon.svg" alt="home_icon">
+              <span>首頁</span>
+            </a>
+            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center active" href="/pages/promotions.html">
+              <img src="/assets/img/present_icon.svg" alt="present_icon">
+              <span>優惠</span>
+            </a>
+            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center" href="/pages/contact.html">
+              <img src="/assets/img/help_icon.svg" alt="help_icon">
+              <span>客服</span>
+            </a>
+            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center" href="add_value.html">
+              <img src="/assets/img/icon-recharge.svg" alt="help_icon">
+              <span>儲值</span>
+            </a>
+            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center" href="#">
+              <img src="/assets/img/member-center-icon-active.svg" alt="account_icon">
+              <span>會員</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- 下方功能列 end-->
+
+
+
+    <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

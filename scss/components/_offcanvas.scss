@@ -1,0 +1,12 @@
+// @import "../helpers/variables";
+.offcanvas-bottom {
+    right: 0;
+    left: 0;
+    height: auto;
+    max-height: calc( #{$offcanvas-vertical-height} - #{$top-navbar-height});
+    border-top: $offcanvas-border-width solid $offcanvas-border-color;
+    transform: translateY(100%);
+  }
+  body{
+    background: transparent linear-gradient(180deg, #F7F5F0 0%, #F5F2E7 57%, #F5F2E7 77%, #FFFBF4 100%) 0% 0% no-repeat padding-box;
+  }

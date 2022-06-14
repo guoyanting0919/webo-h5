@@ -1,0 +1,9 @@
+<svg id="组件_217_3" data-name="组件 217 – 3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="矩形_17596" data-name="矩形 17596" width="24" height="24" fill="none"/>
+  <rect id="矩形_17600" data-name="矩形 17600" width="12" height="12" rx="6" transform="translate(10)" fill="#f9df7b"/>
+  <g id="我的" transform="translate(-32.909 -21.31)">
+    <path id="路径_83179" data-name="路径 83179" d="M238.581,34.7a5.716,5.716,0,1,1,5.854-5.714A5.785,5.785,0,0,1,238.581,34.7Zm0-1.429a4.287,4.287,0,1,0-4.39-4.286A4.339,4.339,0,0,0,238.581,33.273Z" transform="translate(-193.672 0)" fill="#2e2e2e"/>
+    <path id="路径_83180" data-name="路径 83180" d="M52.909,520.357a.659.659,0,0,1-1.317,0c0-3.9-3.432-7.071-7.683-7.071s-7.683,3.174-7.683,7.071a.659.659,0,0,1-1.317,0c0-4.623,4.037-8.357,9-8.357S52.909,515.734,52.909,520.357Z" transform="translate(1 -478.727)" fill="#2e2e2e"/>
+  </g>
+  <path id="路径_83191" data-name="路径 83191" d="M-7614.4,2748.6c-2,2.816-4.353,0-4.353,0" transform="translate(7628.619 -2740)" fill="none" stroke="#8c5f06" stroke-linecap="round" stroke-width="1.5"/>
+</svg>

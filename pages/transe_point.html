@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+    <title>HOMIE - 轉點</title>
+  </head>
+  <body>
+    <!-- Toast 訊息，根據需求使用-->
+    <div class="toast-container position-fixed top-0 end-0 pt-3 d-flex flex-column justify-content-center align-items-center w-100">
+        <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+            <div class="toast-body d-flex flex-row align-items-center">
+                <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img src="/assets/img/info.svg" alt=""></div>
+                <div class="msg ms-2 fw-bold">更換成功</div>
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        <div id="liveToast2" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+            <div class="toast-body d-flex flex-row align-items-center">
+                <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img src="/assets/img/info.svg" alt=""></div>
+                <div class="msg ms-2 fw-bold">更換失敗</div>
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        <div id="liveToast3" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+            <div class="toast-body d-flex flex-row align-items-center">
+                <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img src="/assets/img/info.svg" alt=""></div>
+                <div class="msg ms-2 fw-bold">更換失敗</div>
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Toast 訊息，根據需求使用 end-->
+      <!-- title -->
+      <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
+        <a class="back-icon" href="account.html"><img src="../assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
+        <h2 class="fs-6 mb-0 text-center">
+          轉點
+        </h2>
+      </div>
+      <!-- title end -->
+      <!-- 表單 -->
+      <div class="container">
+        <!-- 戶內轉點 -->
+        <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
+            <div class="pe-2 position-relative d-flex flex-row justify-content-between align-items-center">
+              <div class="card-title">戶內轉點</div>
+              <div class="form-check form-switch" style="transform: translateY(6px);">
+                <img class="ms-1" src="/assets/img/question-circle-fill.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="開啟自動轉點時，系統將會自動把點數全部幫您轉進遊戲平台內">
+                <label class="form-check-label align-middle fs-7" for="flexSwitchCheckDefault">自動轉點</label>
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              </div>
+            </div>
+
+            <div class="card-body">
+                <div class="row justify-content-between mb-2">
+                    <div class="col-5 d-flex flex-row justify-content-center align-items-center"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                    >
+                        <input id="source" class="form-control btn text-center fs-7 fs-6 bg-transparent px-0" type="text" aria-label="readonly input example" value="主帳戶錢包" readonly>
+                        <img class="d-block" src="../assets/img/arrow-right.svg" alt="">
+                    </div>
+                    <div class="col-2 d-flex align-items-center" onclick="transferPosition()"><img src="../assets/img/trans_icon_gray.svg" alt="trans_icon_gray"></div>
+                    <div class="col-5 d-flex flex-row justify-content-center align-items-center"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom_2"
+                        aria-controls="offcanvasBottom_2"
+                    >
+                        <input id="target" class="form-control btn text-center fs-7 fs-6 bg-transparent px-0" type="text" aria-label="readonly input example" value="平台名稱" readonly>
+                        <img class="d-block me-2" src="../assets/img/arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="input-group has-validation mb-2">
+                    <input type="text" class="form-control" id="inputPassword" placeholder="請輸入轉點數量" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                    <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary btn-lin fs-6" type="button" data-bs-toggle="modal" data-bs-target="#checkEdit" disabled>確認轉點</button>
+                </div>
+            </div>
+        </div>
+        <!-- 戶內轉點 end-->
+        <div class="card w-100">
+            <div class=" position-relative py-2 d-flex flex-row align-items-center">
+              <div class="card-title w-100 d-flex">
+                <div class="me-1">我的錢包</div>
+                <img class="me-auto" src="../assets/img/renew.svg" alt="">
+                <span class="fs-7">一鍵回收</span>
+              </div>
+                
+            </div>
+            <!-- 主帳戶點數 -->
+            <div class="card-body pt-1">
+                <div class="position-relative d-flex flex-row justify-content-between align-items-center rounded-3 border border-danger w-100 p-3">
+                    <img class="position-absolute top-0 start-0" src="../assets/img/out.svg" alt="">
+                    <div class="d-flex flex-row align-items-center">
+                        <img src="../assets/img/wallet.svg" alt="">
+                        <div class="ms-1">主帳戶點數</div>
+                    </div>
+                    <div class="me-1">$ 1,234,567.00</div>
+                </div>
+            </div>
+            <!-- 主帳戶點數 end-->
+            <!-- API list -->
+            <div class="card-body pt-0 small row row-cols-3 row-cols-lg-6 g-2 g-lg-3 vh-50 overflow-auto light-gray-btns">
+                <div class="col d-grid">
+                  <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                    <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                    <div>00.00</div>
+                    <div class="text-muted">API名稱</div>
+                  </button>
+                </div>
+                <div class="col d-grid">
+                  <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                    <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                    <div>00.00</div>
+                    <div class="text-muted">API名稱</div>
+                  </button>
+                </div>
+                <div class="col d-grid">
+                  <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                    <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                    <div>00.00</div>
+                    <div class="text-muted">API名稱</div>
+                  </button>
+                </div>
+                <div class="col d-grid">
+                  <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                    <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                    <div>00.00</div>
+                    <div class="text-muted">API名稱</div>
+                  </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+                        <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+                        <div>00.00</div>
+                        <div class="text-muted">API名稱</div>
+                    </button>
+                </div>
+            </div>
+            <!-- API list end-->
+        </div>
+        <div class="d-grid gap-2 my-3">
+            <button class="btn btn-primary btn-lin fs-6" type="button" onclick="showToast ('success', '轉點成功!', 'liveToast')">送出</button>
+        </div>
+      </div><!-- 表單 end-->
+
+      <!-- 主帳戶 offcanvas -->
+      <div class="offcanvas offcanvas-bottom rounded-top-lg border-0" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="pt-2 pb-3 w-100" data-bs-dismiss="offcanvas" aria-label="Close">
+          <div class="m-auto div-close text-reset"></div>
+        </div>
+        <div class="offcanvas-body pt-0 small">
+            <div class="d-flex flex-column" role="group" aria-label="Basic radio toggle button group">
+                <div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio1">
+                        <div class="me-2">主帳戶錢包</div>
+                        <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio2">
+                        <div class="me-auto">平台名稱</div>
+                        <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio3">
+                        <div>平台名稱</div>
+                        <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- 主帳戶 offcanvas end-->
+
+      <!-- 平台名稱 offcanvas -->
+      <div class="offcanvas offcanvas-bottom rounded-top-lg border-0" tabindex="-1" id="offcanvasBottom_2" aria-labelledby="offcanvasBottomLabel">
+        <div class="pt-2 pb-3 w-100" data-bs-dismiss="offcanvas" aria-label="Close">
+          <div class="m-auto div-close text-reset"></div>
+        </div>
+        <div class="offcanvas-body pt-0 small">
+            <div class="d-flex flex-column" role="group" aria-label="Basic radio toggle button group">
+                <div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio_1" autocomplete="off" checked>
+                    <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_1">
+                        <div class="me-2">平台名稱</div>
+                        <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio_2" autocomplete="off">
+                    <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_2">
+                        <div class="me-auto">平台名稱</div>
+                        <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio_3" autocomplete="off">
+                    <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_3">
+                        <div>平台名稱</div>
+                        <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio_4" autocomplete="off">
+                    <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_4">
+                        <div>平台名稱</div>
+                        <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio_5" autocomplete="off">
+                    <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_5">
+                        <div>平台名稱</div>
+                        <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- 平台名稱 offcanvas end-->
+
+      <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+      <script>
+        //#region 轉點按鈕狀態切換
+        var buttons = [].slice.call(document.querySelectorAll('.btn-gray'))
+        buttons.forEach(function (buttonEl) {
+          var button = new bootstrap.Button(buttonEl)
+          buttonEl.addEventListener('click', function(event) {
+            button.toggle()
+          })
+        })
+        //#endregion 轉點按鈕狀態切換
+        //#region 左右互換
+        function transferPosition () {
+            const source = document.querySelector('#source');
+            const sourceValue = source.value;
+            const target = document.querySelector('#target');
+            const targetValue = target.value;
+            source.value = targetValue;
+            target.value = sourceValue;
+        }
+        //#endregion
+
+        //#region Toast 提示
+        function showToast (classStyle, info, toastId) {
+          var toastLiveExample = document.getElementById(toastId)
+          var toastIcon = document.querySelector(`#${toastId} .info-circle`)
+          toastIcon.classList.add(`bg-${classStyle}`)
+          var toastMsg = document.querySelector(`#${toastId} .msg`);
+          toastMsg.textContent = info;
+          var toast = new bootstrap.Toast(toastLiveExample)
+          toast.show()
+        }
+        //#endregion Toast 提示
+
+        //#region tooltip
+        let countdown;
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.map((tooltipTriggerEl)=>{
+            const tooltip = new bootstrap.Tooltip(tooltipTriggerEl);
+        })
+        //#endregion
+    </script>
+  </body>
+</html>

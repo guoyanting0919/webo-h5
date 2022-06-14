@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+    <title>HOMIE - 儲值</title>
+  </head>
+  <body>
+      <!-- title -->
+      <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
+        <a class="back-icon" href="account.html"><img src="../assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
+        <h2 class="fs-6 mb-0 text-center">
+          儲值
+        </h2>
+        <a class="icon-right" href="add_value_history.html">
+          <button style="transform: scale(0.8) translateX(18px);" class="btn btn-lin btn-sm text-white">賺取免費優惠點</button>
+        </a>
+      </div>
+      <!-- title end -->
+
+      <!-- 表單 -->
+      <div class="container">
+
+        <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
+          <div class="card-title">儲值方式</div>
+            <div class="card-body d-flex align-items-center justify-content-between">
+              <div onclick="storeToggle(true)" class="recharge-type-btn store-recharge-icon"></div>
+              <div onclick="storeToggle(false)" class="recharge-type-btn atm-recharge-icon"></div>
+            </div>
+        </div>
+        
+        <!-- 儲值超商 -->
+        <div class="card w-100 mb-2 mt-2" id="storeWrap" style="width: 18rem;">
+          <div class="card-title">請選擇要儲值的超商</div>
+            <div class="card-body d-flex align-items-center justify-content-between">
+              <div class="store-btn active">7-11</div>
+              <div class="store-btn">全家</div>
+              <div class="store-btn">OK</div>
+              <div class="store-btn">萊爾富</div>
+            </div>
+        </div>
+        <!-- 儲值超商 end -->
+
+        <!-- 儲值金額 -->
+        <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
+          <div class="card-title">儲值金額</div>
+            <div class="card-body">
+                <div class="input-group has-validation mt-2">
+                    <input type="text" class="form-control" id="inputValue" placeholder="請輸入儲值金額" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                    <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+                </div>
+                <div class="text-muted fs-8 mt-2 d-flex flex-row align-items-center">
+                  <div>儲值未滿1000點將會酌收50點的手續費</div>
+                </div>
+            </div>
+        </div>
+        <!-- 儲值金額 end -->
+
+        <div class="d-grid gap-2 my-3">
+            <button class="btn btn-primary fs-6" type="button" data-bs-toggle="modal" data-bs-target="#checkEdit">送出</button>
+        </div>
+      </div>
+      <!-- 表單 end-->
+
+        <!-- 確認窗 modal -->
+        <div class="modal fade" id="checkEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white" id="staticBackdropLabel">即將前往儲值</h5>
+            </div>
+            <div class="modal-body py-0">
+                <div class="text-center">
+                    您即將前往三方支付進行支付<br>
+                    頁面所有內容皆為官方渠道<br>
+                    <br>
+                    請依照頁面資訊進行付款?
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="w-100 d-grid gap-2">
+                    <a href="order_established.html" class="btn btn-primary rounded-pill fs-6">確認</a>
+                </div>
+            </div>
+            <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+        </div>
+        <!-- 確認窗 Modal end-->
+
+      <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+      <script>
+        const storeToggle = (bool) => {
+          const el = document.getElementById('storeWrap')
+          if(bool){
+            el.classList.add('d-block')
+            el.classList.remove('d-none')
+          }else{
+            el.classList.add('d-none')
+            el.classList.remove('d-block')
+          }
+        }
+            let storeBtns = document.querySelectorAll('.store-btn')
+            storeBtns.forEach(buttonEl=>{
+              const button = new bootstrap.Button(buttonEl)
+                buttonEl.addEventListener('click', function () {
+                    storeBtns.forEach((btn) => { btn.classList.remove('active') })
+                    button.toggle()
+                })
+            })
+            //#region 方式按鈕功能
+            var way_buttons = document.querySelectorAll('.recharge-type-btn')
+            way_buttons.forEach( (buttonEl) => {
+                const button = new bootstrap.Button(buttonEl)
+                buttonEl.addEventListener('click', function () {
+                    way_buttons.forEach((btn) => { btn.classList.remove('active') })
+                    button.toggle()
+                })
+            })
+            //#endreginon 方式按鈕功能
+      </script>
+  </body>
+</html>

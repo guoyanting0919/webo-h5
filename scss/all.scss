@@ -1,0 +1,286 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// @import "../bootstrap5/scss/bootstrap";
+
+// Then add additional custom code here
+// // Custom.scss
+
+
+// Option B: Include parts of bootstrap5
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../bootstrap5/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required bootstrap5 stylesheets
+// @import "../bootstrap5/scss/variables";
+@import "helpers/variables"; // 自定義變數
+@import "../bootstrap5/scss/mixins";
+@import "../bootstrap5/scss/root";
+
+// 4. Include any optional bootstrap5 CSS as needed
+@import "helpers/utilities";
+
+// Layout & components
+@import "../bootstrap5/scss/reboot";
+@import "../bootstrap5/scss/type";
+@import "../bootstrap5/scss/images";
+@import "../bootstrap5/scss/containers";
+@import "../bootstrap5/scss/grid";
+
+// @import "../bootstrap5/scss/tables";
+@import "../bootstrap5/scss/forms";
+@import "../bootstrap5/scss/buttons";
+@import "../bootstrap5/scss/transitions";
+@import "../bootstrap5/scss/dropdown";
+@import "../bootstrap5/scss/button-group";
+@import "../bootstrap5/scss/nav";
+@import "../bootstrap5/scss/navbar";
+@import "../bootstrap5/scss/card";
+@import "../bootstrap5/scss/accordion";
+// @import "../bootstrap5/scss/breadcrumb";
+// @import "../bootstrap5/scss/pagination";
+@import "../bootstrap5/scss/badge";
+@import "../bootstrap5/scss/alert";
+// @import "../bootstrap5/scss/progress";
+@import "../bootstrap5/scss/list-group";
+@import "../bootstrap5/scss/close";
+@import "../bootstrap5/scss/toasts";
+@import "../bootstrap5/scss/modal";
+@import "../bootstrap5/scss/tooltip";
+@import "../bootstrap5/scss/popover";
+@import "../bootstrap5/scss/carousel";
+@import "../bootstrap5/scss/spinners";
+@import "../bootstrap5/scss/offcanvas";
+@import "../bootstrap5/scss/placeholders";
+
+// Helpers
+@import "../bootstrap5/scss/helpers";
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../bootstrap5/scss/utilities/api";
+
+// 6. Add additional custom code here
+// 自訂義元件
+@import "components/marquee"; // 廣播
+@import "components/carousel"; // 輪播 banner
+@import "components/products"; // 首頁 產品列表
+@import "components/navbar"; // 下方導覽列
+@import "components/badge_btn"; // 登入資訊列按鈕
+@import "components/modal"; // 登入資訊列按鈕
+@import "components/form"; // 表單
+@import "components/nav"; // nav
+@import "components/custom"; // 客製化特殊樣式
+@import "components/card"; // 卡片
+@import "components/offcanvas";
+@import "components/buttons";
+@import "components/toast";
+
+@import "pages/home";
+@import "pages/promotions";
+@import "pages/account";
+
+.form-control:focus{
+  border: 1px solid $primary !important;
+}
+.input-suffix-text{
+  position: absolute;
+    right: 5px;
+    background: #fff;
+    height: 34px;
+    top: 5px;
+    border: 1px solid $primary;
+    color: $primary;
+    border-radius: 4px !important;
+    z-index: 10;
+}
+.btn-lin{
+  background-image: linear-gradient(54deg, #8C5F06 0%, #B48018 100%) !important;
+}
+.offcanvas-header{
+  position: relative;
+  &:after{
+    content: '';
+    background: #e3e3e3;
+    position: absolute;
+    width: 78px;
+    height: 4px;
+    top: -13px;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 100px;
+  }
+  .offcanvas-title{
+    color: #343434;
+  }
+
+  
+}
+
+.form-switch{
+  padding: 0 !important;
+  padding-right: 2.5rem !important;
+}
+.form-check .form-check-input{
+  float: right;
+  margin-left: 0;
+  margin-right: -2.5rem;
+  transform: translateY(2px);
+  background-color: #ebebeb;
+  border: none !important;
+}
+.form-switch .form-check-input:checked{
+  background-color: #f1dcb7;
+}
+
+.offcanvas-body,.light-gray-btns{
+  .btn-gray{
+    background: #F8F8F8;
+    color: #2E2E2E;
+    border: 1px solid transparent;
+  }
+}
+.tooltip-inner{
+  background: $black;
+  color: $white;
+}
+.bs-tooltip-end .tooltip-arrow::before{
+  border-right-color: $black;
+}
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px #F5F5F5 inset;
+}
+.form-label{
+  margin-bottom: 2px;
+  margin-left: 2px;
+  color: #2E2E2E;
+  span{
+    color: red;
+  }
+}
+.invalid-feedback{
+  font-size: 12px;
+  color: red;
+}
+.custom-header{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.custom-header-has-bg{
+    background-image: url('../img/account-bg.svg');
+  }
+  h2{
+    color: #333;
+  }
+  .back-icon{
+    position: absolute;
+    left: 16px;
+    
+  }
+  .icon-right{
+    position: absolute;
+    right: 16px;
+  }
+  .message-icon{
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/msg_icon.png');
+    background-size: contain;
+    position: relative;
+    &.has-msg::after{
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #fff;
+      background: #E63838;
+      border-radius: 100px;
+      right: 1px;
+      top: 1px;
+    }
+  }
+}
+.fs-14{
+  font-size: 14px;
+}
+.card{
+  box-shadow: 0px 3px 6px #8C5F0633;
+  border: none;
+  border-radius: 0.5rem;
+}
+.card-body{
+  padding: 1rem;
+  .col-3.px-2.col-form-label{
+    padding-left: 0px !important;
+    color: #4A4A4A !important;
+  }
+  .recharge-type-btn{
+    width: 152px;
+    height: 60px;
+    &.atm-recharge-icon{
+      background-image: url('../img/atm-recharge-icon.svg');
+      &.active{
+        background-image: url('../img/atm-recharge-icon-active.svg');
+      }
+    }
+    &.store-recharge-icon{
+      background-image: url('../img/store-recharge-icon.svg');
+      &.active{
+        background-image: url('../img/store-recharge-icon-active.svg');
+      }
+    }
+  }
+  .store-btn{
+    width: 75px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #F8F8F8;
+    color: #573B02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.active{
+      background: transparent linear-gradient(40deg, #8C5F06 0%, #B48018 100%) 0% 0% no-repeat padding-box;
+      color: #fff;
+    }
+  }
+}
+.card-title{
+  font-size: 16px;
+  color: #816C4B;
+  padding: 0.5rem 1rem;
+  margin-bottom: -1rem;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 5px;
+    height: 23px;
+    background: #FFDE00;
+  }
+}
+.text-dark{
+  color: #573B02 !important;
+}
+
+#showImgModal .modal-body{
+  max-height: calc(100vh - 48px);
+  height: calc(100vh - 48px);
+}
+.bs-tooltip-bottom .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before{
+  border-bottom-color: #000;
+}
+.btn-gray.active{
+  border: 1px solid #067B0F;
+}
+.toast{
+  border: none;
+}

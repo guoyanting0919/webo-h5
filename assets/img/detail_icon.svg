@@ -1,0 +1,60 @@
+<svg data-name="组 49591" xmlns="http://www.w3.org/2000/svg" width="32" height="32.162" viewBox="0 0 32 32.162">
+    <defs>
+        <filter id="h0jkkm6vmc" x=".455" y="2.108" width="33" height="29" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-color="#b1852e"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="zk2w9o5yod" x=".045" y="4.037" width="30" height="26" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="2" result="blur-2"/>
+            <feFlood flood-color="#b54c05"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="jer2lhb8xe" x="-1.882" y="8.551" width="33" height="20" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="3" result="blur-3"/>
+            <feFlood flood-color="#795810" flood-opacity=".235"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="3fk7ly5lqg" x="-.349" y="11.951" width="28" height="19" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="3" result="blur-4"/>
+            <feFlood flood-color="#795810" flood-opacity=".235"/>
+            <feComposite operator="in" in2="blur-4"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="aubdcne3xa" x1=".827" y1=".619" x2="1" y2=".957" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f9df7b"/>
+            <stop offset="1" stop-color="#fffbe1"/>
+        </linearGradient>
+        <linearGradient id="es6uxxx99f" y1="1" x2=".959" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fc9d2f"/>
+            <stop offset="1" stop-color="#f9df7b"/>
+        </linearGradient>
+        <clipPath id="7jqp7bzi1b">
+            <ellipse data-name="椭圆 384" cx="16" cy="16.081" rx="16" ry="16.081" style="fill:url(#aubdcne3xa)"/>
+        </clipPath>
+    </defs>
+    <circle data-name="椭圆 351" cx="16" cy="16" style="fill:#f65d11" r="16"/>
+    <g data-name="蒙版组 18" style="clip-path:url(#7jqp7bzi1b)">
+        <g data-name="组 49592">
+            <g style="filter:url(#h0jkkm6vmc)" transform="translate(-.002 .001)">
+                <rect data-name="矩形 17606" width="18" height="14" rx="2" transform="translate(7.95 7.61)" style="opacity:.6;fill:#fff"/>
+            </g>
+            <g style="filter:url(#zk2w9o5yod)" transform="translate(-.002 .001)">
+                <rect data-name="矩形 17607" width="18" height="14" rx="2" transform="translate(6.05 9.04)" style="fill:#fff"/>
+            </g>
+            <g style="filter:url(#jer2lhb8xe)" transform="translate(-.002 .001)">
+                <rect data-name="矩形 17608" width="15" height="2" rx="1" transform="translate(7.12 12.55)" style="fill:url(#es6uxxx99f)"/>
+            </g>
+            <g style="filter:url(#3fk7ly5lqg)" transform="translate(-.002 .001)">
+                <rect data-name="矩形 17609" width="10" height="1" rx=".5" transform="translate(8.65 15.95)" style="fill:url(#es6uxxx99f)"/>
+            </g>
+        </g>
+    </g>
+</svg>

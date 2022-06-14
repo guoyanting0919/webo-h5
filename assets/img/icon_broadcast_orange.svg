@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
+    <defs>
+        <clipPath id="a28fcxfjaa">
+            <path data-name="路径 204" d="m19.473-16.2-.573.655a6.084 6.084 0 0 1 1.579 4.152 6.087 6.087 0 0 1-1.569 4.14l.575.653a7.047 7.047 0 0 0 1.815-4.794 7.043 7.043 0 0 0-1.827-4.806z" transform="translate(-18.9 16.2)" style="fill:#fe6600"/>
+        </clipPath>
+        <clipPath id="75d92tpdkb">
+            <path data-name="路径 203" d="M-15 267h276v-520H-15z" transform="translate(15 253)" style="fill:#fe6600"/>
+        </clipPath>
+        <clipPath id="1o8yrlpz1c">
+            <path data-name="路径 207" d="m16.873-14.4-.673.675a3.852 3.852 0 0 1 1.4 2.932 3.851 3.851 0 0 1-1.392 2.921l.676.673a4.738 4.738 0 0 0 1.716-3.594 4.738 4.738 0 0 0-1.727-3.607z" transform="translate(-16.2 14.4)" style="fill:#fe6600"/>
+        </clipPath>
+        <clipPath id="7enwlmy2nd">
+            <path data-name="路径 210" d="m14.991-12.6-.591.719a2.116 2.116 0 0 1 .849 1.687 2.116 2.116 0 0 1-.837 1.678l.6.716a3.018 3.018 0 0 0 1.188-2.394 3.017 3.017 0 0 0-1.209-2.406z" transform="translate(-14.4 12.6)" style="fill:#fe6600"/>
+        </clipPath>
+        <clipPath id="dbpyp50z8e">
+            <path data-name="路径 212" d="M0-7.8h2.4v-4.8H0z" transform="translate(0 12.6)" style="fill:#fe6600"/>
+        </clipPath>
+        <clipPath id="zsu2n66ayf">
+            <path data-name="路径 215" d="m10.2-18-4.8 3.115v5.731L10.2-6z" transform="translate(-5.4 18)" style="fill:#fe6600"/>
+        </clipPath>
+    </defs>
+    <g data-name="组 266" transform="translate(12.6 1.2)" style="clip-path:url(#a28fcxfjaa)">
+        <g data-name="组 265" transform="translate(-22.6 -157.867)" style="clip-path:url(#75d92tpdkb)">
+            <path data-name="路径 202" d="M17.9-17.2h3.733v10.933H17.9z" transform="translate(4.033 174.4)" style="fill:#fe6600"/>
+        </g>
+    </g>
+    <g data-name="组 268" transform="translate(10.8 2.4)" style="clip-path:url(#1o8yrlpz1c)">
+        <g data-name="组 267" transform="translate(-20.8 -159.067)" style="clip-path:url(#75d92tpdkb)">
+            <path data-name="路径 205" d="M15.2-15.4h3.733v8.533H15.2z" transform="translate(4.933 173.8)" style="fill:#fe6600"/>
+        </g>
+    </g>
+    <g data-name="组 270" transform="translate(9.6 3.6)" style="clip-path:url(#7enwlmy2nd)">
+        <g data-name="组 269" transform="translate(-19.6 -160.267)" style="clip-path:url(#75d92tpdkb)">
+            <path data-name="路径 208" d="M13.4-13.6h3.133v6.133H13.4z" transform="translate(5.533 173.2)" style="fill:#fe6600"/>
+        </g>
+    </g>
+    <g data-name="组 271" transform="translate(0 3.6)" style="clip-path:url(#dbpyp50z8e)">
+        <path data-name="路径 211" d="M-1-13.6h3.733v6.133H-1z" transform="translate(.333 12.933)" style="fill:#fe6600"/>
+    </g>
+    <g data-name="组 273" transform="translate(3.6)" style="clip-path:url(#zsu2n66ayf)">
+        <g data-name="组 272" transform="translate(-13.6 -156.667)" style="clip-path:url(#75d92tpdkb)">
+            <path data-name="路径 213" d="M4.4-19h6.133v13.333H4.4z" transform="translate(8.533 175)" style="fill:#fe6600"/>
+        </g>
+    </g>
+</svg>

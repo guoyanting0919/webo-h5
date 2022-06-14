@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="345" height="243" viewBox="0 0 345 243">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="0.004" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8c5f06"/>
+      <stop offset="0.32" stop-color="#fff3a6"/>
+      <stop offset="1" stop-color="#8c5f06"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff8e6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.667" x2="0.241" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8c5f06"/>
+      <stop offset="0.517" stop-color="#e2d588"/>
+      <stop offset="1" stop-color="#8c5f06"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.951" x2="0.004" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#be8d2c"/>
+      <stop offset="1" stop-color="#8c5f06"/>
+    </linearGradient>
+  </defs>
+  <g id="组_49909" data-name="组 49909" transform="translate(-438 -354)">
+    <g id="组_49851" data-name="组 49851" transform="translate(23906 1629)">
+      <g id="组_49836" data-name="组 49836" transform="translate(-23483 -1927)">
+        <g id="组_49829" data-name="组 49829" transform="translate(0 4.086)">
+          <rect id="矩形_15155" data-name="矩形 15155" width="345" height="96" rx="48" transform="translate(15 670.914)" fill="url(#linear-gradient)"/>
+          <g id="矩形_17530" data-name="矩形 17530" transform="translate(15 670.914)" stroke="#f7f5f0" stroke-width="1" fill="url(#linear-gradient-2)">
+            <rect width="345" height="93" rx="46.5" stroke="none"/>
+            <rect x="0.5" y="0.5" width="344" height="92" rx="46" fill="none"/>
+          </g>
+          <text id="VS" transform="translate(188 721.914)" fill="#d5b79a" font-size="12" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"><tspan x="-7" y="0">VS</tspan></text>
+        </g>
+        <g id="组_49823" data-name="组 49823" transform="translate(0 8.85)">
+          <text id="會員VIP等級制_每日領取返水回饋高" data-name="會員VIP等級制,
+每日領取返水回饋高" transform="translate(32 710.562)" fill="#816c4b" font-size="12" font-family="PingFangTC-Regular, PingFang TC"><tspan x="-40" y="13">會員</tspan><tspan y="13" font-family="HelveticaNeue, Helvetica Neue">VIP</tspan><tspan y="13">等級制</tspan><tspan y="13" font-family="HelveticaNeue, Helvetica Neue">,</tspan><tspan x="-54" y="27">每日領取返水回饋高</tspan></text>
+          <g id="组_49807" data-name="组 49807" transform="translate(-120.25 37.15)">
+            <circle id="椭圆_387" data-name="椭圆 387" cx="10" cy="10" r="10" transform="translate(159 650)" fill="#fff"/>
+            <path id="check-circle-fill" d="M74,64A10,10,0,1,0,84,74,10,10,0,0,0,74,64Zm4.319,6.734-4.7,6.518a.71.71,0,0,1-1.154,0L69.681,73.4a.179.179,0,0,1,.145-.283h1.047a.711.711,0,0,1,.578.3l1.589,2.205,3.509-4.866a.714.714,0,0,1,.578-.3h1.047A.179.179,0,0,1,78.319,70.734Z" transform="translate(95 586)" fill="url(#linear-gradient-3)"/>
+          </g>
+          <g id="组_49819" data-name="组 49819" transform="translate(3.25 62.588)">
+            <text id="威博娛樂城" transform="translate(98.75 639.562)" fill="#816c4b" font-size="14" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-35" y="0">威博娛樂城</tspan></text>
+          </g>
+        </g>
+        <g id="组_49824" data-name="组 49824" transform="translate(0 13.85)">
+          <text id="無任何反水回饋" transform="translate(205 710.562)" fill="#989898" font-size="12" font-family="PingFangTC-Regular, PingFang TC"><tspan x="-42" y="13">無任何反水回饋</tspan></text>
+          <g id="组_49820" data-name="组 49820" transform="translate(-1.25 62.15)">
+            <text id="實體賭場" transform="translate(276.25 640)" fill="#757575" font-size="14" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-28" y="0">實體賭場</tspan></text>
+          </g>
+        </g>
+      </g>
+      <path id="路径_83286" data-name="路径 83286" d="M12,0H70A12,12,0,0,1,82,12V23H0V12A12,12,0,0,1,12,0Z" transform="translate(-23327 -1275)" fill="url(#linear-gradient-4)"/>
+      <text id="回饋性" transform="translate(-23286 -1258)" fill="#fff" font-size="14" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-21" y="0">回饋性</tspan></text>
+    </g>
+    <g id="组_49852" data-name="组 49852" transform="translate(23906 1615)">
+      <g id="组_49838" data-name="组 49838" transform="translate(-23483 -1789)">
+        <g id="组_49829-2" data-name="组 49829" transform="translate(0 4.086)">
+          <rect id="矩形_15155-2" data-name="矩形 15155" width="345" height="96" rx="48" transform="translate(15 670.914)" fill="url(#linear-gradient)"/>
+          <g id="矩形_17530-2" data-name="矩形 17530" transform="translate(15 670.914)" stroke="#f7f5f0" stroke-width="1" fill="url(#linear-gradient-2)">
+            <rect width="345" height="93" rx="46.5" stroke="none"/>
+            <rect x="0.5" y="0.5" width="344" height="92" rx="46" fill="none"/>
+          </g>
+          <text id="VS-2" data-name="VS" transform="translate(188 721.914)" fill="#d5b79a" font-size="12" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"><tspan x="-7" y="0">VS</tspan></text>
+        </g>
+        <g id="组_49823-2" data-name="组 49823" transform="translate(0 8.85)">
+          <text id="遊戲多元_節奏快速_自由切換項目遊玩_優惠活動豐富" data-name="遊戲多元,節奏快速,自由切換項目遊玩,優惠活動豐富" transform="translate(32 710.562)" fill="#816c4b" font-size="12" font-family="PingFangTC-Regular, PingFang TC"><tspan x="-69" y="13">遊戲多元</tspan><tspan y="13" font-family="HelveticaNeue, Helvetica Neue">,</tspan><tspan y="13">節奏快速</tspan><tspan y="13" font-family="HelveticaNeue, Helvetica Neue">,</tspan><tspan y="13">自由切</tspan><tspan x="-67" y="27">換項目遊玩</tspan><tspan y="27" font-family="HelveticaNeue, Helvetica Neue">,</tspan><tspan y="27">優惠活動豐富</tspan></text>
+          <g id="组_49807-2" data-name="组 49807" transform="translate(-120.25 37.15)">
+            <circle id="椭圆_387-2" data-name="椭圆 387" cx="10" cy="10" r="10" transform="translate(159 650)" fill="#fff"/>
+            <path id="check-circle-fill-2" data-name="check-circle-fill" d="M74,64A10,10,0,1,0,84,74,10,10,0,0,0,74,64Zm4.319,6.734-4.7,6.518a.71.71,0,0,1-1.154,0L69.681,73.4a.179.179,0,0,1,.145-.283h1.047a.711.711,0,0,1,.578.3l1.589,2.205,3.509-4.866a.714.714,0,0,1,.578-.3h1.047A.179.179,0,0,1,78.319,70.734Z" transform="translate(95 586)" fill="url(#linear-gradient-3)"/>
+          </g>
+          <g id="组_49819-2" data-name="组 49819" transform="translate(3.25 62.588)">
+            <text id="威博娛樂城-2" data-name="威博娛樂城" transform="translate(98.75 639.562)" fill="#816c4b" font-size="14" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-35" y="0">威博娛樂城</tspan></text>
+          </g>
+        </g>
+        <g id="组_49824-2" data-name="组 49824" transform="translate(0 13.85)">
+          <text id="無體驗金" transform="translate(205 710.562)" fill="#989898" font-size="12" font-family="PingFangTC-Regular, PingFang TC"><tspan x="-24" y="13">無體驗金</tspan></text>
+          <g id="组_49820-2" data-name="组 49820" transform="translate(-1.25 62.15)">
+            <text id="實體賭場-2" data-name="實體賭場" transform="translate(276.25 640)" fill="#757575" font-size="14" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-28" y="0">實體賭場</tspan></text>
+          </g>
+        </g>
+      </g>
+      <path id="路径_83287" data-name="路径 83287" d="M12,0H70A12,12,0,0,1,82,12V23H0V12A12,12,0,0,1,12,0Z" transform="translate(-23327 -1137)" fill="url(#linear-gradient-4)"/>
+      <text id="體驗性" transform="translate(-23286 -1120)" fill="#fff" font-size="14" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-21" y="0">體驗性</tspan></text>
+    </g>
+  </g>
+</svg>

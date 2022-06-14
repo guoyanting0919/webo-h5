@@ -1,0 +1,13 @@
+.carousel {
+    height: $carousel-height;
+    .carousel-indicators{
+      margin-bottom: 0px;
+      button{
+        background-color: $primary;
+        width: 16px;
+        &.active{
+          width: 32px;
+        }
+      }
+    } 
+}

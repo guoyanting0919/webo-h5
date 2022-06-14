@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="38.67" viewBox="0 0 40 38.67">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#959595"/>
+      <stop offset="1" stop-color="#2e2e2e"/>
+    </linearGradient>
+    <filter id="转账_1_" x="0" y="0" width="40" height="38.67" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.6"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_ic32-trans" data-name="@ic32-trans" transform="translate(4 2.335)">
+    <circle id="椭圆_369" data-name="椭圆 369" cx="16" cy="16" r="16" fill="url(#linear-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, -4, -2.34)" filter="url(#转账_1_)">
+      <path id="转账_1_2" data-name="转账 (1)" d="M147.869,176.268h-5.034a.267.267,0,0,1-.244-.159.264.264,0,0,1,.048-.286l4.768-5.088a.268.268,0,0,1,.293-.065.265.265,0,0,1,.169.246v3.252a.265.265,0,0,0,.267.264h9.819a.266.266,0,0,1,.267.265V176a.266.266,0,0,1-.267.265Zm4.706,3.438h5.034a.267.267,0,0,1,.244.159.264.264,0,0,1-.048.286l-4.768,5.088a.268.268,0,0,1-.293.065.265.265,0,0,1-.169-.246v-3.244a.266.266,0,0,0-.267-.265h-9.819a.266.266,0,0,1-.267-.264V179.97a.266.266,0,0,1,.267-.265h10.086Z" transform="translate(-130.22 -159.65)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,246 @@
+.vip-info-wrap{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/img/account-bg.svg');
+  background-color: #fff;
+  border-radius: 0 0 8px 8px ;
+  box-shadow: 0px 3px 6px #8C5F0633;
+  background-size: contain;
+  .info-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    transform: translateY(-12px);
+    .header-title{
+      color: $primary;
+      font-weight: 700;
+    }
+  }
+  .info-progress{
+    margin-top: -6px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    .now-level{
+      position: relative;
+      &::after{
+        content: '當前等級';
+        position: absolute;
+        width: 50px;
+        top: 100%;
+        font-size: 12px;
+        left: 4px;
+        color: $primary;
+      }
+    }
+    .next-level{
+      position: relative;
+      &::after{
+        content: '下一等級';
+        position: absolute;
+        width: 50px;
+        top: 100%;
+        font-size: 12px;
+        right: 0;
+        color: $primary;
+      }
+    }
+    img{
+      flex-shrink: 0;
+      position: relative;
+      
+    }
+    .vip-progress-bar{
+      width: 100%;
+      height: 10px;
+      position: relative;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 3px 6px #00000029;
+      .progress-persent{
+        height: 8px;
+        position: absolute;
+        left: 0px;
+        border-radius: 10px;
+        top: 1px;
+        width: 10%;
+        background: transparent linear-gradient(180deg, #816C4B 0%, #BEA276 100%) 0% 0% no-repeat padding-box;
+      }
+    }
+  }
+  .bet-info-wrap{
+    margin: 0 15px;
+    margin-top: 26px;
+    border-top: 1px #fff solid;
+    .bet-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 8px;
+      font-size: 12px;
+      color: #717171;
+    }
+  }
+  .wallet-info-wrap{
+    margin: 15px;
+    height: 83px;
+    background: #fff;
+    box-shadow: 0px 3px 6px #8C5F0633;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .wallet-top{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .pig-icon{
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/img/pig-icon.png');
+        background-size: contain;
+      }
+      div{
+        color: #717171;
+        font-size: 12px;
+      }
+    }
+    .wallet-bottom{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      .money-icon{
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/img/money-icon.png');
+        background-size: contain;
+      }
+      div{
+        color: #717171;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.actions-btns-wrap{
+  .btn-txt{
+    color: #717171;
+    margin-top: -8px;
+  }
+}
+
+.account-list-container{
+  margin-bottom: 10px;
+  .card{
+    box-shadow: 0px 3px 6px #8C5F0633;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  .account-list-icon{
+    width: 20px;
+    height: 20px;
+  }
+  .account-list-txt{
+    font-size: 14px;
+    color: #4A4A4A !important;
+    font-weight: 300;
+  }
+}
+
+.vip-progress-container{
+  margin-top: 16px;
+  .vip-line-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 22px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .vip-line-item{
+      width: 33px;
+      height: 20px;
+      font-size: 12px;
+      color: #fff;
+      background: #BEBEBE;
+      border-radius: 100px;
+      margin-right: 60px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border: 1px solid #BEBEBE;
+      &.active{
+        background-color: $primary;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        width: 60px;
+        top: 50%;
+        right: -60px;
+        background: #BEBEBE;
+        height: 1px;
+      }
+      &:nth-child(5){
+        margin-right: 10px;
+        
+      }
+      &:nth-child(5)::after{
+        width: 0;
+      }
+    }
+  }
+
+  .vip-card-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+    margin-top: 24px;
+    padding-left: 55px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .vip-card-item{
+      width: 263px;
+      flex-shrink: 0;
+      margin-right: 21px;
+    }
+  }
+  
+}
+
+.vip-desc-item{
+  width: 95px;
+  margin-bottom: 20px;
+  display: flex;
+
+  .vip-item-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .back-num{
+      color: $primary;
+      font-weight: 700;
+      font-size: 18px;
+      span{
+        font-size: 12px;
+      }
+    }
+    .third{
+      color: #717171;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
+
+

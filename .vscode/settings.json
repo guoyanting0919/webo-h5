@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "savePath": "assets/css"
+    }
+  ], //scss 儲存設定
+  "liveSassCompile.settings.excludeList": [
+    "**/bootstrap5/**",
+  ], //scss 除外設定
+}
