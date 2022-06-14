@@ -284,3 +284,17 @@ input:-webkit-autofill{
 .toast{
   border: none;
 }
+.deco-icon{
+  position: absolute;
+  height: 16px;
+  width: 5px;
+  background: #FFDE00;
+  left: 0;
+}
+.custom-ticket{
+  flex-shrink: 0;
+  width: 88px;
+  border-left: 1px dashed #dedede;
+  background: #fff;
+  border-radius: 10px;
+}
