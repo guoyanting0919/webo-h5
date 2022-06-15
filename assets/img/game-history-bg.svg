@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="363" height="112" viewBox="0 0 363 112">
+  <defs>
+    <filter id="矩形_17554" x="0" y="0" width="363" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#8c5f06" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.434" y1="0.057" x2="0.629" y2="0.406" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ededed"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="组_49991" data-name="组 49991" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#矩形_17554)">
+      <rect id="矩形_17554-2" data-name="矩形 17554" width="345" height="94" rx="6" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="路径_83247" data-name="路径 83247" d="M257.938,0H315V95H190Z" transform="translate(-8)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

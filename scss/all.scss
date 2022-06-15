@@ -143,6 +143,10 @@
     color: #2E2E2E;
     border: 1px solid transparent;
   }
+  .btn-gray.text-info:hover{
+    background: transparent linear-gradient(43deg, #8C5F06 0%, #B48018 100%) 0% 0% no-repeat padding-box;
+    color: #fff !important;
+  }
 }
 .tooltip-inner{
   background: $black;
