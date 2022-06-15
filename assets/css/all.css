@@ -2058,7 +2058,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #454545;
-  background-color: #F5F5F5;
+  background-color: #f8f8f8;
   background-clip: padding-box;
   border: 1px solid transparent;
   -webkit-appearance: none;
@@ -2088,7 +2088,7 @@ progress {
 
 .form-control:focus {
   color: #454545;
-  background-color: #F5F5F5;
+  background-color: #f8f8f8;
   border-color: #8C5F06;
   outline: 0;
   -webkit-box-shadow: 0 0 6px #8C5F064D;
@@ -2359,7 +2359,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #F5F5F5;
+  background-color: #f8f8f8;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -12243,6 +12243,10 @@ input.is-invalid {
   border: #E63838 solid 1px;
 }
 
+input.is-invalid #count_message {
+  bottom: 24px !important;
+}
+
 .checkEye {
   position: absolute;
   top: 67%;
@@ -13141,6 +13145,34 @@ body {
   font-weight: 700;
 }
 
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BEBEBE !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BEBEBE !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BEBEBE !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BEBEBE !important;
+  opacity: 1;
+  /* Firefox */
+}
+
 .form-control:focus {
   border: 1px solid #8C5F06 !important;
 }
@@ -13409,5 +13441,10 @@ input:-webkit-autofill {
   border-left: 1px dashed #dedede;
   background: #fff;
   border-radius: 10px;
+}
+
+.upload-img-el {
+  width: 90px;
+  height: 50px;
 }
 /*# sourceMappingURL=all.css.map */

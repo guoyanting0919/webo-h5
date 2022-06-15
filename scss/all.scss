@@ -84,6 +84,11 @@
 @import "pages/promotions";
 @import "pages/account";
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BEBEBE !important;
+  opacity: 1; /* Firefox */
+}
+
 .form-control:focus{
   border: 1px solid $primary !important;
 }
@@ -301,4 +306,8 @@ input:-webkit-autofill{
   border-left: 1px dashed #dedede;
   background: #fff;
   border-radius: 10px;
+}
+.upload-img-el{
+  width: 90px;
+  height: 50px;
 }

@@ -1,7 +1,11 @@
 // @import "../helpers/variables";
 input.is-invalid {
     border: $danger solid $border-width;
+    #count_message{
+      bottom: 24px !important;
+    }
 }
+
 .checkEye {
     position: absolute;
     top: 67%;
