@@ -12784,14 +12784,12 @@ body {
 .qa .qa-item::after {
   content: '';
   position: absolute;
-  background-image: url("../../assets/img/arrow_right_gray.svg");
+  background-image: url("../../assets/img/arrow-right.svg");
   width: 20px;
   height: 20px;
   right: 10px;
   background-repeat: no-repeat;
   top: 10px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .promotion-banner {
