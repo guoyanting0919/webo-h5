@@ -12464,8 +12464,8 @@ input#Bank {
 }
 
 body {
-  background: transparent -webkit-gradient(linear, left top, left bottom, from(#F7F5F0), color-stop(57%, #F5F2E7), color-stop(77%, #F5F2E7), to(#FFFBF4)) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(180deg, #F7F5F0 0%, #F5F2E7 57%, #F5F2E7 77%, #FFFBF4 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#F7F5F0), color-stop(57%, #F5F2E7), color-stop(77%, #F5F2E7), to(#ffffff)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #F7F5F0 0%, #F5F2E7 57%, #F5F2E7 77%, #ffffff 100%) 0% 0% no-repeat padding-box;
 }
 
 .btn_active_teal {
