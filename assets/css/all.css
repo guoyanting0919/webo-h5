@@ -13477,4 +13477,12 @@ input:-webkit-autofill {
   text-overflow: ellipsis;
   color: #575757 !important;
 }
+
+.text-gray62 {
+  color: #626262;
+}
+
+.text-gray2e {
+  color: #2e2e2e;
+}
 /*# sourceMappingURL=all.css.map */
