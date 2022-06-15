@@ -311,3 +311,31 @@ input:-webkit-autofill{
   width: 90px;
   height: 50px;
 }
+.msg-card{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: $red;
+    border-radius: 100px;
+    top: 5px;
+    left: 5px;
+  }
+  &.msg-card-readed{
+    opacity: 0.5;
+    &::before{
+      display: none;
+    }
+  }
+}
+
+.text-line-clamp{
+  width: 300px;
+  word-break:keep-all;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  color: #575757 !important;
+}

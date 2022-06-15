@@ -13445,4 +13445,36 @@ input:-webkit-autofill {
   width: 90px;
   height: 50px;
 }
+
+.msg-card {
+  position: relative;
+}
+
+.msg-card::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #E63838;
+  border-radius: 100px;
+  top: 5px;
+  left: 5px;
+}
+
+.msg-card.msg-card-readed {
+  opacity: 0.5;
+}
+
+.msg-card.msg-card-readed::before {
+  display: none;
+}
+
+.text-line-clamp {
+  width: 300px;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #575757 !important;
+}
 /*# sourceMappingURL=all.css.map */

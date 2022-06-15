@@ -1,80 +1,113 @@
 <!doctype html>
 <html lang="zh-tw">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS -->
-    <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
-    <title>HOMIE - 個人訊息</title>
-  </head>
-  <body>
-    <!-- title -->
-    <div class="title d-flex container-fluid bg-dark text-white">
-        <a class="col-4 d-block text-white text-decoration-none" href="account.html"><img class="rotateY" src="../assets/img/arrow_right_white.svg" alt="arrow_right_white"></a>
-        <div class="col-4 text-nowrap"><h2 class="fs-5 mb-0 text-center">個人訊息</h2></div>
-    </div><!-- title end -->
-    <div class="container">
-        <!-- list -->
-        <a class="d-block text-white text-decoration-none card bg-secondary mb-1" href="info_detail.html">
-            <div class="card-body py-2 px-3 position-relative">
-                <div class="d-flex flex-row">
-                    <img class="position-absolute start-0 translate-middle title-decoration" src="../assets/img/title_decorate.svg" alt="">
-                    <div class="col-auto d-flex flex-column">
-                        <div class="fs-7">公告消息</div>
-                    </div>
-                    <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
-                        <div class="fs-8 text-muted">03-29 18:33:24</div>
-                    </div>
-                </div>
-                <div class="fs-8">文字文字文字文字文字文字文字文字文字文字文字文…</div>
-            </div>
-        </a>
-        <a class="d-block text-white text-decoration-none card bg-secondary mb-1" href="info_detail.html">
-            <div class="card-body py-2 px-3 position-relative">
-                <div class="d-flex flex-row">
-                    <div class="col-auto d-flex flex-column">
-                        <div class="fs-7 text-muted">公告消息</div>
-                    </div>
-                    <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
-                        <div class="fs-8 text-muted">03-29 18:33:24</div>
-                    </div>
-                </div>
-                <div class="text-muted fs-8">文字文字文字文字文字文字文字文字文字文字文字文…</div>
-            </div>
-        </a>
-        <a class="d-block text-white text-decoration-none card bg-secondary mb-1" href="info_detail.html">
-            <div class="card-body py-2 px-3 position-relative">
-                <div class="d-flex flex-row">
-                    <div class="col-auto d-flex flex-column">
-                        <div class="fs-7 text-muted">公告消息</div>
-                    </div>
-                    <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
-                        <div class="fs-8 text-muted">03-29 18:33:24</div>
-                    </div>
-                </div>
-                <div class="text-muted fs-8">文字文字文字文字文字文字文字文字文字文字文字文…</div>
-            </div>
-        </a>
-        <a class="d-block text-white text-decoration-none card bg-secondary mb-1" href="info_detail.html">
-            <div class="card-body py-2 px-3 position-relative">
-                <div class="d-flex flex-row">
-                    <img class="position-absolute start-0 translate-middle title-decoration" src="../assets/img/title_decorate.svg" alt="">
-                    <div class="col-auto d-flex flex-column">
-                        <div class="fs-7">公告消息</div>
-                    </div>
-                    <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
-                        <div class="fs-8 text-muted">03-29 18:33:24</div>
-                    </div>
-                </div>
-                <div class="fs-8">文字文字文字文字文字文字文字文字文字文字文字文…</div>
-            </div>
-        </a>
-        <!-- list end-->
-    </div>
-    <div class="mb-2"></div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  </body>
+  <!-- CSS -->
+  <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+  <title>HOMIE - 個人訊息</title>
+</head>
+
+<body>
+  <!-- title -->
+  <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
+    <a class="back-icon" href="account.html"><img src="../assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
+    <h2 class="fs-6 mb-0 text-center">
+      個人訊息
+    </h2>
+    <div class="icon-right fs-7 text-primary">全部已讀</div>
+  </div>
+  <!-- title end -->
+  <div class="container mt-2 pb-5">
+    <!-- list -->
+    <a class="d-block text-decoration-none card mb-1" href="info_detail.html">
+      <!-- 已讀 msg class 添加 msg-card-readed-->
+      <div class="card-body py-3 px-3 position-relative msg-card msg-card-readed">
+        <div class="d-flex flex-row mb-1">
+          <div class="col-auto d-flex flex-column">
+            <div class="fs-7 text-black">公告消息</div>
+          </div>
+          <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="fs-8 text-muted">03-29 18:33:24</div>
+          </div>
+        </div>
+        <div class="fs-8 text-secondary text-line-clamp">文字文字文字文字文字文字文字文字文字文字文文字文字文字文字文字文字文字文字文字文字文文字文字文字文字文字文字文字文字文字文字文
+        </div>
+      </div>
+    </a>
+
+    <a class="d-block text-decoration-none card mb-1" href="info_detail.html">
+      <div class="card-body py-3 px-3 position-relative msg-card ">
+        <div class="d-flex flex-row mb-1">
+          <div class="col-auto d-flex flex-column">
+            <div class="fs-7 text-black">公告消息</div>
+          </div>
+          <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="fs-8 text-muted">03-29 18:33:24</div>
+          </div>
+        </div>
+        <div class="fs-8 text-secondary text-line-clamp">
+          文字
+        </div>
+      </div>
+    </a>
+
+    <a class="d-block text-decoration-none card mb-1" href="info_detail.html">
+      <!-- 已讀 msg class 添加 msg-card-readed-->
+      <div class="card-body py-3 px-3 position-relative msg-card msg-card-readed">
+        <div class="d-flex flex-row mb-1">
+          <div class="col-auto d-flex flex-column">
+            <div class="fs-7 text-black">公告消息</div>
+          </div>
+          <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="fs-8 text-muted">03-29 18:33:24</div>
+          </div>
+        </div>
+        <div class="fs-8 text-secondary text-line-clamp">文字文字文字文字文字文字文字文字文字文字文文字文字文字文字文字文字文字文字文字文字文文字文字文字文字文字文字文字文字文字文字文
+        </div>
+      </div>
+    </a>
+
+    <a class="d-block text-decoration-none card mb-1" href="info_detail.html">
+      <div class="card-body py-3 px-3 position-relative msg-card ">
+        <div class="d-flex flex-row mb-1">
+          <div class="col-auto d-flex flex-column">
+            <div class="fs-7 text-black">公告消息</div>
+          </div>
+          <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="fs-8 text-muted">03-29 18:33:24</div>
+          </div>
+        </div>
+        <div class="fs-8 text-secondary text-line-clamp">
+          文字
+        </div>
+      </div>
+    </a>
+
+    <a class="d-block text-decoration-none card mb-1" href="info_detail.html">
+      <div class="card-body py-3 px-3 position-relative msg-card ">
+        <div class="d-flex flex-row mb-1">
+          <div class="col-auto d-flex flex-column">
+            <div class="fs-7 text-black">公告消息</div>
+          </div>
+          <div class="col-auto ms-auto text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="fs-8 text-muted">03-29 18:33:24</div>
+          </div>
+        </div>
+        <div class="fs-8 text-secondary text-line-clamp">
+          文字
+        </div>
+      </div>
+    </a>
+
+    <!-- list end-->
+  </div>
+  <div class="mb-2"></div>
+
+  <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
