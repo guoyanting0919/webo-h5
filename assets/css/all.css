@@ -12946,7 +12946,7 @@ body {
 }
 
 .time-filter-btns .btn-gray.active {
-  background: #8c5f06 !important;
+  background: transparent linear-gradient(43deg, #8c5f06 0%, #b48018 100%) 0% 0% no-repeat padding-box !important;
   color: #fff !important;
   border: none !important;
 }
