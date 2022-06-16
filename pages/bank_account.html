@@ -1,122 +1,130 @@
 <!doctype html>
 <html lang="zh-tw">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS -->
-    <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../mobile-select-master/css/mobileSelect.css" />
-    <script src="../mobile-select-master/js/mobileSelect.js" type="text/javascript"></script>
-    <title>HOMIE - 帳戶管理</title>
-  </head>
-  <body>
-    <!-- title -->
-    <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
-      <a class="back-icon" href="account.html"><img src="../assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
-      <h2 class="fs-6 mb-0 text-center">
-        帳戶管理
-      </h2>
-    </div>
-    <!-- title end -->
-    <div class="container">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- 銀行帳戶資訊(已綁定) -->
-      <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
-        <div class="card-title">銀行帳戶資訊</div>
-        <div class="card-body">
-          <form>
-            <div class="mb-3 row border-bottom border-light px-0 mx-1">
-              <label for="staticEmail" class="col-3 px-2 col-form-label fs-7 text-secondary">銀行名稱</label>
-              <div class="col-9">
-                <input type="text" disabled class="text-dark form-control-plaintext fs-7" id="staticEmail" value="004 台灣銀行">
-              </div>
+  <!-- CSS -->
+  <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../mobile-select-master/css/mobileSelect.css" />
+  <script src="../mobile-select-master/js/mobileSelect.js" type="text/javascript"></script>
+  <title>WEBO - 帳戶管理</title>
+</head>
+
+<body>
+  <!-- title -->
+  <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
+    <a class="back-icon" href="account.html"><img src="../assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
+    <h2 class="fs-6 mb-0 text-center">
+      帳戶管理
+    </h2>
+  </div>
+  <!-- title end -->
+  <div class="container">
+
+    <!-- 銀行帳戶資訊(已綁定) -->
+    <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
+      <div class="card-title">銀行帳戶資訊</div>
+      <div class="card-body">
+        <form>
+          <div class="mb-3 row border-bottom border-light px-0 mx-1">
+            <label for="staticEmail" class="col-3 px-2 col-form-label fs-7 text-secondary">銀行名稱</label>
+            <div class="col-9">
+              <input type="text" disabled class="text-dark form-control-plaintext fs-7" id="staticEmail"
+                value="004 台灣銀行">
             </div>
-            <div class="mb-3 row border-bottom border-light px-0 mx-1">
-              <label for="staticEmail" class="col-3 px-2 col-form-label fs-7 text-secondary">銀行帳號</label>
-              <div class="col-9">
-                <input type="text" disabled class="text-dark form-control-plaintext fs-7" id="staticEmail" value="12345678900000">
-              </div>
+          </div>
+          <div class="mb-3 row border-bottom border-light px-0 mx-1">
+            <label for="staticEmail" class="col-3 px-2 col-form-label fs-7 text-secondary">銀行帳號</label>
+            <div class="col-9">
+              <input type="text" disabled class="text-dark form-control-plaintext fs-7" id="staticEmail"
+                value="12345678900000">
             </div>
-          </form>
-        </div>
-      </div>
-      <!-- 銀行帳戶資訊(已綁定) end -->
-
-      <!-- 銀行帳戶資訊 -->
-      <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
-        <div class="card-title">銀行帳戶資訊 <span class="text-muted fs-7">(限綁定一次)</span></div>
-        <div class="card-body">
-          <form action="">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">銀行名稱<span class="text-danger"> *</span></label>
-              <div class="input-group has-validation">
-                <input readonly id="Bank" type="text" class="form-control" placeholder="請選擇銀行" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </input>
-              </div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">銀行帳號<span class="text-danger"> *</span></label>
-                <div class="input-group has-validation">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="請輸入銀行帳號" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-              </div>
-          </form>
-        </div>
-      </div>
-      <!-- 銀行帳戶資訊 end -->
-      <div class="d-grid gap-2 mt-3 mb-4">
-        <button class="btn btn-primary btn-lin fs-6 fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#checkEdit">送出</button>
+          </div>
+        </form>
       </div>
     </div>
-    
-    
-    
-    <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <!-- 銀行下拉 -->
-    <script type="text/javascript">
-      var mobileSelect1 = new MobileSelect({
-        trigger: "#Bank",
-        title: "請選擇銀行",
-        wheels: [
-          { 
-            data: [
-              { id: "1", value: "台新" },
-              { id: "2", value: "國泰" },
-              { id: "3", value: "台銀" },
-              { id: "4", value: "開發" },
-              { id: "5", value: "元大" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-              { id: "6", value: "中信" },
-            ],
-           },
-        ],
-        ensureBtnText:'確認',
-        cancelBtnText:'取消',
-        position: [2], //Initialize positioning
-        callback: function (indexArr, data) {
-          console.log(indexArr,data); //Returns the selected json data
-          document.getElementById('Bank').value = data[0].value
+    <!-- 銀行帳戶資訊(已綁定) end -->
+
+    <!-- 銀行帳戶資訊 -->
+    <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
+      <div class="card-title">銀行帳戶資訊 <span class="text-muted fs-7">(限綁定一次)</span></div>
+      <div class="card-body">
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">銀行名稱<span class="text-danger"> *</span></label>
+            <div class="input-group has-validation">
+              <input readonly id="Bank" type="text" class="form-control" placeholder="請選擇銀行"
+                aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+              <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </input>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">銀行帳號<span class="text-danger"> *</span></label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="inputPassword" placeholder="請輸入銀行帳號"
+                aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+              <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 銀行帳戶資訊 end -->
+    <div class="d-grid gap-2 mt-3 mb-4">
+      <button class="btn btn-primary btn-lin fs-6 fw-bold" type="button" data-bs-toggle="modal"
+        data-bs-target="#checkEdit">送出</button>
+    </div>
+  </div>
+
+
+
+  <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <!-- 銀行下拉 -->
+  <script type="text/javascript">
+    var mobileSelect1 = new MobileSelect({
+      trigger: "#Bank",
+      title: "請選擇銀行",
+      wheels: [
+        {
+          data: [
+            { id: "1", value: "台新" },
+            { id: "2", value: "國泰" },
+            { id: "3", value: "台銀" },
+            { id: "4", value: "開發" },
+            { id: "5", value: "元大" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+            { id: "6", value: "中信" },
+          ],
         },
-      });
-    </script>
-  </body>
+      ],
+      ensureBtnText: '確認',
+      cancelBtnText: '取消',
+      position: [2], //Initialize positioning
+      callback: function (indexArr, data) {
+        console.log(indexArr, data); //Returns the selected json data
+        document.getElementById('Bank').value = data[0].value
+      },
+    });
+  </script>
+</body>
+
 </html>
