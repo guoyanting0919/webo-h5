@@ -352,3 +352,11 @@ input:-webkit-autofill{
 .text-gray2e{
   color: #2e2e2e;
 }
+
+.time-filter-btns{
+  .btn-gray.active{
+    background: $primary !important;
+    color: $white !important;
+    border: none !important;
+  }
+}
