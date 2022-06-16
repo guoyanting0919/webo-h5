@@ -12403,6 +12403,12 @@ input:-webkit-autofill {
           transform: translateX(9px);
 }
 
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #e63838;
+}
+
 .nav-pills.nav {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;

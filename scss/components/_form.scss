@@ -132,3 +132,8 @@ input:-webkit-autofill {
 .input-refresh-btn {
   transform: translateX(9px);
 }
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+  box-shadow: none;
+  border: 1px solid $red;
+}
