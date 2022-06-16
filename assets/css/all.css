@@ -12477,6 +12477,10 @@ input:-webkit-autofill {
   /* Firefox */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -13417,6 +13421,8 @@ body {
           justify-content: center;
   position: relative;
   border: 1px solid #bebebe;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .vip-progress-container .vip-line-wrap .vip-line-item.active {

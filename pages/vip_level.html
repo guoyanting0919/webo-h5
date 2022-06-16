@@ -60,7 +60,7 @@
 
   <!-- vip line & card -->
   <div class="vip-progress-container">
-    <div class="vip-line-wrap">
+    <div class="vip-line-wrap" id="vip-line-wrap">
       <div class="vip-line-item active">Lv1</div>
       <div class="vip-line-item">Lv2</div>
       <div class="vip-line-item">Lv3</div>
@@ -68,7 +68,7 @@
       <div class="vip-line-item">Lv5</div>
     </div>
 
-    <div class="vip-card-wrap">
+    <div class="vip-card-wrap" id="vip-card-wrap">
       <img src="../assets/img/vip-card-1.png" class="vip-card-item"></img>
       <img src="../assets/img/vip-card-2.png" class="vip-card-item"></img>
       <img src="../assets/img/vip-card-3.png" class="vip-card-item"></img>
@@ -210,10 +210,59 @@
     </div>
   </nav>
   <!-- 下方功能列 end-->
-
-
-
   <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <script>
+    const linePosition = (document.documentElement.scrollWidth - 55) / 2
+    const cardWrapEl = document.getElementById('vip-card-wrap')
+    const lineWrapEl = document.getElementById('vip-line-wrap')
+    const cardsEl = document.querySelectorAll('.vip-card-item')
+    const tagEl = document.querySelectorAll('.vip-line-item')
+    const cardWrapElRect = cardWrapEl.getClientRects()
+    const lineWrapElRect = lineWrapEl.getClientRects()
+
+    function throttle(func, timeout = 250) {
+      let last;
+      let timer;
+      return function () {
+        const context = this;
+        const args = arguments;
+        const now = +new Date();
+        if (last && now < last + timeout) {
+          clearTimeout(timer)
+          timer = setTimeout(function () {
+            last = now
+            func.apply(context, args)
+          }, timeout)
+        } else {
+          last = now
+          func.apply(context, args)
+        }
+      }
+    }
+
+    function handleScroll() {
+      let activeIndex = -1
+      cardsEl.forEach((el, idx) => {
+        const elRect = el.getClientRects()
+        if (elRect[0].x < linePosition) {
+          activeIndex++
+        }
+      })
+      tagEl.forEach(el => {
+        el.classList.remove('active')
+      })
+      tagEl[activeIndex].classList.add('active')
+      if (activeIndex === 4) {
+        lineWrapEl.scrollTo({ left: 100, top: 0, behavior: 'smooth' })
+      } else {
+        lineWrapEl.scrollTo({ left: 0, top: 0, behavior: 'smooth' })
+      }
+
+    }
+
+    cardWrapEl.addEventListener('scroll', throttle(handleScroll, 150))
+  </script>
 </body>
 
 </html>

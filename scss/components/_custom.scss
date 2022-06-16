@@ -7,6 +7,10 @@ $nav-bottom-height: 50px;
   opacity: 1; /* Firefox */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title {
   padding-top: 15px;
   padding-bottom: 15px;
