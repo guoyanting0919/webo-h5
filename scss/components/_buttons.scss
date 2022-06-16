@@ -116,9 +116,12 @@
 .btn-lin {
   background: transparent linear-gradient(82deg, #8c5f06 0%, #d0941d 100%) 0% 0%
     no-repeat padding-box;
-  &:active {
-    background: $primary !important;
-  }
+  border: 1px solid transparent !important;
+  transform: 0.5s;
+  border-radius: 6px;
+  // &:active {
+  //   background: $primary !important;
+  // }
   &[disabled] {
     opacity: 0.5;
   }

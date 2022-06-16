@@ -12931,10 +12931,10 @@ body {
 
 .btn-lin {
   background: transparent linear-gradient(82deg, #8c5f06 0%, #d0941d 100%) 0% 0% no-repeat padding-box;
-}
-
-.btn-lin:active {
-  background: #8c5f06 !important;
+  border: 1px solid transparent !important;
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  border-radius: 6px;
 }
 
 .btn-lin[disabled] {

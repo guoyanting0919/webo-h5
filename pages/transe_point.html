@@ -59,17 +59,18 @@
   <div class="container">
     <!-- 戶內轉點 -->
     <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
-      <div class="pe-2 position-relative d-flex flex-row justify-content-between align-items-center">
-        <div class="card-title">戶內轉點</div>
+      <div class="pe-2 pb-3 position-relative d-flex flex-row justify-content-between align-items-center">
+        <div class="card-title" id="txtEl">請[點選]轉點錢包</div>
         <div class="form-check form-switch" style="transform: translateY(6px);">
           <img class="ms-1" src="/assets/img/question-circle-fill.svg" alt="" data-bs-toggle="tooltip"
             data-bs-placement="bottom" title="開啟自動轉點時，系統將會自動把點數全部幫您轉進遊戲平台內">
           <label class="form-check-label align-middle fs-7" for="flexSwitchCheckDefault">自動轉點</label>
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input onchange="switchOnChange(this.checked)" class="form-check-input" type="checkbox" role="switch"
+            id="flexSwitchCheckDefault">
         </div>
       </div>
 
-      <div class="card-body">
+      <div class="card-body" id="self-trans-zone">
         <div class="row justify-content-between mb-2">
           <div class="col-5 d-flex flex-row justify-content-center align-items-center" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
@@ -382,7 +383,24 @@
     tooltipTriggerList.map((tooltipTriggerEl) => {
       const tooltip = new bootstrap.Tooltip(tooltipTriggerEl);
     })
-        //#endregion
+    //#endregion
+
+    // 轉點 switch input
+    const selfEl = document.getElementById('self-trans-zone')
+    const txtEl = document.getElementById('txtEl')
+    const switchOnChange = (isChecked) => {
+      console.log(isChecked);
+
+      if (isChecked) {
+        selfEl.classList.add('d-none')
+        selfEl.classList.remove('d-block')
+        txtEl.innerText = '戶內轉點'
+      } else {
+        selfEl.classList.add('d-block')
+        selfEl.classList.remove('d-none')
+        txtEl.innerText = '請[點選]轉點錢包'
+      }
+    }
   </script>
 </body>
 
