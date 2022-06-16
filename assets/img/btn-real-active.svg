@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="42" viewBox="0 0 60 42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9df7b"/>
+      <stop offset="1" stop-color="#fffbe1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="0.972" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8c5f06"/>
+      <stop offset="0.251" stop-color="#fff3a6"/>
+      <stop offset="0.527" stop-color="#8c5f06"/>
+      <stop offset="0.759" stop-color="#fff3a6"/>
+      <stop offset="1" stop-color="#8c5f06"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" y1="0.433" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path">
+      <rect id="矩形_101" data-name="矩形 101" width="60" height="40" rx="10" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#573b02"/>
+      <stop offset="0.495" stop-color="#c7a889"/>
+      <stop offset="1" stop-color="#573b02"/>
+    </linearGradient>
+  </defs>
+  <g id="组_50688" data-name="组 50688" transform="translate(-633 -918)">
+    <g id="组件_8_171" data-name="组件 8 – 171" transform="translate(633 918)">
+      <g id="组件_4_14" data-name="组件 4 – 14">
+        <rect id="矩形_59" data-name="矩形 59" width="60" height="40" rx="8" transform="translate(0 2)" fill="url(#linear-gradient-2)"/>
+        <rect id="矩形_58" data-name="矩形 58" width="60" height="40" rx="10" fill="url(#linear-gradient-3)"/>
+      </g>
+      <g id="蒙版组_15" data-name="蒙版组 15" transform="translate(0 1)" clip-path="url(#clip-path)">
+        <path id="路径_297" data-name="路径 297" d="M6.042,6.042,58.914,13.6l7.553,52.871L13.6,58.914Z" transform="translate(30 -51.272) rotate(45)" fill="url(#linear-gradient-4)"/>
+      </g>
+    </g>
+    <text id="真人" transform="translate(658 944)" fill="#333" font-size="14" font-family="PingFangTC-Regular, PingFang TC"><tspan x="0" y="0">真人</tspan></text>
+    <g id="_ic_casino" data-name="@ic_casino" transform="translate(640 931)">
+      <rect id="矩形_17662" data-name="矩形 17662" width="16" height="16" fill="none"/>
+      <path id="骰子6" d="M165.944,153.6H155.056a1.561,1.561,0,0,0-1.556,1.556v10.887a1.561,1.561,0,0,0,1.556,1.556h10.887a1.561,1.561,0,0,0,1.556-1.556V155.154A1.56,1.56,0,0,0,165.944,153.6ZM157,165.264a1.168,1.168,0,1,1,1.168-1.168A1.167,1.167,0,0,1,157,165.264Zm0-3.5a1.168,1.168,0,1,1,1.168-1.168A1.167,1.167,0,0,1,157,161.765Zm0-3.5a1.168,1.168,0,1,1,1.168-1.168A1.167,1.167,0,0,1,157,158.265Zm7,7a1.168,1.168,0,1,1,1.168-1.168A1.167,1.167,0,0,1,164,165.264Zm0-3.5a1.168,1.168,0,1,1,1.168-1.168A1.167,1.167,0,0,1,164,161.765Zm0-3.5a1.168,1.168,0,1,1,1.168-1.168A1.167,1.167,0,0,1,164,158.265Z" transform="translate(-152.5 -152.6)" fill="url(#linear-gradient-5)"/>
+    </g>
+  </g>
+</svg>
