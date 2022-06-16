@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+  <title>WEBO - 遊戲紀錄</title>
+</head>
+
+<body>
+  <!-- title -->
+  <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
+    <a class="back-icon" href="account.html"><img src="../assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
+    <h2 class="fs-6 mb-0 text-center">
+      遊戲紀錄
+    </h2>
+  </div>
+  <!-- title end -->
+  <!-- search -->
+  <div class="container border-bottom border-light bg-white">
+    <div class="row align-items-center g-2 pb-2">
+      <div class="col-auto collapseBtn">
+        <button class="accordion-button collapsed text-info btn-sm fs-7 rounded-2" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseService" aria-expanded="true"
+          aria-controls="collapseService" id="plateform-filter">
+          所有平台
+        </button>
+      </div>
+      <div class="col-auto collapseBtn">
+        <button class="accordion-button collapsed text-info btn-sm fs-7 rounded-2" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseTime" aria-expanded="false" aria-controls="collapseTime"
+          id="time-filter-btn">
+          今日
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- 搜尋選單 -->
+  <div class="container py-0 bg-white border-bottom border-light" id="accordion">
+    <div class="row align-items-center fs-7 py-2">
+      <div class="col-auto fs-8 text-gray62">搜尋日期 : 2021-05-01 ~ 2021-05-05</div>
+    </div>
+
+    <!-- 平台選擇 -->
+    <div class="collapse my-2 mt-0" id="collapseService" data-bs-parent="#accordion">
+      <div class="d-flex flex-column px-2" role="group" aria-label="Basic radio toggle button group">
+        <div class="plateform-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio_1" autocomplete="off" checked>
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_1">
+            <div class="text-gray2e fs-7">所有平台</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+        <div class="plateform-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio_2" autocomplete="off">
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_2">
+            <div class="text-gray2e fs-7">真人娛樂</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+        <div class="plateform-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio_3" autocomplete="off">
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_3">
+            <div class="text-gray2e fs-7">棋牌遊戲</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+        <div class="plateform-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio_4" autocomplete="off">
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_4">
+            <div class="text-gray2e fs-7">電競</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+        <div class="plateform-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio_5" autocomplete="off">
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_5">
+            <div class="text-gray2e fs-7">彩票投注</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+        <div class="plateform-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio_6" autocomplete="off">
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio_6">
+            <div class="text-gray2e fs-7">電子遊藝</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- 平台選擇 end-->
+    <!-- 日期選擇 -->
+    <div class="collapse my-2 mt-0" id="collapseTime" data-bs-parent="#accordion">
+
+      <div class="row row-cols-4 g-2 light-gray-btns time-filter-btns">
+        <div class="w-100 fs-8 form-label">時間搜尋</div>
+        <div class="d-grid"><button class="btn btn-gray text-info active" type="button">今日</button></div>
+        <div class="d-grid"><button class="btn btn-gray text-info" type="button">昨日</button></div>
+        <div class="d-grid"><button class="btn btn-gray text-info" type="button">本週</button></div>
+        <div class="d-grid"><button class="btn btn-gray text-info" type="button">上週</button></div>
+        <div class="d-grid"><button class="btn btn-gray text-info" type="button">本月</button></div>
+        <div class="d-grid"><button class="btn btn-gray text-info" type="button">上月</button></div>
+        <div class="d-grid"><button class="btn btn-gray text-info" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseCustomTime" aria-expanded="false" aria-controls="collapseCustomTime">自訂義</button>
+        </div>
+      </div>
+    </div>
+    <!-- 自訂時間 -->
+    <div class="collapse my-2" id="collapseCustomTime">
+      <div class="mb-3">
+        <label for="startTime" class="form-label">開始時間</label>
+        <input type="date" class="form-control" id="startTime" placeholder="請選擇開始時間">
+        <label for="endTime" class="form-label">結束時間</label>
+        <input type="date" class="form-control" id="endTime" placeholder="請選擇結束時間">
+      </div>
+      <div class="d-grid"><button class="btn btn-primary btn-lin" type="button">搜尋</button></div>
+    </div>
+    <!-- 自訂時間 end-->
+    <!-- 日期選擇 end-->
+  </div>
+  <!-- 搜尋選單 end-->
+  <!-- search end-->
+  <div class="container">
+    <!-- 總計欄位 -->
+    <div class="row bg-white py-2 mb-2">
+      <div class="col-6 text-center">
+        <div class="fs-8 text-gray62">投注總金額</div>
+        <div class="fw-bold">99,000.<span class="fs-8">00</span></div>
+      </div>
+      <div class="col-6 text-center">
+        <div class="fs-8 text-gray62">總結果</div>
+        <div class="fw-bold">89,000.<span class="fs-8">00</span></div>
+      </div>
+
+    </div><!-- 總計欄位 end-->
+    <!-- list -->
+    <a class="d-block text-decoration-none card mb-1" href="game_record_detail.html">
+      <div class="card-body py-2 d-flex flex-row px-3">
+        <div class="col-6 d-flex flex-column">
+          <div class="deco-icon"></div>
+          <div class="mb-2 text-secondary">平台名稱</div>
+          <div class="text-gray fs-8 mb-2">有效投注</div>
+          <div class="text-gray fs-8">結果</div>
+        </div>
+        <div class="col-6 ms-auto text-end">
+          <div class="mb-2"> &nbsp;</div>
+          <div class="fw-bold mb-1">100.<span class="fs-8">00</span></div>
+          <div class="fw-bold text-primary">1,238.<span class="fs-8">00</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="d-block text-decoration-none card mb-1" href="game_record_detail.html">
+      <div class="card-body py-2 d-flex flex-row px-3">
+        <div class="col-6 d-flex flex-column">
+          <div class="deco-icon"></div>
+          <div class="mb-2 text-secondary">平台名稱</div>
+          <div class="text-gray fs-8 mb-2">有效投注</div>
+          <div class="text-gray fs-8">結果</div>
+        </div>
+        <div class="col-6 ms-auto text-end">
+          <div class="mb-2"> &nbsp;</div>
+          <div class="fw-bold mb-1">100.<span class="fs-8">00</span></div>
+          <div class="fw-bold text-primary">1,238.<span class="fs-8">00</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="d-block text-decoration-none card mb-1" href="game_record_detail.html">
+      <div class="card-body py-2 d-flex flex-row px-3">
+        <div class="col-6 d-flex flex-column">
+          <div class="deco-icon"></div>
+          <div class="mb-2 text-secondary">平台名稱</div>
+          <div class="text-gray fs-8 mb-2">有效投注</div>
+          <div class="text-gray fs-8">結果</div>
+        </div>
+        <div class="col-6 ms-auto text-end">
+          <div class="mb-2"> &nbsp;</div>
+          <div class="fw-bold mb-1">100.<span class="fs-8">00</span></div>
+          <div class="fw-bold text-primary">1,238.<span class="fs-8">00</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="d-block text-decoration-none card mb-1" href="game_record_detail.html">
+      <div class="card-body py-2 d-flex flex-row px-3">
+        <div class="col-6 d-flex flex-column">
+          <div class="deco-icon"></div>
+          <div class="mb-2 text-secondary">平台名稱</div>
+          <div class="text-gray fs-8 mb-2">有效投注</div>
+          <div class="text-gray fs-8">結果</div>
+        </div>
+        <div class="col-6 ms-auto text-end">
+          <div class="mb-2"> &nbsp;</div>
+          <div class="fw-bold mb-1">100.<span class="fs-8">00</span></div>
+          <div class="fw-bold text-primary">1,238.<span class="fs-8">00</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="d-block text-decoration-none card mb-1" href="game_record_detail.html">
+      <div class="card-body py-2 d-flex flex-row px-3">
+        <div class="col-6 d-flex flex-column">
+          <div class="deco-icon"></div>
+          <div class="mb-2 text-secondary">平台名稱</div>
+          <div class="text-gray fs-8 mb-2">有效投注</div>
+          <div class="text-gray fs-8">結果</div>
+        </div>
+        <div class="col-6 ms-auto text-end">
+          <div class="mb-2"> &nbsp;</div>
+          <div class="fw-bold mb-1">100.<span class="fs-8">00</span></div>
+          <div class="fw-bold text-primary">1,238.<span class="fs-8">00</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="d-block text-decoration-none card mb-1" href="game_record_detail.html">
+      <div class="card-body py-2 d-flex flex-row px-3">
+        <div class="col-6 d-flex flex-column">
+          <div class="deco-icon"></div>
+          <div class="mb-2 text-secondary">平台名稱</div>
+          <div class="text-gray fs-8 mb-2">有效投注</div>
+          <div class="text-gray fs-8">結果</div>
+        </div>
+        <div class="col-6 ms-auto text-end">
+          <div class="mb-2"> &nbsp;</div>
+          <div class="fw-bold mb-1">100.<span class="fs-8">00</span></div>
+          <div class="fw-bold text-primary">1,238.<span class="fs-8">00</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="d-block text-decoration-none card mb-1" href="game_record_detail.html">
+      <div class="card-body py-2 d-flex flex-row px-3">
+        <div class="col-6 d-flex flex-column">
+          <div class="deco-icon"></div>
+          <div class="mb-2 text-secondary">平台名稱</div>
+          <div class="text-gray fs-8 mb-2">有效投注</div>
+          <div class="text-gray fs-8">結果</div>
+        </div>
+        <div class="col-6 ms-auto text-end">
+          <div class="mb-2"> &nbsp;</div>
+          <div class="fw-bold mb-1">100.<span class="fs-8">00</span></div>
+          <div class="fw-bold text-primary">1,238.<span class="fs-8">00</span></div>
+        </div>
+      </div>
+    </a>
+
+
+    <div class="mx-auto my-5 text-center">
+      <img src="../assets/img/no_data.svg" alt="no_data">
+      <div class="d-grid gap-2 mt-3">
+        <a class="btn btn-primary fs-6 btn-lin" href="account.html">返回</a>
+      </div>
+    </div>
+    <!-- list end-->
+  </div>
+  <div class="mb-2"></div>
+
+  <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- 日期選擇 -->
+  <script>
+    const timeBtns = document.querySelectorAll('.time-filter-btns .btn-gray')
+    const timeFilterBtn = document.getElementById('time-filter-btn')
+    timeBtns.forEach((el) => {
+      el.addEventListener('click', function (e) {
+        timeBtns.forEach(el => el.classList.remove('active'))
+        el.classList.add('active')
+        timeFilterBtn.innerText = el.innerText
+
+      })
+    })
+  </script>
+
+  <!-- 平台選擇 -->
+  <script>
+    const plateFromOptions = document.querySelectorAll('.plateform-option')
+    const plateFormBtn = document.getElementById('plateform-filter')
+    console.log(plateFromOptions);
+    plateFromOptions.forEach(el => {
+      el.addEventListener('click', function (e) {
+        e.stopPropagation();
+        plateFormBtn.innerText = el.innerText
+      })
+    })
+
+  </script>
+</body>
+
+</html>

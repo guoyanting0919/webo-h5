@@ -1,0 +1,15 @@
+$bottom-navbar-rounded-top: 20px;
+$bottom-navbar-rounded-bottom: 0;
+.navbar {
+    border-radius: $bottom-navbar-rounded-top $bottom-navbar-rounded-top $bottom-navbar-rounded-bottom $bottom-navbar-rounded-bottom;
+    box-shadow: 0px -3px 6px #00000017;
+}
+.nav-link {
+    img {
+        width: 20px; // 下方導覽列 icon 大小
+    }
+    span {
+        font-size: 12px;
+        color: #999999 !important;
+    }
+}

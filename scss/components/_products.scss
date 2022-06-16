@@ -1,0 +1,15 @@
+@import "../helpers/variables";
+$down-space: $down-navbar-height + 50px;
+.products {
+    height: 50vh;
+    overflow: auto;
+    padding-bottom: $down-space; // 根據下方導覽列高度決定
+}
+.products-inner {
+    min-height: 50vh;
+}
+@include media-breakpoint-up(md) {
+    .products {
+        // height: auto;
+    }
+}

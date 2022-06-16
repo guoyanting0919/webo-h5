@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <filter id="htye1a6f3a" x="1.332" y="2.138" width="30" height="27.438" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feFlood flood-color="#b54c05"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="组 49326">
+        <g data-name="组 49583">
+            <circle data-name="椭圆 351" cx="16" cy="16" style="fill:#f65d11" r="16"/>
+            <g data-name="组 49582">
+                <g style="filter:url(#htye1a6f3a)">
+                    <path data-name="路径 64007" d="M80.834 125.57a1.585 1.585 0 0 1 .2.014 1.339 1.339 0 0 0-.623-.27l-12.791-2.053a1.367 1.367 0 0 0-1.565 1.139l-.187 1.173h14.966zm1.366 2.019a1.368 1.368 0 0 0-1.366-1.373H65.566a1.368 1.368 0 0 0-1.366 1.373v9.72a1.368 1.368 0 0 0 1.366 1.373h15.266a1.368 1.368 0 0 0 1.366-1.373V134.7h-5.282a2.449 2.449 0 0 1 0-4.9H82.2v-2.212z" transform="translate(-56.868 -116.102)" style="fill:#fff"/>
+                </g>
+                <path data-name="路径 64008" d="M676.238 535.7a.688.688 0 1 0 .511-.832.688.688 0 0 0-.511.832z" transform="translate(-656.719 -519.489)" style="fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>

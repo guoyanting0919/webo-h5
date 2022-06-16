@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+  <title>WEBO - 提款</title>
+</head>
+
+<body>
+  <!-- Toast 訊息，根據需求使用-->
+  <div
+    class="toast-container position-fixed top-0 end-0 pt-3 d-flex flex-column justify-content-center align-items-center w-100">
+    <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換成功</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div id="liveToast2" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換失敗</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div id="liveToast3" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換失敗</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Toast 訊息，根據需求使用 end-->
+  <!-- title -->
+  <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
+    <a class="back-icon" href="account.html"><img src="../assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
+    <h2 class="fs-6 mb-0 text-center">
+      提款
+    </h2>
+  </div>
+  <!-- title end -->
+
+  <!-- 表單 -->
+  <div class="container">
+    <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
+      <div class="card-title">銀行帳戶資訊 <span class="text-muted fs-7">(限綁定一次)</span></div>
+      <div class="card-body">
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">銀行名稱<span class="text-danger">*</span></label>
+            <div class="input-group has-validation" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom">
+              <input type="text" class="form-control  rounded-3" id="inputQutionType" placeholder="請選擇銀行名稱"
+                aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+              <img class="d-block" src="../assets/img/arrow-right.svg" alt=""
+                style="position: absolute;right: 8px;top: 15px;z-index: 9;">
+              <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">銀行帳號<span class="text-danger">*</span></label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="inputPassword" placeholder="請輸入銀行帳號"
+                aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+              <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="d-grid gap-2 mt-0 mb-4">
+        <button class="mx-2 btn btn-primary btn-lin fs-6 fw-bold" type="button" data-bs-toggle="modal"
+          data-bs-target="#checkEdit">送出</button>
+      </div>
+    </div>
+    <!-- 銀行帳戶 -->
+    <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
+      <div class="card-title">銀行帳戶</div>
+      <div class="card-body">
+        <form>
+          <div class="mb-3 row border-bottom border-light px-0 mx-1">
+            <label for="staticEmail" class="col-3 px-2 col-form-label fs-7 text-secondary">銀行名稱</label>
+            <div class="col-9">
+              <input type="text" disabled class="text-dark form-control-plaintext fs-7" id="staticEmail"
+                value="004 台灣銀行">
+            </div>
+          </div>
+          <div class="mb-3 row border-bottom border-light px-0 mx-1">
+            <label for="staticEmail" class="col-3 px-2 col-form-label fs-7 text-secondary">銀行帳號</label>
+            <div class="col-9">
+              <input type="text" disabled class="text-dark form-control-plaintext fs-7" id="staticEmail"
+                value="12345678900000">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 銀行帳戶 end -->
+
+    <!-- 提款金額 -->
+    <div class="card w-100 mb-2 mt-2" style="width: 18rem;">
+      <div class="card-title">提款金額 <span class="text-muted fs-7">(單筆最低提款金額為1,000)</span></div>
+      <div class="card-body">
+        <form action="">
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"><span class="text-danger"></span></label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="inputPassword" placeholder="請輸入提款金額"
+                aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+              <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+            </div>
+            <div class="text-muted fs-8 mt-2 d-flex flex-row align-items-center">
+              <div>本週免手續費次數 : 1</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="d-grid gap-2 mt-0 mb-4">
+        <button class="mx-2 btn btn-primary btn-lin fs-6 fw-bold" type="button" data-bs-toggle="modal"
+          data-bs-target="#checkEdit">送出</button>
+      </div>
+    </div>
+    <!-- 提款金額end -->
+
+    <!-- 我的錢包 -->
+    <div class="card w-100">
+      <div class=" position-relative py-2 d-flex flex-row align-items-center">
+        <div class="card-title w-100 d-flex">
+          <div class="me-1">我的錢包</div>
+          <img class="me-auto" src="../assets/img/renew.svg" alt="">
+          <span class="fs-7" data-bs-toggle="modal" data-bs-target="#recycle">一鍵回收</span>
+        </div>
+
+      </div>
+      <!-- 主帳戶點數 -->
+      <div class="card-body pt-1">
+        <div
+          class="position-relative d-flex flex-row justify-content-between align-items-center rounded-3 border  w-100 p-3">
+          <div class="d-flex flex-row align-items-center">
+            <img src="../assets/img/wallet.svg" alt="">
+            <div class="ms-1">主帳戶點數</div>
+          </div>
+          <div class="me-1 text-primary fw-bolder">$ 1,234,567.<span class="fs-7">00</span></div>
+        </div>
+      </div>
+      <!-- 主帳戶點數 end-->
+      <!-- API list -->
+      <div class="card-body pt-0 small row row-cols-3 row-cols-lg-6 g-2 g-lg-3 vh-50 overflow-auto light-gray-btns">
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 我的錢包 end -->
+
+    <!-- 提款說明 -->
+    <div class="w-100 my-3" style="width: 18rem;">
+      <div class="text-primary pb-2 border-bottom">提款說明</div>
+      <div class="card-body fs-8 p-0 pt-2" style="color: #717171;">
+        1. 會員單日出款次數為1次。 <br /><br />
+        2. 每次提款最少點數為1000點以上，請務必確認填寫之帳號，若提供的帳號錯誤，恕本公司無法負責。 <br /><br />
+        3. 單筆最低出款金額1000，當日最高出款金額上限60萬，VIP威博賭俠以上最高出款100萬。 <br /><br />
+        4. 提款時需達到最後一筆拋售後存款金額的 1倍有效投注量才可提出申請。 PS:如利用本平臺進行任何洗錢詐騙行為，本公司保留權利審核會員帳戶或停權終止會員服務)<br /><br />
+        5. 轉盤活動洗碼量標準比照所屬活動拋售條件。 <br /><br />
+        6. 平台儲值沒參加優惠活動，都需 1倍洗碼量。 <br /><br />
+        7. 依會員等級設置免提領次數，一般會員每日出款酌收2%手續費，最低手續費30元。 <br /><br />
+        8. 因點數詐騙事件頻繁，為保障會員權益，新會員首次拋售需在首次儲值後滿24小時後申請。
+      </div>
+    </div>
+    <!-- 提款說明  end -->
+  </div>
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-bottom rounded-top-lg border-0" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="pt-2 pb-3 w-100" data-bs-dismiss="offcanvas" aria-label="Close">
+      <div class="m-auto div-close text-reset"></div>
+    </div>
+    <div class="offcanvas-body pt-0 small">
+      <div class="d-flex flex-column" role="group" aria-label="Basic radio toggle button group">
+        <div class="canvas-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio1">
+            <div class="me-2">中信</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+        <div class="canvas-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio2">
+            <div class="me-auto">國泰</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+        <div class="canvas-option">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio3">
+            <div>台銀</div>
+            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast 訊息，根據需求使用-->
+  <div
+    class="toast-container position-fixed top-0 end-0 pt-3 d-flex flex-column justify-content-center align-items-center w-100">
+    <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換成功</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div id="liveToast2" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換失敗</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div id="liveToast3" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換失敗</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Toast 訊息，根據需求使用 end-->
+
+  <!-- 確認窗 modal -->
+  <div class="modal fade" id="checkEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">確認送出</h5>
+        </div>
+        <div class="modal-body py-0">
+          <!-- <div class="text-center">
+            確認送出?
+          </div> -->
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button onclick="showToast ('success', '已送出!', 'liveToast')"
+              class="btn btn-primary btn-lin fs-6">確認</button>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 確認窗 Modal end-->
+
+  <!-- 一件回收 modal -->
+  <div class="modal fade" id="recycle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">確認全部回收至主帳戶?</h5>
+        </div>
+        <div class="modal-body py-0">
+          <div class="text-center">
+            是否確認全部平台點數額度回收至主帳戶?
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button onclick="showToast ('success', '回收成功!', 'liveToast')"
+              class="btn btn-primary btn-lin fs-6">確認</button>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- offcanvasBottom -->
+  <script type="text/javascript">
+    let options = document.querySelectorAll('#offcanvasBottom .canvas-option')
+    const input = document.getElementById('inputQutionType')
+    options.forEach(el => {
+      const button = new bootstrap.Button(el)
+      el.addEventListener('click', function (e) {
+        // e.preventDefault()
+        e.stopPropagation()
+        input.value = el.childNodes[3].innerText
+
+      })
+
+    })
+  </script>
+
+  <script>
+    function showToast(classStyle, info, toastId) {
+      var toastLiveExample = document.getElementById(toastId)
+      var toastIcon = document.querySelector(`#${toastId} .info-circle`)
+      toastIcon.classList.add(`bg-${classStyle}`)
+      var toastMsg = document.querySelector(`#${toastId} .msg`);
+      toastMsg.textContent = info;
+      var toast = new bootstrap.Toast(toastLiveExample)
+      toast.show()
+    }
+  </script>
+
+</body>
+
+</html>

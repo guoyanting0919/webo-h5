@@ -1,0 +1,24 @@
+<svg data-name="组 49324" xmlns="http://www.w3.org/2000/svg" width="32" height="32.162" viewBox="0 0 32 32.162">
+    <defs>
+        <linearGradient id="rt55dxbjha" x1=".827" y1=".619" x2="1" y2=".957" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f9df7b"/>
+            <stop offset="1" stop-color="#fffbe1"/>
+        </linearGradient>
+        <clipPath id="wm3l8mypsb">
+            <ellipse data-name="椭圆 384" cx="16" cy="16.081" rx="16" ry="16.081" style="fill:url(#rt55dxbjha)"/>
+        </clipPath>
+        <filter id="9q8dmisuxc" x="1.258" y="2.212" width="29.482" height="28.22" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feFlood flood-color="#b54c05"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <circle data-name="椭圆 351" cx="16" cy="16" style="fill:#f65d11" r="16"/>
+    <g style="clip-path:url(#wm3l8mypsb)">
+        <g style="filter:url(#9q8dmisuxc)" data-name="蒙版组 18">
+            <path data-name="转账 (1)" d="M148.392 176.861h-5.5a.293.293 0 0 1-.214-.492l5.21-5.625a.292.292 0 0 1 .5.2v3.6a.291.291 0 0 0 .292.292h10.729a.292.292 0 0 1 .292.293v1.443a.292.292 0 0 1-.292.293zm5.142 3.8h5.5a.293.293 0 0 1 .214.492l-5.21 5.625a.292.292 0 0 1-.5-.2v-3.587a.293.293 0 0 0-.292-.293h-10.732a.293.293 0 0 1-.292-.292v-1.453a.292.292 0 0 1 .292-.293h11.021z" transform="translate(-134.96 -163.44)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

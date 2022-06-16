@@ -1,0 +1,140 @@
+.btn_active_teal {
+  display: none;
+}
+.btn-outline-gray {
+  border-color: $gray-800;
+  color: $gray-400;
+  &.active,
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+    color: color-contrast($primary);
+  }
+}
+.btn-gray.active {
+  border: $teal solid $border-width;
+  .btn_active_teal {
+    display: block;
+  }
+}
+.btn-gray-dark {
+  border: $gray-800 solid $border-width;
+  &.active,
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: $gray-800;
+  }
+}
+.accordion-button::after {
+  width: 10px;
+  height: 8px;
+  margin-left: 10px;
+  background-position: center;
+  background-size: auto;
+}
+.btn-bg-orange {
+  background: transparent escape-svg(url("../../assets/img/btn_bg_gray.svg"))
+    center / 100% auto no-repeat;
+  &.active,
+  &:focus,
+  &:active,
+  &:hover {
+    background-image: escape-svg(url("../../assets/img/btn_bg_orange.svg"));
+  }
+}
+.btn-dark {
+  color: $gray-400;
+  &.active,
+  &:focus,
+  &:active,
+  &:hover {
+    border-color: $gray-100;
+    color: $gray-100;
+  }
+}
+.dropdown-toggle::after {
+  color: $white;
+}
+
+.home-nav-btn {
+  width: 60px;
+  height: 42px;
+  background: transparent !important;
+  &.btn-sport {
+    background-image: url("../../assets/img/btn-sport.png") !important;
+    background-size: cover !important;
+    &.active {
+      background-image: url("../../assets/img/btn-sport-active.png") !important;
+      background-size: cover !important;
+    }
+  }
+  &.btn-real {
+    background-image: url("../../assets/img/btn-real.png") !important;
+    background-size: cover !important;
+    &.active {
+      background-image: url("../../assets/img/btn-real-active.svg") !important;
+      background-size: cover !important;
+    }
+  }
+  &.btn-electron {
+    background-image: url("../../assets/img/btn-electron.png") !important;
+    background-size: cover !important;
+    &.active {
+      background-image: url("../../assets/img/btn-electron-active.svg") !important;
+      background-size: cover !important;
+    }
+  }
+  &.btn-lottery {
+    background-image: url("../../assets/img/btn-lottery.png") !important;
+    background-size: cover !important;
+    &.active {
+      background-image: url("../../assets/img/btn-lottery-active.svg") !important;
+      background-size: cover !important;
+    }
+  }
+  &.btn-chess {
+    background-image: url("../../assets/img/btn-chess.png") !important;
+    background-size: cover !important;
+    &.active {
+      background-image: url("../../assets/img/btn-chess-active.svg") !important;
+      background-size: cover !important;
+    }
+  }
+  &.btn-game {
+    background-image: url("../../assets/img/btn-game.png") !important;
+    background-size: cover !important;
+    &.active {
+      background-image: url("../../assets/img/btn-game-active.svg") !important;
+      background-size: cover !important;
+    }
+  }
+}
+
+.btn-lin {
+  background: transparent linear-gradient(82deg, #8c5f06 0%, #d0941d 100%) 0% 0%
+    no-repeat padding-box;
+  border: 1px solid transparent !important;
+  transform: 0.5s;
+  border-radius: 6px;
+  // &:active {
+  //   background: $primary !important;
+  // }
+  &[disabled] {
+    opacity: 0.5;
+  }
+}
+.time-filter-btns {
+  .btn-gray.active {
+    background: transparent linear-gradient(43deg, #8c5f06 0%, #b48018 100%) 0%
+      0% no-repeat padding-box !important;
+    color: $white !important;
+    border: none !important;
+  }
+}
+.btn-outline-primary {
+  color: #573b02;
+  border: 1px solid #8c5f06;
+}

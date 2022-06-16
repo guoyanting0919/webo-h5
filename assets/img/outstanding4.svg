@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167.5" height="113.001" viewBox="0 0 167.5 113.001">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="0.004" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8c5f06"/>
+      <stop offset="0.32" stop-color="#fff3a6"/>
+      <stop offset="1" stop-color="#8c5f06"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff8e6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd500"/>
+      <stop offset="1" stop-color="#ff9100"/>
+    </linearGradient>
+  </defs>
+  <g id="组_49790" data-name="组 49790" transform="translate(-15 -330)">
+    <g id="组_49556" data-name="组 49556" transform="translate(15 343.001)">
+      <rect id="矩形_15155" data-name="矩形 15155" width="165.5" height="99" rx="8" transform="translate(1 1)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_17530" data-name="矩形 17530" width="167.5" height="97" rx="8" fill="url(#linear-gradient-2)"/>
+    </g>
+    <text id="線上咨詢" transform="translate(99 392)" fill="#816c4b" font-size="16" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-32" y="0">線上咨詢</tspan></text>
+    <text id="網頁版_客戶端_手機版_三大終端供您選擇" data-name="網頁版、客戶端、手機版
+三大終端供您選擇" transform="translate(99 410)" fill="#c2a67b" font-size="12" font-family="PingFangTC-Regular, PingFang TC"><tspan x="-66" y="0">網頁版、客戶端、手機版</tspan><tspan y="0" font-family="HelveticaNeue, Helvetica Neue"></tspan><tspan x="-48" y="14">三大終端供您選擇</tspan></text>
+    <g id="组_49792" data-name="组 49792" transform="translate(-1567 -1669)">
+      <circle id="椭圆_370" data-name="椭圆 370" cx="19" cy="19" r="19" transform="translate(1647 1999)" fill="url(#linear-gradient-3)"/>
+      <g id="组_49582" data-name="组 49582" transform="translate(1649.449 2001.45)">
+        <g id="组_49580" data-name="组 49580" transform="translate(6.283 5.99)">
+          <g id="组_49576" data-name="组 49576" transform="translate(2.473)">
+            <path id="路径_83184" data-name="路径 83184" d="M-442.676,578.924v-1.006a6.8,6.8,0,0,0,6.789-6.789V566.6a6.8,6.8,0,0,0-6.789-6.789,6.8,6.8,0,0,0-6.79,6.789v4.526h-1.006V566.6a7.8,7.8,0,0,1,7.8-7.8,7.8,7.8,0,0,1,7.8,7.8v4.526A7.8,7.8,0,0,1-442.676,578.924Z" transform="translate(450.471 -558.807)" fill="#fafcfb"/>
+          </g>
+          <g id="组_49577" data-name="组 49577" transform="translate(0 7.795)">
+            <path id="路径_83185" data-name="路径 83185" d="M-455.861,589.822c-.1-.007-.195-.015-.294-.015a4.149,4.149,0,0,0-4.149,4.149v.754a4.149,4.149,0,0,0,4.149,4.149c.1,0,.2-.008.294-.015Z" transform="translate(460.304 -589.807)" fill="#fafcfb"/>
+          </g>
+          <g id="组_49578" data-name="组 49578" transform="translate(16.093 7.795)">
+            <path id="路径_83186" data-name="路径 83186" d="M-396.306,589.822c.1-.007.195-.015.294-.015a4.149,4.149,0,0,1,4.149,4.149v.754a4.149,4.149,0,0,1-4.149,4.149c-.1,0-.2-.008-.294-.015Z" transform="translate(396.306 -589.807)" fill="#fafcfb"/>
+          </g>
+          <g id="组_49579" data-name="组 49579" transform="translate(7.753 18.357)">
+            <path id="路径_83187" data-name="路径 83187" d="M-424.442,632.939a1.132,1.132,0,0,1-1.132,1.132h-2.766a1.132,1.132,0,0,1-1.132-1.132h0a1.132,1.132,0,0,1,1.132-1.132h2.766a1.132,1.132,0,0,1,1.132,1.132Z" transform="translate(429.471 -631.807)" fill="#fafcfb"/>
+          </g>
+        </g>
+        <g id="组_49581" data-name="组 49581">
+          <path id="路径_83188" data-name="路径 83188" d="M-468.739,568.089a16.57,16.57,0,0,1-16.551-16.551,16.57,16.57,0,0,1,16.551-16.551,16.57,16.57,0,0,1,16.551,16.551A16.57,16.57,0,0,1-468.739,568.089Zm0-32.1a15.563,15.563,0,0,0-15.545,15.545,15.563,15.563,0,0,0,15.545,15.545,15.563,15.563,0,0,0,15.545-15.545A15.563,15.563,0,0,0-468.739,535.993Z" transform="translate(485.29 -534.987)" fill="#fafcfb"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

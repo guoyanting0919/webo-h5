@@ -1,0 +1,19 @@
+<svg id="btn_bg_orange" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="60" viewBox="0 0 101 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.433" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9df7b"/>
+      <stop offset="1" stop-color="#fffbe1"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="矩形_99" data-name="矩形 99" width="101" height="60" rx="4" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect id="矩形_58" data-name="矩形 58" width="101" height="60" rx="4" fill="#f65d11"/>
+  <g id="蒙版组_5" data-name="蒙版组 5" clip-path="url(#clip-path)">
+    <path id="路径_83161" data-name="路径 83161" d="M21.64,21.64,114.788.379,93.527,93.527.379,114.788Z" transform="translate(50.5 -94.693) rotate(45)" opacity="0.4" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152.5" height="60" viewBox="0 0 152.5 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9df7b"/>
+      <stop offset="1" stop-color="#fffbe1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.433" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e3e3e3"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="矩形_99" data-name="矩形 99" width="152.5" height="60" rx="6" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="银行" x="6.5" y="8" width="48" height="46.254" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_49880" data-name="组 49880" transform="translate(-192.5 -94)">
+    <g id="tab-bg" transform="translate(192.5 94)">
+      <g id="矩形_58" data-name="矩形 58" stroke="#e3e3e3" stroke-width="1" fill="url(#linear-gradient-2)">
+        <rect width="152.5" height="60" rx="6" stroke="none"/>
+        <rect x="0.5" y="0.5" width="151.5" height="59" rx="5.5" fill="none"/>
+      </g>
+      <g id="蒙版组_5" data-name="蒙版组 5" clip-path="url(#clip-path)">
+        <path id="路径_83161" data-name="路径 83161" d="M48.391,48.391,170.707-2.038,120.278,120.278-2.038,170.707Z" transform="translate(76.25 -132.524) rotate(45)" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+    <text id="ATM" transform="translate(264 130)" fill="#b5b5b5" font-size="15" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="-17" y="0">ATM</tspan></text>
+    <g id="_icon40-bank" data-name="@icon40-bank" transform="translate(203 104)">
+      <rect id="矩形_17561" data-name="矩形 17561" width="40" height="40" fill="none"/>
+      <g transform="matrix(1, 0, 0, 1, -10.5, -10)" filter="url(#银行)">
+        <path id="银行-2" data-name="银行" d="M127.516,138.554,116.6,133.772l-.039-.018a1.745,1.745,0,0,0-.745-.237h-.039a1.807,1.807,0,0,0-.748.237.155.155,0,0,1-.039.018L104.1,138.554a.493.493,0,0,0-.307.457v.577a.357.357,0,0,0,.358.358h1.178a.355.355,0,0,1,.346.261c.147.562.772.529.872.523h18.485a.789.789,0,0,0,.872-.523.355.355,0,0,1,.346-.261h1.178a.357.357,0,0,0,.358-.358v-.547a.369.369,0,0,1,.006-.057A.439.439,0,0,0,127.516,138.554Zm-.784,15.022H104.877a.789.789,0,0,0-.821.821v1.016a.357.357,0,0,0,.358.358h22.777a.357.357,0,0,0,.358-.358V154.4A.781.781,0,0,0,126.732,153.576Zm-19.486-11.647v9.243h-.935a.8.8,0,0,0-.8.781c0,.012,0,.024,0,.033v.409a.357.357,0,0,0,.358.358h19.916a.357.357,0,0,0,.358-.358v-.409a.113.113,0,0,0,0-.033.8.8,0,0,0-.8-.781H124.4v-9.243a.357.357,0,0,0-.358-.358h-2.3a.357.357,0,0,0-.358.358v9.243h-1.833v-9.243a.357.357,0,0,0-.358-.358h-2.278a.357.357,0,0,0-.358.358v9.261h-1.488v-9.261a.357.357,0,0,0-.358-.358H112.44a.357.357,0,0,0-.358.358v9.243h-1.833v-9.243a.357.357,0,0,0-.358-.358h-2.278A.359.359,0,0,0,107.246,141.929Zm0-.358" transform="translate(-85.29 -114.52)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

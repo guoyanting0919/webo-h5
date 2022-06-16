@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148.5" height="127.971" viewBox="0 0 148.5 127.971">
+    <defs>
+        <linearGradient id="3y0yvg3gwa" x1=".835" y1=".2" x2=".376" y2=".267" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f9df7b"/>
+            <stop offset="1" stop-color="#f9df7b" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <path data-name="路径 83152" d="M10 0h138.5L72.6 127.971H0V10A10 10 0 0 1 10 0z" style="fill:url(#3y0yvg3gwa)"/>
+</svg>

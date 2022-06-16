@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167.5" height="113.001" viewBox="0 0 167.5 113.001">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="0.004" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8c5f06"/>
+      <stop offset="0.32" stop-color="#fff3a6"/>
+      <stop offset="1" stop-color="#8c5f06"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff8e6"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="矩形_17710" data-name="矩形 17710" width="40" height="40" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="组_49788" data-name="组 49788" transform="translate(-15 -330)">
+    <g id="组_49556" data-name="组 49556" transform="translate(15 343.001)">
+      <rect id="矩形_15155" data-name="矩形 15155" width="165.5" height="99" rx="8" transform="translate(1 1)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_17530" data-name="矩形 17530" width="167.5" height="97" rx="8" fill="url(#linear-gradient-2)"/>
+    </g>
+    <text id="快速儲值" transform="translate(99 392)" fill="#816c4b" font-size="16" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-32" y="0">快速儲值</tspan></text>
+    <text id="極速提存款_轉獨家_網路優化技術" data-name="極速提存款，轉獨家
+網路優化技術" transform="translate(99 410)" fill="#c2a67b" font-size="12" font-family="PingFangTC-Regular, PingFang TC"><tspan x="-54" y="0">極速提存款，轉獨家</tspan><tspan y="0" font-family="HelveticaNeue, Helvetica Neue"></tspan><tspan x="-36" y="14">網路優化技術</tspan></text>
+    <g id="蒙版组_27" data-name="蒙版组 27" transform="translate(79.25 330)" clip-path="url(#clip-path)">
+      <g id="组_49789" data-name="组 49789" transform="translate(2.5 0)">
+        <path id="路径_83261" data-name="路径 83261" d="M1065.388,325.818h-1.646a4.5,4.5,0,0,1-4.463-4.524v.019l-11.369-6.4-11.369,6.4v-.019a4.5,4.5,0,0,1-4.463,4.524h-1.625c-.328,3.343-.876,20.908,17.468,29.1C1066.263,346.725,1065.716,329.161,1065.388,325.818Z" transform="translate(-1030.354 -314.916)" fill="#ffefc2"/>
+        <path id="路径_83262" data-name="路径 83262" d="M1048.686,333.821a7.859,7.859,0,0,1-5.918,5.573,25.43,25.43,0,0,0,14.35,22.48,25.428,25.428,0,0,0,14.35-22.477,7.859,7.859,0,0,1-5.938-5.576l-8.423-4.738Z" transform="translate(-1039.552 -325.413)" fill="#ffde76"/>
+        <path id="路径_83263" data-name="路径 83263" d="M1111.822,325.818a4.448,4.448,0,0,1-4.352-4.524v.019l-11.084-6.4-.014.008V354.9l.024.011c17.884-8.191,17.35-25.755,17.03-29.1Z" transform="translate(-1078.391 -314.916)" fill="#f18c2e"/>
+        <path id="路径_83264" data-name="路径 83264" d="M1104.551,333.821l-8.164-4.738-.014.008v32.77l.024.013c11.852-6.152,13.73-17.188,13.91-22.477A7.721,7.721,0,0,1,1104.551,333.821Z" transform="translate(-1078.391 -325.413)" fill="#fbb040"/>
+      </g>
+    </g>
+  </g>
+</svg>

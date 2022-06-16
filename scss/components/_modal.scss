@@ -1,0 +1,37 @@
+@import "../helpers/variables";
+.modal-dialog {
+    position: relative;
+}
+.modal-content{
+  box-shadow: 0px 3px 15px #5f4517;
+  border: none;
+  padding-bottom: 10px;
+}
+.modal-body{
+  max-height: 400px;
+  overflow: auto;
+}
+.modal-header {
+    border: 0;
+}
+.modal-title {
+    width: 100%;
+    text-align: center;
+    color: $primary;
+}
+.btn-down-close {
+    position: absolute;
+    top: calc(100% + 10px);;
+    right: calc(50% - 23px);
+    width: 34px;
+    height: 34px;
+    background: transparent escape-svg($btn-close-bg) center / $btn-close-width auto no-repeat; // include 
+    color: $btn-close-color;
+}
+.modal-footer {
+    border: 0;
+}
+#showImgModal .modal-body{
+  max-height: calc(100vh - 48px);
+  height: calc(100vh - 48px);
+}

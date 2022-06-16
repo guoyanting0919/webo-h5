@@ -1,0 +1,86 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// @import "../bootstrap5/scss/bootstrap";
+
+// Then add additional custom code here
+// // Custom.scss
+
+// Option B: Include parts of bootstrap5
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../bootstrap5/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required bootstrap5 stylesheets
+// @import "../bootstrap5/scss/variables";
+@import "helpers/variables"; // 自定義變數
+@import "../bootstrap5/scss/mixins";
+@import "../bootstrap5/scss/root";
+
+// 4. Include any optional bootstrap5 CSS as needed
+@import "helpers/utilities";
+
+// Layout & components
+@import "../bootstrap5/scss/reboot";
+@import "../bootstrap5/scss/type";
+@import "../bootstrap5/scss/images";
+@import "../bootstrap5/scss/containers";
+@import "../bootstrap5/scss/grid";
+
+// @import "../bootstrap5/scss/tables";
+@import "../bootstrap5/scss/forms";
+@import "../bootstrap5/scss/buttons";
+@import "../bootstrap5/scss/transitions";
+@import "../bootstrap5/scss/dropdown";
+@import "../bootstrap5/scss/button-group";
+@import "../bootstrap5/scss/nav";
+@import "../bootstrap5/scss/navbar";
+@import "../bootstrap5/scss/card";
+@import "../bootstrap5/scss/accordion";
+// @import "../bootstrap5/scss/breadcrumb";
+// @import "../bootstrap5/scss/pagination";
+@import "../bootstrap5/scss/badge";
+@import "../bootstrap5/scss/alert";
+// @import "../bootstrap5/scss/progress";
+@import "../bootstrap5/scss/list-group";
+@import "../bootstrap5/scss/close";
+@import "../bootstrap5/scss/toasts";
+@import "../bootstrap5/scss/modal";
+@import "../bootstrap5/scss/tooltip";
+@import "../bootstrap5/scss/popover";
+@import "../bootstrap5/scss/carousel";
+@import "../bootstrap5/scss/spinners";
+@import "../bootstrap5/scss/offcanvas";
+@import "../bootstrap5/scss/placeholders";
+
+// Helpers
+@import "../bootstrap5/scss/helpers";
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../bootstrap5/scss/utilities/api";
+
+// 6. Add additional custom code here
+// 自訂義元件
+@import "components/marquee"; // 廣播
+@import "components/carousel"; // 輪播 banner
+@import "components/products"; // 首頁 產品列表
+@import "components/navbar"; // 下方導覽列
+@import "components/badge_btn"; // 登入資訊列按鈕
+@import "components/modal"; // 登入資訊列按鈕
+@import "components/form"; // 表單
+@import "components/nav"; // nav
+@import "components/custom"; // 客製化特殊樣式
+@import "components/card"; // 卡片
+@import "components/offcanvas";
+@import "components/buttons";
+@import "components/toast";
+
+@import "pages/home";
+@import "pages/promotions";
+@import "pages/account";
+
+@import "components/utilities";
