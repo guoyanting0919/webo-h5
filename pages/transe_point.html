@@ -92,8 +92,8 @@
           <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
         </div>
         <div class="d-grid gap-2">
-          <button class="btn btn-primary btn-lin fs-6" type="button" data-bs-toggle="modal" data-bs-target="#checkEdit"
-            disabled>確認轉點</button>
+          <button onclick="showToast ('success', '轉點成功!', 'liveToast')" class="btn btn-primary btn-lin fs-6"
+            type="button">確認轉點</button>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
         <div class="card-title w-100 d-flex">
           <div class="me-1">我的錢包</div>
           <img class="me-auto" src="../assets/img/renew.svg" alt="">
-          <span class="fs-7">一鍵回收</span>
+          <span class="fs-7" data-bs-toggle="modal" data-bs-target="#checkEdit">一鍵回收</span>
         </div>
 
       </div>
@@ -234,6 +234,31 @@
         onclick="showToast ('success', '轉點成功!', 'liveToast')">送出</button>
     </div>
   </div><!-- 表單 end-->
+
+  <!-- 確認窗 modal -->
+  <div class="modal fade" id="checkEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">確認全部回收至主帳戶?</h5>
+        </div>
+        <div class="modal-body py-0">
+          <div class="text-center">
+            是否確認全部平台點數額度回收至主帳戶?
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button onclick="showToast ('success', '回收成功!', 'liveToast')"
+              class="btn btn-primary btn-lin fs-6">確認</button>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
 
   <!-- 主帳戶 offcanvas -->
   <div class="offcanvas offcanvas-bottom rounded-top-lg border-0" tabindex="-1" id="offcanvasBottom"
