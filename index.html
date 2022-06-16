@@ -508,6 +508,7 @@
             <div class="col-12 position-relative">
               <label for="inputAccount" class="form-label">密碼<span>*</span></label>
               <div class="input-group has-validation">
+                <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
                 <input type="password" class="form-control is-invalid" id="login_inputPassword" placeholder="密碼"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
                 <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
@@ -520,16 +521,16 @@
             </div>
             <div class="col-12 position-relative">
               <label for="login_inputPassword" class="form-label">驗證碼<span>*</span></label>
-              <!-- input 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
               <div class="input-group has-validation">
+                <!-- input 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
                 <input type="password" class="form-control is-invalid" id="inputCode" placeholder="驗證碼"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback" required>
                 <div id="validationServerPasswordFeedback" class="invalid-feedback">錯誤</div>
               </div>
-              <!-- img 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <!-- div 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
               <div
                 class="checkImg is-invalid rounded-3 overflow-hidden d-flex align-items-center justify-content-center">
-                <div class="text-primary fs-7">請點擊刷新</div>
+                <div class="text-primary fs-7 input-refresh-btn">請點擊刷新</div>
               </div>
             </div>
             <div class="col-12">
@@ -594,6 +595,7 @@
         <div class="modal-body py-0">
           <form class="row g-2">
             <div class="col-12">
+              <label for="inputAccount" class="form-label">帳號<span>*</span></label>
               <div class="input-group has-validation">
                 <input type="text" class="form-control  is-invalid" id="inputAccount" placeholder="會員帳號"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
@@ -601,14 +603,16 @@
               </div>
             </div>
             <div class="col-12 position-relative">
+              <label for="inputAccount" class="form-label">手機號碼<span>*</span></label>
               <div class="input-group has-validation">
+                <!-- input 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
                 <input type="text" class="form-control is-invalid" id="inputPhone" placeholder="手機號碼"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
                 <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
               </div>
-              <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <!-- button 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
               <button type="button" class="btn p-0 text-primary timerBtn sendMobileOTP is-invalid">
-                <span class="countdownText">發送驗證碼</span>
+                <div class="countdownText">發送驗證碼</div>
               </button>
             </div>
             <div class="col-12">
@@ -644,22 +648,25 @@
         <div class="modal-body py-0">
           <form class="row g-2">
             <div class="col-12 position-relative">
+              <label for="inputAccount" class="form-label">新密碼<span>*</span></label>
               <div class="input-group has-validation">
-                <input type="password" class="form-control is-invalid" id="newPassword" placeholder="新密碼確認"
+                <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+                <input type="password" class="form-control " id="newPassword" placeholder="新密碼"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
               </div>
               <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-              <div class="checkEye is-invalid" onclick="showPassword('newPassword')">
+              <div class="checkEye " onclick="showPassword('newPassword')">
                 <img class="eyeOpen newPassword" src="/assets/img/eye_show.svg" alt="eye_open">
                 <img class="eyeClose newPassword d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
               </div>
             </div>
             <div class="col-12 position-relative">
+              <label for="inputAccount" class="form-label">新密碼確認<span>*</span></label>
               <div class="input-group has-validation">
                 <input type="password" class="form-control is-invalid" id="newPassword_check" placeholder="新密碼確認"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
               </div>
               <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
               <div class="checkEye is-invalid" onclick="showPassword('newPassword_check')">

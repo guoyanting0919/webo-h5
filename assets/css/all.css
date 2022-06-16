@@ -12307,7 +12307,11 @@ input.is-invalid #count_message {
   display: none;
 }
 
-.btn-check:checked + .radio-icon-check img, .btn-check:active + .radio-icon-check img, .radio-icon-check:active img, .radio-icon-check.active img, .show > .radio-icon-check.dropdown-toggle img {
+.btn-check:checked + .radio-icon-check img,
+.btn-check:active + .radio-icon-check img,
+.radio-icon-check:active img,
+.radio-icon-check.active img,
+.show > .radio-icon-check.dropdown-toggle img {
   display: inline;
 }
 
@@ -12375,13 +12379,14 @@ input#Bank {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px #F5F5F5 inset;
+  -webkit-box-shadow: 0 0 0 30px #f5f5f5 inset;
 }
 
 .form-label {
   margin-bottom: 2px;
   margin-left: 2px;
-  color: #2E2E2E;
+  font-size: 13px;
+  color: #2e2e2e;
 }
 
 .form-label span {
@@ -12391,6 +12396,11 @@ input:-webkit-autofill {
 .invalid-feedback {
   font-size: 12px;
   color: red;
+}
+
+.input-refresh-btn {
+  -webkit-transform: translateX(9px);
+          transform: translateX(9px);
 }
 
 .nav-pills.nav {
