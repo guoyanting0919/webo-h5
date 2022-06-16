@@ -121,19 +121,19 @@
       <div class="card-body">
         <form action="">
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">身份證件姓名<span class="text-danger"> *</span></label>
+            <label for="exampleFormControlInput1" class="form-label">身份證件姓名<span class="text-danger">*</span></label>
             <div class="input-group has-validation">
               <input type="text" class="form-control" id="inputPassword" placeholder="請輸入身份證件姓名"
                 aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
               <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
             </div>
-            <div class="text-muted fs-8 mt-2 d-flex flex-row">
+            <div class="text-muted fs-8 mt-2 d-flex flex-row align-items-center">
               <div class="me-1"><img src="../assets/img/info_icon.svg" alt="info_icon"></div>
               <div>為了維護您的權利,證件姓名需與身分證須為同一人</div>
             </div>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">身分證字號<span class="text-danger"> *</span></label>
+            <label for="exampleFormControlInput1" class="form-label">身分證字號<span class="text-danger">*</span></label>
             <div class="input-group has-validation">
               <input type="text" class="form-control is-invalid" id="inputPassword" placeholder="請輸入身分證字號"
                 aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
@@ -143,9 +143,9 @@
         </form>
         <form runat="server" class="d-flex">
           <label for="imgInp" class="form-label text-muted w-50 position-relative me-2">
-            <div class="mb-2 text-secondary">上傳證件照片<span class="text-danger"> *</span></div>
+            <div class="mb-2 text-secondary">上傳證件照片<span class="text-danger">*</span></div>
             <div id="uploader"
-              class="border-3 uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
+              class="uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
               <img src="../assets/img/upload.svg" alt="upload">
               <div class="fs-6 text-secondary">身分證正面</div>
               <div>請點擊此處上傳</div>
@@ -158,7 +158,7 @@
           <label for="imgFnp" class="form-label text-muted w-50 position-relative">
             <div class="mb-2"> &nbsp; <span class="text-danger"></span></div>
             <div id="uploader2"
-              class="border-3 uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
+              class="uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
               <img src="../assets/img/upload.svg" alt="upload">
               <div class="fs-6 text-secondary">身分證反面</div>
               <div>請點擊此處上傳</div>
@@ -178,17 +178,17 @@
       <div class="card-body">
         <form action="">
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">銀行名稱 <span class="text-danger"> *</span></label>
+            <label for="exampleFormControlInput1" class="form-label">銀行名稱 <span class="text-danger">*</span></label>
             <div class="input-group has-validation" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
               aria-controls="offcanvasBottom">
-              <input type="text" class="form-control is-invalid" id="inputQutionType" placeholder="請選擇銀行名稱"
+              <input type="text" class="form-control rounded-3 is-invalid" id="inputQutionType" placeholder="請選擇銀行名稱"
                 aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
               <img class="d-block" src="../assets/img/arrow-right.svg" alt=""
                 style="position: absolute;right: 8px;top: 15px;z-index: 9;">
               <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">分行名稱<span class="text-danger"> *</span></label>
+              <label for="exampleFormControlInput1" class="form-label">分行名稱<span class="text-danger">*</span></label>
               <div class="input-group has-validation">
                 <input type="text" class="form-control" id="inputPassword" placeholder="請輸入分行名稱"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
@@ -196,7 +196,7 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">銀行帳號<span class="text-danger"> *</span></label>
+              <label for="exampleFormControlInput1" class="form-label">銀行帳號<span class="text-danger">*</span></label>
               <div class="input-group has-validation">
                 <input type="text" class="form-control" id="inputPassword" placeholder="請輸入銀行帳號"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
@@ -204,7 +204,7 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">戶名<span class="text-danger"> *</span></label>
+              <label for="exampleFormControlInput1" class="form-label">戶名<span class="text-danger">*</span></label>
               <div class="input-group has-validation">
                 <input type="text" class="form-control" id="inputPassword" placeholder="請輸入戶名"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
@@ -213,10 +213,10 @@
             </div>
         </form>
         <form runat="server">
-          <label for="imgTnp" class="form-labeltext-muted w-100 position-relative">
-            <div class="mb-2 text-secondary">上傳存簿照片<span class="text-danger"> *</span></div>
+          <label for="imgTnp" class="form-label text-muted w-100 position-relative">
+            <div class="mb-2 text-secondary">上傳證件照片<span class="text-danger">*</span></div>
             <div id="uploader3"
-              class="border-3 uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
+              class="uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
               <img src="../assets/img/upload.svg" alt="upload">
               <div class="fs-6 text-secondary">請點擊此處上傳圖片</div>
             </div>
