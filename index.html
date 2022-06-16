@@ -1,859 +1,954 @@
 <!doctype html>
 <html lang="zh-tw">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS -->
-    <link href="assets/css/all.css" rel="stylesheet" type="text/css">
-    <title>HOMIE</title>
-  </head>
-  <body>
-      <!-- brand -->
-      <div class="d-flex container-fluid justify-content-center p-0">
-        <a class="navbar-brand d-flex h-2" href="#">
-          <img src="assets/img/webo-logo.png" alt="WEBO">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="assets/css/all.css" rel="stylesheet" type="text/css">
+  <title>HOMIE</title>
+</head>
+
+<body>
+  <!-- brand -->
+  <div class="d-flex container-fluid justify-content-center p-0">
+    <a class="navbar-brand d-flex h-2" href="#">
+      <img src="assets/img/webo-logo.png" alt="WEBO">
+    </a>
+  </div>
+  <!-- brand end -->
+
+  <div class="container">
+    <!-- banner -->
+    <div id="carousel-banner" class="carousel slide overflow-hidden" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active rounded-3" style="height: 150px;">
+          <img src="https://fakeimg.pl/345x147/" class="d-block w-100 rounded-3 h-100" alt="...">
+        </div>
+        <div class="carousel-item rounded-3" style="height: 150px;">
+          <img src="https://fakeimg.pl/345x147/" class="d-block w-100 rounded-3 h-100" alt="...">
+        </div>
+        <div class="carousel-item rounded-3" style="height: 150px;">
+          <img src="https://fakeimg.pl/345x147/" class="d-block w-100 rounded-3 h-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <!-- banner end-->
+
+    <!-- 跑馬燈 -->
+    <div class="marquee d-flex flex-row py-2 justify-content-between align-items-center" style="overflow:hidden;">
+      <div class="me-1">
+        <img class="icon-broadcast" src="assets/img/icon-sound.png" alt="broadcast">
+      </div>
+      <div class="marquee-info w-100 d-flex flex-row align-items-center me-1 fs-8">
+        <div>★ test marquee 111111 test marquee 11111 ★</div>
+        <div>2. 測試</div>
+        <div>3. 測試</div>
+        <div>4. 測試</div>
+        <div>5. 測試</div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-info btn-sm dropdown-toggle rounded-pill" type="button" data-bs-toggle="modal"
+          data-bs-target="#info_detail">更多</button>
+      </div>
+    </div>
+    <!-- 跑馬燈 end-->
+
+  </div>
+  <!-- 快速登入/註冊 -->
+  <div class="mb-3 py-2 mt-1">
+    <div class="container">
+      <div class="row py-1 justify-content-between align-items-center">
+        <div class="col-6">
+          <div class="fs-7">您還未登入</div>
+          <div class="fs-8 text-muted">登入/註冊後查看更多訊息</div>
+        </div>
+        <div class="d-flex flex-row badge_btns">
+          <div class="start_btn fs-8 align-middle" data-bs-toggle="modal" data-bs-target="#login">登入</div>
+          <div class="end_btn fs-8 align-middle" data-bs-toggle="modal" data-bs-target="#signUp">註冊</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 快速登入 end-->
+
+  <!-- 網站優勢 start -->
+  <div class="mb-3 py-2 mt-1 text-center">
+    <img src="./assets/img/outstanding-title.svg" alt="" srcset="">
+    <div class="web-outstandind-wrap">
+      <img src="./assets/img/outstanding1.svg" alt="">
+      <img src="./assets/img/outstanding2.svg" alt="">
+      <img src="./assets/img/outstanding3.svg" alt="">
+      <img src="./assets/img/outstanding4.svg" alt="">
+    </div>
+  </div>
+  <!-- 網站優勢 end -->
+
+  <!-- webo 比較 -->
+  <div class="webo-compare mb-3 py-2 mt-1 text-center">
+    <img src="./assets/img/compare-title.svg" alt="" srcset="" class="mb-3">
+    <div id="carousel-compare" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators carousel-indicators-compare">
+        <button type="button" data-bs-target="#carousel-compare" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-compare" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-compare" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel-compare" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="height: 243px;">
+          <div class="d-block w-100 rounded-3 h-100 compare-item compare1"></div>
+        </div>
+        <div class="carousel-item" style="height: 243px;">
+          <div class="d-block w-100 rounded-3 h-100 compare-item compare2"></div>
+        </div>
+        <div class="carousel-item" style="height: 243px;">
+          <div class="d-block w-100 rounded-3 h-100 compare-item compare3"></div>
+        </div>
+        <div class="carousel-item" style="height: 243px;">
+          <div class="d-block w-100 rounded-3 h-100 compare-item compare4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 比較 list -->
+  <div class="compare-list mb-3 mt-1 text-center">
+    <div class="list-title">
+      <div class="title-item"></div>
+      <div class="title-item">威博娛樂城</div>
+      <div class="title-item">一般娛樂城</div>
+    </div>
+    <div class="list-content">
+      <div class="content-item">營運方式</div>
+      <div class="content-item">現金版</div>
+      <div class="content-item">信用版</div>
+    </div>
+    <div class="list-content">
+      <div class="content-item">出金穩定度</div>
+      <div class="content-item">安全穩定的第三方 出金系統</div>
+      <div class="content-item">品質參差不齊危險</div>
+    </div>
+    <div class="list-content">
+      <div class="content-item">存提款速度</div>
+      <div class="content-item">穩定快速</div>
+      <div class="content-item">較慢、獲利不出</div>
+    </div>
+    <div class="list-content">
+      <div class="content-item">客服專業度</div>
+      <div class="content-item">24小時專業客服, 親切服務</div>
+      <div class="content-item">上線時間不定, 機器人回覆</div>
+    </div>
+  </div>
+  <!-- 比較 list end -->
+
+  <!-- QA -->
+  <div class="qa mb-3 py-2 mt-1 text-center">
+    <img src="./assets/img/qa-title.svg" alt="" srcset="" class="mb-3">
+    <div class="qa-wrap">
+      <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">如何選擇安全線上娛樂城，判別黑網詐騙?</div>
+      <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">威博值得玩嗎?是不是詐騙?</div>
+      <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">什麼是流水(洗瑪)?什麼是返利?</div>
+      <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">威博會不會出金?延遲出金怎麼辦?</div>
+      <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">首儲後該如何提款?</div>
+      <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">一次搞懂威博優惠攻略</div>
+      <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">流水該如何計算，返利該如何計算?</div>
+    </div>
+  </div>
+  <!-- QA end -->
+
+  <!-- 登入後資訊 目前隱藏 TODO:hide-->
+  <div class="mb-2 py-2">
+    <div class="container">
+      <div class="row py-1 justify-content-between align-items-center">
+        <div class="col-6">
+          <div class="d-flex flex-row align-items-center">
+            <a class="d-block me-2" href="/pages/account.html">
+              <img src="assets/img/vip-level-1.png" style="width:36px" alt="vip_level">
+            </a>
+            <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+              <div class="fs-8 text-primary">AAAAA01</div>
+              <div class="fs-7 arrow-down">$777,777.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="d-flex flex-row justify-content-end">
+            <a class="me-3 text-center text-white text-decoration-none" href="/pages/add_value.html">
+              <div class="d-flex flex-column justify-content-end">
+                <img style="margin-bottom:-12px" src="assets/img/add_value.png" alt="add_value">
+                <span class="fs-8 lh-sm align-text-bottom text-primary">儲值</span>
+              </div>
+            </a>
+            <a class="me-3 text-center text-white text-decoration-none" href="/pages/transe_point.html">
+              <div class="d-flex flex-column justify-content-end">
+                <img style="margin-bottom:-12px" src="assets/img/transe.png" alt="transe">
+                <span class="fs-8 lh-sm align-text-bottom text-primary">轉點</span>
+              </div>
+            </a>
+            <a class="text-center text-white text-decoration-none" href="/pages/auction.html">
+              <div class="d-flex flex-column justify-content-end">
+                <img style="margin-bottom:-12px" src="assets/img/auction_icon.png" alt="">
+                <span class="fs-8 lh-sm align-text-bottom text-primary">拍賣</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- 登入後資訊 end-->
+
+  <!-- 產品列表 TODO:hide-->
+  <div style="margin-bottom: 56px;" class="container">
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button
+          class="home-nav-btn btn-sport nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center active"
+          id="v-pills-tab-1" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab"
+          aria-controls="v-pills-1" aria-selected="true">
+        </button>
+        <button
+          class="home-nav-btn btn-real nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center"
+          id="v-pills-tab-2" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab"
+          aria-controls="v-pills-2" aria-selected="false">
+        </button>
+        <button
+          class="home-nav-btn btn-electron nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center"
+          id="v-pills-tab-3" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab"
+          aria-controls="v-pills-3" aria-selected="false">
+        </button>
+        <button
+          class="home-nav-btn btn-lottery nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center"
+          id="v-pills-tab-4" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab"
+          aria-controls="v-pills-4" aria-selected="false">
+        </button>
+        <button
+          class="home-nav-btn btn-chess nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center"
+          id="v-pills-tab-5" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab"
+          aria-controls="v-pills-4" aria-selected="false">
+        </button>
+        <button
+          class="home-nav-btn btn-game nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center"
+          id="v-pills-tab-6" data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab"
+          aria-controls="v-pills-4" aria-selected="false">
+        </button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade overflow-auto products show active" id="v-pills-1" role="tabpanel"
+          aria-labelledby="v-pills-tab-1">
+          <div class="products-inner">
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade overflow-auto products" id="v-pills-2" role="tabpanel"
+          aria-labelledby="v-pills-tab-2">
+          <div class="products-inner">
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade overflow-auto products" id="v-pills-3" role="tabpanel"
+          aria-labelledby="v-pills-tab-3">
+          <div class="products-inner">
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade overflow-auto products" id="v-pills-4" role="tabpanel"
+          aria-labelledby="v-pills-tab-4">
+          <div class="products-inner">
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade overflow-auto products" id="v-pills-5" role="tabpanel"
+          aria-labelledby="v-pills-tab-5">
+          <div class="products-inner">
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade overflow-auto products" id="v-pills-6" role="tabpanel"
+          aria-labelledby="v-pills-tab-6">
+          <div class="products-inner">
+            <div class="mb-2 overflow-hidden rounded-3">
+              <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 產品列表 end-->
+
+  <!-- Toast 訊息，根據需求使用-->
+  <div
+    class="toast-container position-fixed top-0 end-0 pt-3 d-flex flex-column justify-content-center align-items-center w-100">
+    <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換成功</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div id="liveToast2" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換失敗</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div id="liveToast3" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="/assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換失敗</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Toast 訊息，根據需求使用 end-->
+
+  <!-- 下方功能列 -->
+  <nav class="navbar navbar-expand fixed-bottom bg-white ">
+    <div class="container-fluid px-4">
+      <div class="navbar-nav w-100 justify-content-between">
+        <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center active"
+          aria-current="page" href="#">
+          <img src="/assets/img/home_icon_white.svg" alt="home_icon">
+          <span>首頁</span>
+        </a>
+        <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center"
+          href="/pages/promotions.html">
+          <img src="/assets/img/present_icon.svg" alt="present_icon">
+          <span>優惠</span>
+        </a>
+        <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center"
+          href="/pages/contact.html">
+          <img src="/assets/img/help_icon.svg" alt="help_icon">
+          <span>客服</span>
+        </a>
+        <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center"
+          href="/pages/add_value.html">
+          <img src="/assets/img/icon-recharge.svg" alt="help_icon">
+          <span>儲值</span>
+        </a>
+        <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center"
+          href="/pages/account.html">
+          <img src="/assets/img/member-center-icon.svg" alt="account_icon">
+          <span>會員</span>
         </a>
       </div>
-      <!-- brand end -->
-      
-      <div class="container">
-        <!-- banner -->
-        <div id="carousel-banner" class="carousel slide overflow-hidden" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active rounded-3" style="height: 150px;">
-              <img src="https://fakeimg.pl/345x147/" class="d-block w-100 rounded-3 h-100" alt="...">
-            </div>
-            <div class="carousel-item rounded-3" style="height: 150px;">
-              <img src="https://fakeimg.pl/345x147/" class="d-block w-100 rounded-3 h-100" alt="...">
-            </div>
-            <div class="carousel-item rounded-3" style="height: 150px;">
-              <img src="https://fakeimg.pl/345x147/" class="d-block w-100 rounded-3 h-100" alt="...">
-            </div>
-          </div>
-        </div>
-        <!-- banner end-->
-        
-        <!-- 跑馬燈 -->
-        <div class="marquee d-flex flex-row py-2 justify-content-between align-items-center" style="overflow:hidden;">
-          <div class="me-1">
-            <img class="icon-broadcast" src="assets/img/icon-sound.png" alt="broadcast">
-          </div>
-          <div class="marquee-info w-100 d-flex flex-row align-items-center me-1 fs-8">
-            <div>★ test marquee 111111 test marquee 11111 ★</div>
-            <div>2. 測試</div>
-            <div>3. 測試</div>
-            <div>4. 測試</div>
-            <div>5. 測試</div>
-          </div>
-          <div class="btn-group">
-            <button class="btn btn-info btn-sm dropdown-toggle rounded-pill" type="button" data-bs-toggle="modal" data-bs-target="#info_detail">更多</button>
-          </div>
-        </div>
-        <!-- 跑馬燈 end-->
-
-      </div>
-      <!-- 快速登入/註冊 -->
-      <div class="mb-3 py-2 mt-1">
-        <div class="container">
-          <div class="row py-1 justify-content-between align-items-center">
-            <div class="col-6">
-              <div class="fs-7">您還未登入</div>
-              <div class="fs-8 text-muted">登入/註冊後查看更多訊息</div>
-            </div>
-            <div class="d-flex flex-row badge_btns">
-              <div class="start_btn fs-8 align-middle" data-bs-toggle="modal" data-bs-target="#login">登入</div>
-              <div class="end_btn fs-8 align-middle" data-bs-toggle="modal" data-bs-target="#signUp">註冊</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 快速登入 end-->
-
-      <!-- 網站優勢 start -->
-      <div class="mb-3 py-2 mt-1 text-center">
-        <img src="./assets/img/outstanding-title.svg" alt="" srcset="">
-        <div class="web-outstandind-wrap">
-          <img src="./assets/img/outstanding1.svg" alt="">
-          <img src="./assets/img/outstanding2.svg" alt="">
-          <img src="./assets/img/outstanding3.svg" alt="">
-          <img src="./assets/img/outstanding4.svg" alt="">
-        </div>
-      </div>
-      <!-- 網站優勢 end -->
-
-      <!-- webo 比較 -->
-      <div class="webo-compare mb-3 py-2 mt-1 text-center">
-        <img src="./assets/img/compare-title.svg" alt="" srcset="" class="mb-3">
-        <div id="carousel-compare" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators carousel-indicators-compare">
-            <button type="button" data-bs-target="#carousel-compare" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel-compare" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel-compare" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carousel-compare" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" style="height: 243px;">
-              <div class="d-block w-100 rounded-3 h-100 compare-item compare1" ></div>
-            </div>
-            <div class="carousel-item" style="height: 243px;">
-              <div class="d-block w-100 rounded-3 h-100 compare-item compare2" ></div>
-            </div>
-            <div class="carousel-item" style="height: 243px;">
-              <div class="d-block w-100 rounded-3 h-100 compare-item compare3" ></div>
-            </div>
-            <div class="carousel-item" style="height: 243px;">
-              <div class="d-block w-100 rounded-3 h-100 compare-item compare4" ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 比較 list -->
-      <div class="compare-list mb-3 mt-1 text-center">
-        <div class="list-title">
-          <div class="title-item"></div>
-          <div class="title-item">威博娛樂城</div>
-          <div class="title-item">一般娛樂城</div>
-        </div>
-        <div class="list-content">
-          <div class="content-item">營運方式</div>
-          <div class="content-item">現金版</div>
-          <div class="content-item">信用版</div>
-        </div>
-        <div class="list-content">
-          <div class="content-item">出金穩定度</div>
-          <div class="content-item">安全穩定的第三方 出金系統</div>
-          <div class="content-item">品質參差不齊危險</div>
-        </div>
-        <div class="list-content">
-          <div class="content-item">存提款速度</div>
-          <div class="content-item">穩定快速</div>
-          <div class="content-item">較慢、獲利不出</div>
-        </div>
-        <div class="list-content">
-          <div class="content-item">客服專業度</div>
-          <div class="content-item">24小時專業客服, 親切服務</div>
-          <div class="content-item">上線時間不定, 機器人回覆</div>
-        </div>
-      </div>
-      <!-- 比較 list end -->
-
-      <!-- QA -->
-      <div class="qa mb-3 py-2 mt-1 text-center">
-        <img src="./assets/img/qa-title.svg" alt="" srcset="" class="mb-3">
-        <div class="qa-wrap">
-          <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">如何選擇安全線上娛樂城，判別黑網詐騙?</div>
-          <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">威博值得玩嗎?是不是詐騙?</div>
-          <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">什麼是流水(洗瑪)?什麼是返利?</div>
-          <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">威博會不會出金?延遲出金怎麼辦?</div>
-          <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">首儲後該如何提款?</div>
-          <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">一次搞懂威博優惠攻略</div>
-          <div class="qa-item" data-bs-toggle="modal" data-bs-target="#qa">流水該如何計算，返利該如何計算?</div>
-        </div>
-      </div>
-      <!-- QA end -->
-    
-      <!-- 登入後資訊 目前隱藏 TODO:hide-->
-      <div  class="mb-2 py-2">
-        <div class="container">
-          <div class="row py-1 justify-content-between align-items-center">
-            <div class="col-6">
-              <div class="d-flex flex-row align-items-center">
-                <a class="d-block me-2" href="/pages/account.html">
-                  <img src="assets/img/vip-level-1.png" style="width:36px" alt="vip_level">
-                </a>
-                <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                  <div class="fs-8 text-primary">AAAAA01</div>
-                  <div class="fs-7 arrow-down">$777,777.00</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="d-flex flex-row justify-content-end">
-                <a class="me-3 text-center text-white text-decoration-none" href="/pages/add_value.html">
-                  <div class="d-flex flex-column justify-content-end">
-                    <img style="margin-bottom:-12px" src="assets/img/add_value.png" alt="add_value">
-                    <span class="fs-8 lh-sm align-text-bottom text-primary">儲值</span>
-                  </div>
-                </a>
-                <a class="me-3 text-center text-white text-decoration-none" href="/pages/transe_point.html">
-                  <div class="d-flex flex-column justify-content-end">
-                    <img style="margin-bottom:-12px" src="assets/img/transe.png" alt="transe">
-                    <span class="fs-8 lh-sm align-text-bottom text-primary">轉點</span>
-                  </div>
-                </a>
-                <a class="text-center text-white text-decoration-none" href="/pages/auction.html">
-                  <div class="d-flex flex-column justify-content-end">
-                    <img style="margin-bottom:-12px" src="assets/img/auction_icon.png" alt="">
-                    <span class="fs-8 lh-sm align-text-bottom text-primary">拍賣</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- 登入後資訊 end-->
-
-      <!-- 產品列表 TODO:hide-->
-      <div style="margin-bottom: 56px;" class="container">
-        <div class="d-flex align-items-start">
-          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="home-nav-btn btn-sport nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center active" id="v-pills-tab-1" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">
-            </button>
-            <button class="home-nav-btn btn-real nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center" id="v-pills-tab-2" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">
-            </button>
-            <button class="home-nav-btn btn-electron nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center" id="v-pills-tab-3" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">
-            </button>
-            <button class="home-nav-btn btn-lottery nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center" id="v-pills-tab-4" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">
-            </button>
-            <button class="home-nav-btn btn-chess nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center" id="v-pills-tab-5" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">
-            </button>
-            <button class="home-nav-btn btn-game nav-link tab-btn btn mb-2 rounded-2 py-2 px-2 d-flex flex-row nowarp align-items-center" id="v-pills-tab-6" data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">
-            </button>
-          </div>
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade overflow-auto products show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-tab-1">
-              <div class="products-inner">
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade overflow-auto products" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-tab-2">
-              <div class="products-inner">
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade overflow-auto products" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-tab-3">
-              <div class="products-inner">
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade overflow-auto products" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-tab-4">
-              <div class="products-inner">
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade overflow-auto products" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-tab-5">
-              <div class="products-inner">
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade overflow-auto products" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-tab-6">
-              <div class="products-inner">
-                <div class="mb-2 overflow-hidden rounded-3">
-                  <img class="w-100" src="/assets/img/product_banner.PNG" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 產品列表 end-->
-
-      <!-- Toast 訊息，根據需求使用-->
-      <div class="toast-container position-fixed top-0 end-0 pt-3 d-flex flex-column justify-content-center align-items-center w-100">
-        <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="d-flex">
-            <div class="toast-body d-flex flex-row align-items-center">
-              <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img src="/assets/img/info.svg" alt=""></div>
-              <div class="msg ms-2 fw-bold">更換成功</div>
-            </div>
-            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
-        </div>
-        <div id="liveToast2" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="d-flex">
-            <div class="toast-body d-flex flex-row align-items-center">
-              <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img src="/assets/img/info.svg" alt=""></div>
-              <div class="msg ms-2 fw-bold">更換失敗</div>
-            </div>
-            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
-        </div>
-        <div id="liveToast3" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="d-flex">
-            <div class="toast-body d-flex flex-row align-items-center">
-              <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img src="/assets/img/info.svg" alt=""></div>
-              <div class="msg ms-2 fw-bold">更換失敗</div>
-            </div>
-            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
-        </div>
-      </div>
-      <!-- Toast 訊息，根據需求使用 end-->
-
-      <!-- 下方功能列 -->
-      <nav class="navbar navbar-expand fixed-bottom bg-white ">
-        <div class="container-fluid px-4">
-          <div class="navbar-nav w-100 justify-content-between">
-            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center active" aria-current="page" href="#">
-              <img src="/assets/img/home_icon_white.svg" alt="home_icon">
-              <span>首頁</span>
-            </a>
-            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center" href="/pages/promotions.html">
-              <img src="/assets/img/present_icon.svg" alt="present_icon">
-              <span>優惠</span>
-            </a>
-            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center" href="/pages/contact.html">
-              <img src="/assets/img/help_icon.svg" alt="help_icon">
-              <span>客服</span>
-            </a>
-            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center" href="/pages/add_value.html">
-              <img src="/assets/img/icon-recharge.svg" alt="help_icon">
-              <span>儲值</span>
-            </a>
-            <a class="nav-link px-2 py-1 text-decoration-none d-block d-flex flex-column justify-content-center align-items-center" href="/pages/account.html">
-              <img src="/assets/img/member-center-icon.svg" alt="account_icon">
-              <span>會員</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-      <!-- 下方功能列 end-->
-
-    <!-- 註冊 modal -->
-    <div class="modal fade" id="signUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="staticBackdropLabel">註冊</h5>
-          </div>
-          <div class="modal-body py-0">
-            <form class="row g-2 needs-validation">
-              <div class="col-12">
-                <label for="inputAccount" class="form-label">會員帳號<span>*</span></label>
-                <div class="input-group has-validation mt-1">
-                  <!-- input 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                  <input type="text" class="form-control" id="inputAccount" placeholder="會員帳號" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-              </div>
-              <div class="col-12 position-relative">
-                <label for="inputAccount" class="form-label">密碼<span>*</span></label>
-                <div class="input-group has-validation">
-                  <input type="password" class="form-control" id="signUp_inputPassword" placeholder="密碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback" required>
-                  <div id="validationServerPasswordFeedback" class="invalid-feedback">錯誤</div>
-                </div>
-                <!-- img 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <div class="checkEye" onclick="showPassword('signUp_inputPassword')">
-                  <img class="eyeOpen signUp_inputPassword" src="/assets/img/eye_show.svg" alt="eye_open">
-                  <img class="eyeClose signUp_inputPassword d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
-                </div>
-              </div>
-              <div class="col-12 position-relative">
-                <label for="inputAccount" class="form-label">確認密碼<span>*</span></label>
-                <div class="input-group has-validation">
-                  <input type="password" class="form-control" id="signUp_inputPassword_check" placeholder="確認密碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-                <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <div class="checkEye" onclick="showPassword('signUp_inputPassword_check')">
-                  <img class="eyeOpen signUp_inputPassword_check" src="/assets/img/eye_show.svg" alt="eye_open">
-                  <img class="eyeClose signUp_inputPassword_check d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="inputAccount" class="form-label">會員名稱<span>*</span></label>
-                <div class="input-group has-validation">
-                  <input type="text" class="form-control" id="inputName" placeholder="會員名稱" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-              </div>
-              <div class="col-12 position-relative">
-                <label for="inputAccount" class="form-label">手機號碼<span>*</span></label>
-                <div class="input-group has-validation">
-                  <input type="text" class="form-control" id="inputPhone" placeholder="手機號碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-                <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <button type="button" class="btn p-0 text-primary timerBtn sendMobileOTP">
-                  <span class="countdownText">發送驗證碼</span>
-                </button>
-              </div>
-              <div class="col-12">
-                <label for="inputAccount" class="form-label">手機驗證碼<span>*</span></label>
-                <div class="input-group has-validation">
-                  <input type="text" class="form-control" id="inputPhoneCode" placeholder="手機驗證碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="inputAccount" class="form-label">好友推廣碼</label>
-                <div class="input-group has-validation">
-                  <input type="text" class="form-control" id="inputFriendCode" placeholder="好友推廣碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <div class="w-100 d-grid gap-2">
-              <button type="button" class="btn btn-primary rounded-pill">註冊</button>
-            </div>
-          </div>
-          <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-      </div>
     </div>
-    <!-- 註冊 Modal end-->
+  </nav>
+  <!-- 下方功能列 end-->
 
-    <!-- 登入 modal -->
-    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="staticBackdropLabel">登入</h5>
-          </div>
-          <div class="modal-body py-0">
-            <form class="row g-2">
-              <div class="col-12">
-                <label for="inputAccount" class="form-label">帳號<span>*</span></label>
-                <div class="input-group has-validation mt-1">
-                  <input type="text" class="form-control" id="inputAccount" placeholder="會員帳號" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-              </div>
-              <div class="col-12 position-relative">
-                <label for="inputAccount" class="form-label">密碼<span>*</span></label>
-                <div class="input-group has-validation">
-                  <input type="password" class="form-control is-invalid" id="login_inputPassword" placeholder="密碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
-                </div>
-                <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <div class="checkEye is-invalid" onclick="showPassword('login_inputPassword')">
-                  <img class="eyeOpen login_inputPassword" src="/assets/img/eye_show.svg" alt="eye_open">
-                  <img class="eyeClose login_inputPassword d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
-                </div>
-              </div>
-              <div class="col-12 position-relative">
-                <label for="login_inputPassword" class="form-label">驗證碼<span>*</span></label>
+  <!-- 註冊 modal -->
+  <div class="modal fade" id="signUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="staticBackdropLabel">註冊</h5>
+        </div>
+        <div class="modal-body py-0">
+          <form class="row g-2 needs-validation">
+            <div class="col-12">
+              <label for="inputAccount" class="form-label">會員帳號<span>*</span></label>
+              <div class="input-group has-validation mt-1">
                 <!-- input 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <div class="input-group has-validation">
-                  <input type="password" class="form-control is-invalid" id="inputCode" placeholder="驗證碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback" required>
-                  <div id="validationServerPasswordFeedback" class="invalid-feedback">錯誤</div>
+                <input type="text" class="form-control" id="inputAccount" placeholder="會員帳號"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </div>
+            </div>
+            <div class="col-12 position-relative">
+              <label for="inputAccount" class="form-label">密碼<span>*</span></label>
+              <div class="input-group has-validation">
+                <input type="password" class="form-control is-invalid" id="signUp_inputPassword" placeholder="密碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback" required>
+                <div id="validationServerPasswordFeedback" class="invalid-feedback">錯誤</div>
+              </div>
+              <!-- img 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <div class="checkEye is-invalid" onclick="showPassword('signUp_inputPassword')">
+                <img class="eyeOpen signUp_inputPassword" src="/assets/img/eye_show.svg" alt="eye_open">
+                <img class="eyeClose signUp_inputPassword d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
+              </div>
+            </div>
+            <div class="col-12 position-relative">
+              <label for="inputAccount" class="form-label">確認密碼<span>*</span></label>
+              <div class="input-group has-validation">
+                <input type="password" class="form-control" id="signUp_inputPassword_check" placeholder="確認密碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </div>
+              <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <div class="checkEye" onclick="showPassword('signUp_inputPassword_check')">
+                <img class="eyeOpen signUp_inputPassword_check" src="/assets/img/eye_show.svg" alt="eye_open">
+                <img class="eyeClose signUp_inputPassword_check d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="inputAccount" class="form-label">會員名稱<span>*</span></label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="inputName" placeholder="會員名稱"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </div>
+            </div>
+            <div class="col-12 position-relative">
+              <label for="inputAccount" class="form-label">手機號碼<span>*</span></label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control is-invalid" id="inputPhone" placeholder="手機號碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </div>
+              <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <button type="button" class="btn p-0 text-primary timerBtn sendMobileOTP is-invalid">
+                <span class="countdownText">發送驗證碼</span>
+              </button>
+            </div>
+            <div class="col-12">
+              <label for="inputAccount" class="form-label">手機驗證碼<span>*</span></label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="inputPhoneCode" placeholder="手機驗證碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="inputAccount" class="form-label">好友推廣碼</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="inputFriendCode" placeholder="好友推廣碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button type="button" class="btn btn-primary btn-lin">註冊</button>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 註冊 Modal end-->
+
+  <!-- 登入 modal -->
+  <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="staticBackdropLabel">登入</h5>
+        </div>
+        <div class="modal-body py-0">
+          <form class="row g-2">
+            <div class="col-12">
+              <label for="inputAccount" class="form-label">帳號<span>*</span></label>
+              <div class="input-group has-validation mt-1">
+                <input type="text" class="form-control" id="inputAccount" placeholder="會員帳號"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </div>
+            </div>
+            <div class="col-12 position-relative">
+              <label for="inputAccount" class="form-label">密碼<span>*</span></label>
+              <div class="input-group has-validation">
+                <input type="password" class="form-control is-invalid" id="login_inputPassword" placeholder="密碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
+              </div>
+              <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <div class="checkEye is-invalid" onclick="showPassword('login_inputPassword')">
+                <img class="eyeOpen login_inputPassword" src="/assets/img/eye_show.svg" alt="eye_open">
+                <img class="eyeClose login_inputPassword d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
+              </div>
+            </div>
+            <div class="col-12 position-relative">
+              <label for="login_inputPassword" class="form-label">驗證碼<span>*</span></label>
+              <!-- input 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <div class="input-group has-validation">
+                <input type="password" class="form-control is-invalid" id="inputCode" placeholder="驗證碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback" required>
+                <div id="validationServerPasswordFeedback" class="invalid-feedback">錯誤</div>
+              </div>
+              <!-- img 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <div
+                class="checkImg is-invalid rounded-3 overflow-hidden d-flex align-items-center justify-content-center">
+                <div class="text-primary fs-7">請點擊刷新</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex align-items-center">
+                <div class="form-check ps-2 me-auto">
+                  <div class="form-check form-switch">
+                    <label class="form-check-label align-middle fs-8 text-primary me-1"
+                      for="flexSwitchCheckDefault">記住密碼</label>
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                  </div>
                 </div>
-                <!-- img 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <div class="checkImg is-invalid rounded-3 overflow-hidden d-flex align-items-center justify-content-center">
-                  <div class="text-primary fs-7">請點擊刷新</div>
+                <div class="text-end pe-0">
+                  <a href="javascript:void(0)" class="text-decoration-none fs-7" data-bs-toggle="modal"
+                    data-bs-target="#forget">忘記密碼？</a>
                 </div>
               </div>
-              <div class="col-12">
-                <div class="row px-4">
-                  <div class="col-6 form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label fs-7" for="flexRadioDefault2">
-                      記住密碼
-                    </label>
-                  </div>
-                  <div class="col-6 text-end pe-0">
-                    <a href="javascript:void(0)" class="text-decoration-none fs-7" data-bs-toggle="modal" data-bs-target="#forget">忘記密碼？</a>
-                  </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button type="button" class="btn btn-primary btn-lin">登入</button>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 登入 Modal end-->
+
+  <!-- QA Modal -->
+  <div class="modal fade" id="qa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="staticBackdropLabel">如何選擇 安全線上娛樂城?</h5>
+        </div>
+        <div class="modal-body py-0">
+          <p class="text-primary">我知道你在想什麼，想賺錢卻對博弈環境充滿不確定感，很多人提到娛樂城就會有很多的疑問？違法嗎？出金嗎？怎麼選？危不危險？其實這些問題的根本都只在一個關鍵點，就是「安全性」。
+            這應該是大家最愛問的問題之一，到底違不違法？大多數台灣的
+            都把伺服器設置在博弈合法的外地島國，玩家是透過網路在線上接觸娛樂城，這就像是伺服器不在本島，你只是飛到美國拉斯維加斯玩牌一樣，也因為如此，兌換現金的這個行為也不算在境內發生，那就在合理不過囉。但還是必須說，線上娛樂城在操作上面雖然不涉及違法，但合法也是建立在灰色地帶上面，玩家也還是不要做出其他踰矩行為，才能保護雙方權益。
+            目前大多是採用128位SSL加密技術確保數據安全性。你可能不知道128位加密技術是什麼概念？給大家一個比較值可能比較好理解，基本上56位密鑰的破解時間大概是399秒，而128密鑰則需要1.02x10的18次方才能破解，如果還是沒概念，那只要知道這就是加密強度的意思，128位加密就是很難很難被破解，所以玩家們真的不用擔心隱私問題。
+            我們可以知道玩家收不收到傳票的關鍵，便在於一間線上娛樂城帳戶的乾淨程度，他們就是沒有監管好自己的平台，後期也讓玩家自生自滅。因此各位玩家們如果怕收到傳票，請一定要找出金有專人一對一認證，且使有正常管道的。</p>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- QA Modal end -->
+
+  <!-- 忘記密碼 modal -->
+  <div class="modal fade" id="forget" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="staticBackdropLabel">忘記密碼</h5>
+        </div>
+        <div class="modal-body py-0">
+          <form class="row g-2">
+            <div class="col-12">
+              <div class="input-group has-validation">
+                <input type="text" class="form-control  is-invalid" id="inputAccount" placeholder="會員帳號"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
+              </div>
+            </div>
+            <div class="col-12 position-relative">
+              <div class="input-group has-validation">
+                <input type="text" class="form-control is-invalid" id="inputPhone" placeholder="手機號碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
+              </div>
+              <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <button type="button" class="btn p-0 text-primary timerBtn sendMobileOTP is-invalid">
+                <span class="countdownText">發送驗證碼</span>
+              </button>
+            </div>
+            <div class="col-12">
+              <div class="input-group has-validation">
+                <input type="text" class="form-control  is-invalid" id="inputPhoneCode" placeholder="手機驗證碼"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button type="button" class="btn btn-primary btn-lin" data-bs-toggle="modal"
+              data-bs-target="#changePassword">下一步</button>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 忘記密碼 Modal end-->
+
+  <!-- 更換密碼 modal -->
+  <div class="modal fade" id="changePassword" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="staticBackdropLabel">更換密碼</h5>
+        </div>
+        <div class="modal-body py-0">
+          <form class="row g-2">
+            <div class="col-12 position-relative">
+              <div class="input-group has-validation">
+                <input type="password" class="form-control is-invalid" id="newPassword" placeholder="新密碼確認"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
+              </div>
+              <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <div class="checkEye is-invalid" onclick="showPassword('newPassword')">
+                <img class="eyeOpen newPassword" src="/assets/img/eye_show.svg" alt="eye_open">
+                <img class="eyeClose newPassword d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
+              </div>
+            </div>
+            <div class="col-12 position-relative">
+              <div class="input-group has-validation">
+                <input type="password" class="form-control is-invalid" id="newPassword_check" placeholder="新密碼確認"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
+                <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
+              </div>
+              <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
+              <div class="checkEye is-invalid" onclick="showPassword('newPassword_check')">
+                <img class="eyeOpen newPassword_check" src="/assets/img/eye_show.svg" alt="eye_open">
+                <img class="eyeClose newPassword_check d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button type="button" class="btn btn-primary">確認</button>
+
+            <!-- TODO: 示意用需刪除，根據情況使用 -->
+            <button type="button" class="btn btn-primary"
+              onclick="showToast('success', '密碼更改成功', 'liveToast')">確認</button>
+            <button type="button" class="btn btn-primary"
+              onclick="showToast('danger', '密碼更改失敗', 'liveToast2')">失敗</button>
+            <button type="button" class="btn btn-primary"
+              onclick="showToast('warning', '更改失敗', 'liveToast3')">失敗</button>
+            <!-- 示意用需刪除，根據情況使用 -->
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 更換密碼 Modal end-->
+
+
+  <!-- 跑馬燈詳細 modal -->
+  <div class="modal fade" id="info_detail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pb-0">
+          <h5 class="modal-title" id="staticBackdropLabel">财富快速增值</h5>
+        </div>
+        <div class="modal-body text-center">
+          财富快速增值，品牌信誉、充值便利、⼤额无忧财富快速增值，品牌信誉、充值便利、⼤额无忧
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 跑馬燈詳細 Modal end-->
+
+
+  <!-- 進廳前彈窗 modal -->
+  <div class="modal fade" id="api_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pb-0">
+          <h5 class="modal-title text-primary fw-bolder" id="staticBackdropLabel">API名稱</h5>
+        </div>
+        <div class="modal-body text-center">
+          <div class="card-body pt-1">
+            <!-- 主帳戶點數 -->
+            <div
+              class="d-flex flex-row justify-content-between align-items-center rounded-3 border border-light w-100 p-1 mb-2">
+              <div class="d-flex flex-column">
+                <div class="d-flex flex-row align-items-center">
+                  <img src="assets/img/wallet.svg" alt="">
+                  <div class="mx-1 fs-7 text-secondary">主帳戶點數</div>
+                  <img src="assets/img/renew.svg" alt="">
                 </div>
+                <div class="text-primary fw-bolder">$ 1,234,567.00</div>
+              </div>
+              <a href="javascript:void(0)" class="fs-8 text-decoration-none me-1 align-self-end">一鍵回收</a>
+            </div>
+            <!-- 主帳戶點數 end-->
+            <form class="text-start mb-2">
+              <label for="exampleFormControlInput1" class="form-label text-secondary">API名稱餘額</label>
+              <div class="input-group has-validation mb-1">
+                <input type="text" class="form-control " id="inputPassword" value="123,456.00"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" readonly>
+              </div>
+              <label for="exampleFormControlInput1" class="form-label text-secondary">API名稱轉點數量<span
+                  class="text-danger"> *</span></label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="inputPassword" placeholder="請輸入您想轉點的數量"
+                  aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2">
+                <button class="input-group-text input-suffix-text" id="basic-addon2">最大</button>
               </div>
             </form>
-          </div>
-          <div class="modal-footer">
-            <div class="w-100 d-grid gap-2">
-              <button type="button" class="btn btn-primary rounded-pill">登入</button>
+            <div class="row row-cols-2 g-2 mt-3">
+              <div class="d-grid"><button type="button"
+                  class="btn btn-outline-primary fw-bolder rounded-3 fs-6">開始遊戲</button></div>
+              <div class="d-grid"><button type="button"
+                  class="btn btn-primary rounded-3 btn-lin fw-bolder rounded-3 fs-6">轉帳並開始遊戲</button></div>
             </div>
           </div>
-          <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 進廳前彈窗 Modal end-->
+
+  <!-- 轉點 offcanvas -->
+  <div class="offcanvas offcanvas-bottom rounded-top-lg border-0" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="py-2 w-100" data-bs-dismiss="offcanvas" aria-label="Close">
+      <div class="m-auto div-close text-reset"></div>
+    </div>
+    <div class="offcanvas-header pt-1 flex-column justify-content-center align-items-center">
+      <div class="d-flex flex-row align-items-center mb-3">
+        <h5 class="offcanvas-title fs-6 me-2" id="offcanvasBottomLabel">遊戲聽餘額</h5>
+        <img src="/assets/img/renew.svg" alt="renew">
+      </div>
+      <div class="d-flex flex-row justify-content-between w-100">
+        <div class="form-check form-switch">
+          <img class="ms-1" src="/assets/img/question-circle-fill.svg" alt="" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" title="開啟自動轉點時，系統將會自動把點數全部幫您轉進遊戲平台內">
+          <label class="form-check-label align-middle fs-7" for="flexSwitchCheckDefault">自動轉點</label>
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        </div>
+        <div>
+          <button type="button" class="btn btn-outline-primary btn-sm fs-8 px-3">一鍵回收</button>
+          <button type="button" class="btn btn-primary btn-sm fs-8 px-3">戶內轉點</button>
         </div>
       </div>
     </div>
-    <!-- 登入 Modal end-->
-
-    <!-- QA Modal -->
-    <div class="modal fade" id="qa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="staticBackdropLabel">如何選擇 安全線上娛樂城?</h5>
-          </div>
-          <div class="modal-body py-0">
-            <p class="text-primary">我知道你在想什麼，想賺錢卻對博弈環境充滿不確定感，很多人提到娛樂城就會有很多的疑問？違法嗎？出金嗎？怎麼選？危不危險？其實這些問題的根本都只在一個關鍵點，就是「安全性」。 這應該是大家最愛問的問題之一，到底違不違法？大多數台灣的 都把伺服器設置在博弈合法的外地島國，玩家是透過網路在線上接觸娛樂城，這就像是伺服器不在本島，你只是飛到美國拉斯維加斯玩牌一樣，也因為如此，兌換現金的這個行為也不算在境內發生，那就在合理不過囉。但還是必須說，線上娛樂城在操作上面雖然不涉及違法，但合法也是建立在灰色地帶上面，玩家也還是不要做出其他踰矩行為，才能保護雙方權益。 目前大多是採用128位SSL加密技術確保數據安全性。你可能不知道128位加密技術是什麼概念？給大家一個比較值可能比較好理解，基本上56位密鑰的破解時間大概是399秒，而128密鑰則需要1.02x10的18次方才能破解，如果還是沒概念，那只要知道這就是加密強度的意思，128位加密就是很難很難被破解，所以玩家們真的不用擔心隱私問題。 我們可以知道玩家收不收到傳票的關鍵，便在於一間線上娛樂城帳戶的乾淨程度，他們就是沒有監管好自己的平台，後期也讓玩家自生自滅。因此各位玩家們如果怕收到傳票，請一定要找出金有專人一對一認證，且使有正常管道的。</p>
-          </div>
-          <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+    <div class="offcanvas-body pt-0 small row row-cols-3 row-cols-lg-6 g-2 g-lg-3">
+      <div class="col d-grid">
+        <button type="button"
+          class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2"
+          data-bs-toggle="modal" data-bs-target="#api_modal">
+          <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+          <div>00.00</div>
+          <div class="text-muted">API名稱</div>
+        </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button"
+          class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2"
+          data-bs-toggle="modal" data-bs-target="#api_modal">
+          <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+          <div>00.00</div>
+          <div class="text-muted">API名稱</div>
+        </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button"
+          class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2"
+          data-bs-toggle="modal" data-bs-target="#api_modal">
+          <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+          <div>00.00</div>
+          <div class="text-muted">API名稱</div>
+        </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button"
+          class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2"
+          data-bs-toggle="modal" data-bs-target="#api_modal">
+          <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
+          <div>00.00</div>
+          <div class="text-muted">API名稱</div>
+        </button>
       </div>
     </div>
-    <!-- QA Modal end -->
-    
-    <!-- 忘記密碼 modal -->
-    <div class="modal fade" id="forget" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="staticBackdropLabel">忘記密碼</h5>
-          </div>
-          <div class="modal-body py-0">
-            <form class="row g-2">
-              <div class="col-12">
-                <div class="input-group has-validation">
-                  <input type="text" class="form-control rounded-pill is-invalid" id="inputAccount" placeholder="會員帳號" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
-                </div>
-              </div>
-              <div class="col-12 position-relative">
-                <div class="input-group has-validation">
-                  <input type="text" class="form-control rounded-pill is-invalid" id="inputPhone" placeholder="手機號碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
-                </div>
-                <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <button type="button" class="btn p-0 text-primary timerBtn sendMobileOTP is-invalid">
-                  <span class="countdownText">發送驗證碼</span>
-                </button>
-              </div>
-              <div class="col-12">
-                <div class="input-group has-validation">
-                  <input type="text" class="form-control rounded-pill is-invalid" id="inputPhoneCode" placeholder="手機驗證碼" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <div class="w-100 d-grid gap-2">
-              <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#changePassword">下一步</button>
-            </div>
-          </div>
-          <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-      </div>
-    </div>
-    <!-- 忘記密碼 Modal end-->
+  </div>
+  <!-- 轉點 offcanvas end-->
 
-    <!-- 更換密碼 modal -->
-    <div class="modal fade" id="changePassword" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="staticBackdropLabel">更換密碼</h5>
-          </div>
-          <div class="modal-body py-0">
-            <form class="row g-2">
-              <div class="col-12 position-relative">
-                <div class="input-group has-validation">
-                  <input type="password" class="form-control rounded-pill is-invalid" id="newPassword" placeholder="新密碼確認" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
-                </div>
-                <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <div class="checkEye is-invalid" onclick="showPassword('newPassword')">
-                  <img class="eyeOpen newPassword" src="/assets/img/eye_show.svg" alt="eye_open">
-                  <img class="eyeClose newPassword d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
-                </div>
-              </div>
-              <div class="col-12 position-relative">
-                <div class="input-group has-validation">
-                  <input type="password" class="form-control rounded-pill is-invalid" id="newPassword_check" placeholder="新密碼確認" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-                  <div id="validationServerPasswordFeedback2" class="invalid-feedback ms-3">錯誤</div>
-                </div>
-                <!-- 錯誤加上 is-invalid 無錯誤移除 is-invalid-->
-                <div class="checkEye is-invalid" onclick="showPassword('newPassword_check')">
-                  <img class="eyeOpen newPassword_check" src="/assets/img/eye_show.svg" alt="eye_open">
-                  <img class="eyeClose newPassword_check d-none" src="/assets/img/eye_hide.svg" alt="eye_close">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <div class="w-100 d-grid gap-2">
-              <button type="button" class="btn btn-primary rounded-pill">確認</button>
+  <script src="./js/popover.js" crossorigin="anonymous"></script>
+  <script src="/bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+    //#region bs5tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    ////#endregion bs5tooltips
+    //#region 首頁產品列表滑動切換功能
+    var triggerTabList = [].slice.call(document.querySelectorAll('.products'))
+    triggerTabList.forEach(function (triggerEl) {
+      const nowId = triggerEl.id
+      const idArr = nowId.split('-')
+      const lastNum = Number(idArr[idArr.length - 1]) - 1;
+      const lastId = `v-pills-${lastNum}`
+      const nextNum = Number(idArr[idArr.length - 1]) + 1;
+      const nextId = `v-pills-${nextNum}`
+      const lastEl = document.querySelector(`button[data-bs-target="#${lastId}"]`)
+      const nowEl = document.querySelector(`button[data-bs-target="#${nowId}"]`)
+      const nextEl = document.querySelector(`button[data-bs-target="#${nextId}"]`)
+      const lastPillTrigger = new bootstrap.Tab(lastEl)
+      const nowPillTrigger = new bootstrap.Tab(nowEl)
+      const nextPillTrigger = new bootstrap.Tab(nextEl)
 
-              <!-- TODO: 示意用需刪除，根據情況使用 -->
-              <button type="button" class="btn btn-primary rounded-pill" onclick="showToast('success', '密碼更改成功', 'liveToast')">確認</button>
-              <button type="button" class="btn btn-primary rounded-pill" onclick="showToast('danger', '密碼更改失敗', 'liveToast2')">失敗</button>
-              <button type="button" class="btn btn-primary rounded-pill" onclick="showToast('warning', '更改失敗', 'liveToast3')">失敗</button>
-              <!-- 示意用需刪除，根據情況使用 -->
-            </div>
-          </div>
-          <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-      </div>
-    </div>
-    <!-- 更換密碼 Modal end-->
-
-
-    <!-- 跑馬燈詳細 modal -->
-    <div class="modal fade" id="info_detail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <div class="modal-header pb-0">
-              <h5 class="modal-title" id="staticBackdropLabel">财富快速增值</h5>
-          </div>
-          <div class="modal-body text-center">
-              财富快速增值，品牌信誉、充值便利、⼤额无忧财富快速增值，品牌信誉、充值便利、⼤额无忧
-          </div>
-          <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-      </div>
-    </div>
-    <!-- 跑馬燈詳細 Modal end-->
-
-    
-    <!-- 進廳前彈窗 modal -->
-    <div class="modal fade" id="api_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <div class="modal-header pb-0">
-              <h5 class="modal-title text-primary fw-bolder" id="staticBackdropLabel">API名稱</h5>
-          </div>
-          <div class="modal-body text-center">
-            <div class="card-body pt-1">
-              <!-- 主帳戶點數 -->
-              <div class="d-flex flex-row justify-content-between align-items-center rounded-3 border border-light w-100 p-1 mb-2">
-                  <div class="d-flex flex-column">
-                    <div class="d-flex flex-row align-items-center">
-                      <img src="assets/img/wallet.svg" alt="">
-                      <div class="mx-1 fs-7 text-secondary">主帳戶點數</div>
-                      <img src="assets/img/renew.svg" alt="">
-                    </div>
-                    <div class="text-primary fw-bolder">$ 1,234,567.00</div>
-                  </div>
-                  <a href="javascript:void(0)" class="fs-8 text-decoration-none me-1 align-self-end">一鍵回收</a>
-              </div>
-              <!-- 主帳戶點數 end-->
-              <form class="text-start mb-2">
-                <label for="exampleFormControlInput1" class="form-label text-secondary">API名稱餘額</label>
-                <div class="input-group has-validation mb-1">
-                    <input type="text" class="form-control " id="inputPassword" value="123,456.00" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" readonly>
-                </div>
-                <label for="exampleFormControlInput1" class="form-label text-secondary">API名稱轉點數量<span class="text-danger"> *</span></label>
-                <div class="input-group has-validation">
-                    <input type="text" class="form-control" id="inputPassword" placeholder="請輸入您想轉點的數量" aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2">
-                    <button class="input-group-text input-suffix-text" id="basic-addon2">最大</button>
-                </div>
-              </form>
-              <div class="row row-cols-2 g-2 mt-3">
-                <div class="d-grid"><button type="button" class="btn btn-outline-primary fw-bolder rounded-3 fs-6">開始遊戲</button></div>
-                <div class="d-grid"><button type="button" class="btn btn-primary rounded-3 btn-lin fw-bolder rounded-3 fs-6">轉帳並開始遊戲</button></div>
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-      </div>
-    </div>
-    <!-- 進廳前彈窗 Modal end-->
-
-    <!-- 轉點 offcanvas -->
-    <div class="offcanvas offcanvas-bottom rounded-top-lg border-0" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-      <div class="py-2 w-100" data-bs-dismiss="offcanvas" aria-label="Close">
-        <div class="m-auto div-close text-reset"></div>
-      </div>
-      <div class="offcanvas-header pt-1 flex-column justify-content-center align-items-center">
-        <div class="d-flex flex-row align-items-center mb-3">
-          <h5 class="offcanvas-title fs-6 me-2" id="offcanvasBottomLabel">遊戲聽餘額</h5>
-          <img src="/assets/img/renew.svg" alt="renew">
-        </div>
-        <div class="d-flex flex-row justify-content-between w-100">
-          <div class="form-check form-switch">
-            <img class="ms-1" src="/assets/img/question-circle-fill.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="開啟自動轉點時，系統將會自動把點數全部幫您轉進遊戲平台內">
-            <label class="form-check-label align-middle fs-7" for="flexSwitchCheckDefault">自動轉點</label>
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          </div>
-          <div>
-            <button type="button" class="btn btn-outline-primary btn-sm fs-8 px-3">一鍵回收</button>
-            <button type="button" class="btn btn-primary btn-sm fs-8 px-3">戶內轉點</button>
-          </div>
-        </div>
-      </div>
-      <div class="offcanvas-body pt-0 small row row-cols-3 row-cols-lg-6 g-2 g-lg-3">
-        <div class="col d-grid">
-          <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2" data-bs-toggle="modal" data-bs-target="#api_modal">
-            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
-            <div>00.00</div>
-            <div class="text-muted">API名稱</div>
-          </button>
-        </div>
-        <div class="col d-grid">
-          <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2" data-bs-toggle="modal" data-bs-target="#api_modal">
-            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
-            <div>00.00</div>
-            <div class="text-muted">API名稱</div>
-          </button>
-        </div>
-        <div class="col d-grid">
-          <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2" data-bs-toggle="modal" data-bs-target="#api_modal">
-            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
-            <div>00.00</div>
-            <div class="text-muted">API名稱</div>
-          </button>
-        </div>
-        <div class="col d-grid">
-          <button type="button" class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2" data-bs-toggle="modal" data-bs-target="#api_modal">
-            <img class="btn_active_teal position-absolute start-0 top-0" src="/assets/img/btn_active_teal.svg" alt="">
-            <div>00.00</div>
-            <div class="text-muted">API名稱</div>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- 轉點 offcanvas end-->
-
-    <script src="./js/popover.js" crossorigin="anonymous"></script>
-    <script src="/bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script>
-        //#region bs5tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-        ////#endregion bs5tooltips
-        //#region 首頁產品列表滑動切換功能
-        var triggerTabList = [].slice.call(document.querySelectorAll('.products'))
-        triggerTabList.forEach(function (triggerEl) {
-          const nowId = triggerEl.id
-          const idArr = nowId.split('-')
-          const lastNum = Number(idArr[idArr.length - 1]) - 1;
-          const lastId = `v-pills-${lastNum}`
-          const nextNum = Number(idArr[idArr.length - 1]) + 1;
-          const nextId = `v-pills-${nextNum}`
-          const lastEl = document.querySelector(`button[data-bs-target="#${lastId}"]`)
-          const nowEl = document.querySelector(`button[data-bs-target="#${nowId}"]`)
-          const nextEl = document.querySelector(`button[data-bs-target="#${nextId}"]`)
-          const lastPillTrigger = new bootstrap.Tab(lastEl)
-          const nowPillTrigger = new bootstrap.Tab(nowEl)
-          const nextPillTrigger = new bootstrap.Tab(nextEl)
-
-          triggerEl.addEventListener('scroll', function (event) {
-            const scrollHeight = triggerEl.scrollHeight
-            const clientHeight = triggerEl.clientHeight
-            const scrollTop = triggerEl.scrollTop
-            if (scrollTop == 0 && lastNum < Number(idArr[idArr.length - 1]) && lastNum != 0) {
-              // 捲動到頂切換
-              // nowPillTrigger.dispose()
-              lastPillTrigger.show()
-            } else if (scrollTop >= scrollHeight - clientHeight && nextNum <= triggerTabList.length) {
-              // 捲動到底切換
-              // nowPillTrigger.dispose()
-              nextPillTrigger.show()
-            }
-          })
-        })
-        //#endregion 首頁產品列表滑動切換功能
-        //#region 轉點按鈕狀態切換
-        var buttons = [].slice.call(document.querySelectorAll('.btn-gray'))
-        buttons.forEach(function (buttonEl) {
-          var button = new bootstrap.Button(buttonEl)
-          buttonEl.addEventListener('click', function(event) {
-            button.toggle()
-          })
-        })
-        //#endregion 轉點按鈕狀態切換
-        //#region 顯示/隱藏密碼
-        function showPassword (inputId) {
-          const eye_open = document.querySelector(`.eyeOpen.${inputId}`);
-          const eye_close = document.querySelector(`.eyeClose.${inputId}`);
-          const inputEl = document.querySelector(`#${inputId}`);
-          if (inputEl.type === "password") {
-            inputEl.type = "text";
-            eye_close.classList.remove('d-none')
-            eye_open.classList.add('d-none')
-
-          } else {
-            inputEl.type = "password";
-            eye_open.classList.remove('d-none')
-            eye_close.classList.add('d-none')
-          }
+      triggerEl.addEventListener('scroll', function (event) {
+        const scrollHeight = triggerEl.scrollHeight
+        const clientHeight = triggerEl.clientHeight
+        const scrollTop = triggerEl.scrollTop
+        if (scrollTop == 0 && lastNum < Number(idArr[idArr.length - 1]) && lastNum != 0) {
+          // 捲動到頂切換
+          // nowPillTrigger.dispose()
+          lastPillTrigger.show()
+        } else if (scrollTop >= scrollHeight - clientHeight && nextNum <= triggerTabList.length) {
+          // 捲動到底切換
+          // nowPillTrigger.dispose()
+          nextPillTrigger.show()
         }
-        //#endregion 顯示/隱藏密碼
-        //#region 發送驗證碼
-        const countdownTexts = [].slice.call(document.querySelectorAll(".countdownText"));
-        const timerBtns = [].slice.call(document.querySelectorAll(".timerBtn"));
-        let countdown;
+      })
+    })
+    //#endregion 首頁產品列表滑動切換功能
+    //#region 轉點按鈕狀態切換
+    var buttons = [].slice.call(document.querySelectorAll('.btn-gray'))
+    buttons.forEach(function (buttonEl) {
+      var button = new bootstrap.Button(buttonEl)
+      buttonEl.addEventListener('click', function (event) {
+        button.toggle()
+      })
+    })
+    //#endregion 轉點按鈕狀態切換
+    //#region 顯示/隱藏密碼
+    function showPassword(inputId) {
+      const eye_open = document.querySelector(`.eyeOpen.${inputId}`);
+      const eye_close = document.querySelector(`.eyeClose.${inputId}`);
+      const inputEl = document.querySelector(`#${inputId}`);
+      if (inputEl.type === "password") {
+        inputEl.type = "text";
+        eye_close.classList.remove('d-none')
+        eye_open.classList.add('d-none')
 
-        const showTimer = (inputSeconds) => {
-            const remainderSeconds = inputSeconds % 60 || 60;
-            countdownTexts.forEach((countdownText) => {
-              countdownText.textContent = `
+      } else {
+        inputEl.type = "password";
+        eye_open.classList.remove('d-none')
+        eye_close.classList.add('d-none')
+      }
+    }
+    //#endregion 顯示/隱藏密碼
+    //#region 發送驗證碼
+    const countdownTexts = [].slice.call(document.querySelectorAll(".countdownText"));
+    const timerBtns = [].slice.call(document.querySelectorAll(".timerBtn"));
+    let countdown;
+
+    const showTimer = (inputSeconds) => {
+      const remainderSeconds = inputSeconds % 60 || 60;
+      countdownTexts.forEach((countdownText) => {
+        countdownText.textContent = `
                   ${remainderSeconds < 10 ? "0" + remainderSeconds : remainderSeconds}s 後重發
               `;
-            })
-        }
+      })
+    }
 
-        function timer(inputSeconds){
-            const now = Date.now();
-            const done = now + inputSeconds * 1000;
-            showTimer(inputSeconds);
+    function timer(inputSeconds) {
+      const now = Date.now();
+      const done = now + inputSeconds * 1000;
+      showTimer(inputSeconds);
 
-            countdown = setInterval(()=>{
-                const tiemleft = Math.round((done-Date.now())/ 1000);
-                if(tiemleft<= 0){
-                    clearInterval(countdown);
-                    countdownTexts.forEach((countdownText) => {
-                      countdownText.textContent = '發送驗證碼'
-                    })
-                    return  // 結束執行setInterval，不再執行下面程式碼
-                }
-                showTimer(tiemleft)
-            }, 1000)
-        } 
+      countdown = setInterval(() => {
+        const tiemleft = Math.round((done - Date.now()) / 1000);
+        if (tiemleft <= 0) {
+          clearInterval(countdown);
+          countdownTexts.forEach((countdownText) => {
+            countdownText.textContent = '發送驗證碼'
+          })
+          return  // 結束執行setInterval，不再執行下面程式碼
+        }
+        showTimer(tiemleft)
+      }, 1000)
+    }
 
-        const handleTimerBtn = ()=> {
-          clearInterval(countdown); // clear countdown
-          const countDownTime = 60;
-          timer(countDownTime)
-        }
-        timerBtns.forEach(function (timerBtn) {
-          timerBtn.addEventListener("click", handleTimerBtn)
-        })
-        //#endregion
-        
-        //#region Toast 提示
-        function showToast (classStyle, info, toastId) {
-          var toastLiveExample = document.getElementById(toastId)
-          var toastIcon = document.querySelector(`#${toastId} .info-circle`)
-          toastIcon.classList.add(`bg-${classStyle}`)
-          var toastMsg = document.querySelector(`#${toastId} .msg`);
-          toastMsg.textContent = info;
-          var toast = new bootstrap.Toast(toastLiveExample)
-          toast.show()
-        }
+    const handleTimerBtn = () => {
+      clearInterval(countdown); // clear countdown
+      const countDownTime = 60;
+      timer(countDownTime)
+    }
+    timerBtns.forEach(function (timerBtn) {
+      timerBtn.addEventListener("click", handleTimerBtn)
+    })
+    //#endregion
+
+    //#region Toast 提示
+    function showToast(classStyle, info, toastId) {
+      var toastLiveExample = document.getElementById(toastId)
+      var toastIcon = document.querySelector(`#${toastId} .info-circle`)
+      toastIcon.classList.add(`bg-${classStyle}`)
+      var toastMsg = document.querySelector(`#${toastId} .msg`);
+      toastMsg.textContent = info;
+      var toast = new bootstrap.Toast(toastLiveExample)
+      toast.show()
+    }
         //#endregion Toast 提示
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
