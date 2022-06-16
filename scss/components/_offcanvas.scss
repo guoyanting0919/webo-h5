@@ -1,12 +1,46 @@
 // @import "../helpers/variables";
 .offcanvas-bottom {
-    right: 0;
-    left: 0;
-    height: auto;
-    max-height: calc( #{$offcanvas-vertical-height} - #{$top-navbar-height});
-    border-top: $offcanvas-border-width solid $offcanvas-border-color;
-    transform: translateY(100%);
+  right: 0;
+  left: 0;
+  height: auto;
+  max-height: calc(#{$offcanvas-vertical-height} - #{$top-navbar-height});
+  border-top: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateY(100%);
+}
+body {
+  background: transparent
+    linear-gradient(180deg, #f7f5f0 0%, #f5f2e7 57%, #f5f2e7 77%, #ffffff 100%)
+    0% 0% no-repeat padding-box;
+}
+
+.offcanvas-header {
+  position: relative;
+  &:after {
+    content: "";
+    background: #e3e3e3;
+    position: absolute;
+    width: 78px;
+    height: 4px;
+    top: -13px;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 100px;
   }
-  body{
-    background: transparent linear-gradient(180deg, #F7F5F0 0%, #F5F2E7 57%, #F5F2E7 77%, #ffffff 100%) 0% 0% no-repeat padding-box;
+  .offcanvas-title {
+    color: #343434;
   }
+}
+
+.offcanvas-body,
+.light-gray-btns {
+  .btn-gray {
+    background: #f8f8f8;
+    color: #2e2e2e;
+    border: 1px solid transparent;
+  }
+  .btn-gray.text-info:hover {
+    background: transparent linear-gradient(43deg, #8c5f06 0%, #b48018 100%) 0%
+      0% no-repeat padding-box;
+    color: #fff !important;
+  }
+}

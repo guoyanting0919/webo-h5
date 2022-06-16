@@ -31,3 +31,7 @@
 .modal-footer {
     border: 0;
 }
+#showImgModal .modal-body{
+  max-height: calc(100vh - 48px);
+  height: calc(100vh - 48px);
+}

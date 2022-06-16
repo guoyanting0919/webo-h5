@@ -1,64 +1,143 @@
 @import "../helpers/variables";
 $nav-bottom-height: 50px;
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bebebe !important;
+  opacity: 1; /* Firefox */
+}
+
 .title {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .title-decoration {
-    top: $spacer * 1.2;
+  top: $spacer * 1.2;
 }
 .mb-nav-bottom {
-    margin-bottom: $nav-bottom-height + 15px;
+  margin-bottom: $nav-bottom-height + 15px;
 }
 .custom_bg_img {
-    min-height: 160px;
-    background-image: url("/assets/img/account_bg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  min-height: 160px;
+  background-image: url("/assets/img/account_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .text-shadow {
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 .rotateY {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .add-div {
-    border: dashed 2px $gray-300;
+  border: dashed 2px $gray-300;
 }
 .edit {
-    color: $blue;
-    text-decoration: none;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-    text-align: end;
+  color: $blue;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  text-align: end;
 }
 .uploader {
-    border-radius: $border-radius;
-    border: dashed 1px $gray-400;
-    width: 100%;
-    height: 160px;
-    background-color: $gray-900;
-    opacity: 0.5;
-    img {
-        width: 26px;
-        height: 26px;
-        margin-bottom: 10px;
-    }
+  border-radius: $border-radius;
+  border: dashed 1px $gray-400;
+  width: 100%;
+  height: 160px;
+  background-color: $gray-900;
+  opacity: 0.5;
+  img {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
 }
 .rounded-top-lg {
-    border-radius: $border-radius-lg;
+  border-radius: $border-radius-lg;
 }
 .div-close {
-    height: 4px;
-    background-color: $white;
-    border-radius: $border-radius-pill;
-    width: 20%;
+  height: 4px;
+  background-color: $white;
+  border-radius: $border-radius-pill;
+  width: 20%;
 }
 .info-circle {
-    height: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.tooltip-inner {
+  background: $black;
+  color: $white;
+}
+.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: $black;
+}
+.bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+  border-bottom-color: #000;
+}
+
+.custom-header {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.custom-header-has-bg {
+    background-image: url("../img/account-bg.svg");
+  }
+  h2 {
+    color: #333;
+  }
+  .back-icon {
+    position: absolute;
+    left: 16px;
+  }
+  .icon-right {
+    position: absolute;
+    right: 16px;
+  }
+  .message-icon {
     width: 24px;
+    height: 24px;
+    background-image: url("../img/msg_icon.png");
+    background-size: contain;
+    position: relative;
+    &.has-msg::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #fff;
+      background: #e63838;
+      border-radius: 100px;
+      right: 1px;
+      top: 1px;
+    }
+  }
+}
+.toast {
+  border: none;
+}
+.custom-ticket {
+  flex-shrink: 0;
+  width: 88px;
+  border-left: 1px dashed #dedede;
+  background: #fff;
+  border-radius: 10px;
+}
+.deco-icon {
+  position: absolute;
+  height: 16px;
+  width: 5px;
+  background: #ffde00;
+  left: 0;
+}
+.upload-img-el {
+  width: 90px;
+  height: 50px;
 }
