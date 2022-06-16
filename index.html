@@ -729,9 +729,11 @@
                   <div class="mx-1 fs-7 text-secondary">主帳戶點數</div>
                   <img src="assets/img/renew.svg" alt="">
                 </div>
-                <div class="text-primary fw-bolder">$ 1,234,567.00</div>
+                <div class="me-1 text-primary fw-bolder">$ 1,234,567.<span class="fs-7">00</span>
+                </div>
               </div>
-              <a href="javascript:void(0)" class="fs-8 text-decoration-none me-1 align-self-end">一鍵回收</a>
+              <a data-bs-toggle="modal" data-bs-target="#recycle" href="javascript:void(0)"
+                class="fs-8 text-decoration-none me-1 align-self-end">一鍵回收</a>
             </div>
             <!-- 主帳戶點數 end-->
             <form class="text-start mb-2">
@@ -741,7 +743,8 @@
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" readonly>
               </div>
               <label for="exampleFormControlInput1" class="form-label text-secondary">API名稱轉點數量<span
-                  class="text-danger"> *</span></label>
+                  class="text-danger">
+                  *</span></label>
               <div class="input-group has-validation">
                 <input type="text" class="form-control" id="inputPassword" placeholder="請輸入您想轉點的數量"
                   aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2">
@@ -782,12 +785,13 @@
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
         </div>
         <div>
-          <button type="button" class="btn btn-outline-primary btn-sm fs-8 px-3">一鍵回收</button>
+          <button type="button" class="btn btn-outline-primary btn-sm fs-8 px-3" data-bs-toggle="modal"
+            data-bs-target="#recycle">一鍵回收</button>
           <button type="button" class="btn btn-primary btn-sm fs-8 px-3">戶內轉點</button>
         </div>
       </div>
     </div>
-    <div class="offcanvas-body pt-0 small row row-cols-3 row-cols-lg-6 g-2 g-lg-3">
+    <div class="offcanvas-body light-gray-btns pt-0 small row row-cols-3 row-cols-lg-6 g-2 g-lg-3">
       <div class="col d-grid">
         <button type="button"
           class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2"
@@ -827,6 +831,31 @@
     </div>
   </div>
   <!-- 轉點 offcanvas end-->
+
+  <!-- 一件回收 modal -->
+  <div class="modal fade" id="recycle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">確認全部回收至主帳戶?</h5>
+        </div>
+        <div class="modal-body py-0">
+          <div class="text-center">
+            是否確認全部平台點數額度回收至主帳戶?
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button onclick="showToast ('success', '回收成功!', 'liveToast')"
+              class="btn btn-primary btn-lin fs-6">確認</button>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
 
   <script src="./js/popover.js" crossorigin="anonymous"></script>
   <script src="/bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
@@ -870,13 +899,13 @@
     })
     //#endregion 首頁產品列表滑動切換功能
     //#region 轉點按鈕狀態切換
-    var buttons = [].slice.call(document.querySelectorAll('.btn-gray'))
-    buttons.forEach(function (buttonEl) {
-      var button = new bootstrap.Button(buttonEl)
-      buttonEl.addEventListener('click', function (event) {
-        button.toggle()
-      })
-    })
+    // var buttons = [].slice.call(document.querySelectorAll('.btn-gray'))
+    // buttons.forEach(function (buttonEl) {
+    //   var button = new bootstrap.Button(buttonEl)
+    //   buttonEl.addEventListener('click', function (event) {
+    //     button.toggle()
+    //   })
+    // })
     //#endregion 轉點按鈕狀態切換
     //#region 顯示/隱藏密碼
     function showPassword(inputId) {
