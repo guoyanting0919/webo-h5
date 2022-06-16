@@ -114,9 +114,13 @@
 }
 
 .btn-lin {
-  background-image: linear-gradient(54deg, #8c5f06 0%, #b48018 100%) !important;
+  background: transparent linear-gradient(82deg, #8c5f06 0%, #d0941d 100%) 0% 0%
+    no-repeat padding-box;
   &:active {
     background: $primary !important;
+  }
+  &[disabled] {
+    opacity: 0.5;
   }
 }
 .time-filter-btns {
