@@ -21,14 +21,13 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 15px;
-    transform: translateY(-12px);
     .header-title {
       color: $primary;
       font-weight: 700;
     }
   }
   .info-progress {
-    margin-top: -6px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -95,7 +94,7 @@
     }
   }
   .wallet-info-wrap {
-    margin: 15px;
+    margin: 14px;
     height: 83px;
     background: #fff;
     box-shadow: 0px 3px 6px #8c5f0633;
