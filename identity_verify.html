@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS -->
-  <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/all.css" rel="stylesheet" type="text/css">
   <title>WEBO - 身分驗證</title>
 </head>
 
 <body>
   <!-- title -->
   <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
-    <a class="back-icon" href="account_detail.html"><img src="../assets/img/arrow_right_gray.svg"
+    <a class="back-icon" href="account_detail.html"><img src="./assets/img/arrow_right_gray.svg"
         alt="arrow_right_white"></a>
     <h2 class="fs-6 mb-0 text-center">
       實名認證
@@ -60,7 +60,7 @@
             <label for="staticEmail" class="col-3 px-2 col-form-label fs-7 text-secondary">證件照片</label>
             <div class="col-6 d-flex">
               <img onclick="showModal(`../assets/img/ROC_mibunsho.jpg`)" id="idCard" class="w-50"
-                src="../assets/img/ROC_mibunsho.jpg" alt="">
+                src="./assets/img/ROC_mibunsho.jpg" alt="">
               <img onclick="showModal(`https:/\/fakeimg.pl/345x147/`)" id="idCardB" class="w-50"
                 src="https://fakeimg.pl/345x147/" alt="">
             </div>
@@ -126,7 +126,7 @@
               <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
             </div>
             <div class="text-muted fs-8 mt-2 d-flex flex-row align-items-center">
-              <div class="me-1"><img src="../assets/img/info_icon.svg" alt="info_icon"></div>
+              <div class="me-1"><img src="./assets/img/info_icon.svg" alt="info_icon"></div>
               <div>為了維護您的權利,證件姓名需與身分證須為同一人</div>
             </div>
           </div>
@@ -144,7 +144,7 @@
             <div class="mb-2 text-secondary">上傳證件照片<span class="text-danger">*</span></div>
             <div id="uploader"
               class="uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
-              <img src="../assets/img/upload.svg" alt="upload">
+              <img src="./assets/img/upload.svg" alt="upload">
               <div class="fs-6 text-secondary">身分證正面</div>
               <div>請點擊此處上傳</div>
             </div>
@@ -157,7 +157,7 @@
             <div class="mb-2"> &nbsp; <span class="text-danger"></span></div>
             <div id="uploader2"
               class="uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
-              <img src="../assets/img/upload.svg" alt="upload">
+              <img src="./assets/img/upload.svg" alt="upload">
               <div class="fs-6 text-secondary">身分證反面</div>
               <div>請點擊此處上傳</div>
             </div>
@@ -181,7 +181,7 @@
               aria-controls="offcanvasBottom">
               <input type="text" class="form-control rounded-3 is-invalid" id="inputQutionType" placeholder="請選擇銀行名稱"
                 aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
-              <img class="d-block" src="../assets/img/arrow-right.svg" alt=""
+              <img class="d-block" src="./assets/img/arrow-right.svg" alt=""
                 style="position: absolute;right: 8px;top: 15px;z-index: 9;">
               <div id="validationServerPasswordFeedback2" class="invalid-feedback">錯誤</div>
             </div>
@@ -215,7 +215,7 @@
             <div class="mb-2 text-secondary">上傳證件照片<span class="text-danger">*</span></div>
             <div id="uploader3"
               class="uploader d-flex flex-column justify-content-center align-items-center bg-transparent">
-              <img src="../assets/img/upload.svg" alt="upload">
+              <img src="./assets/img/upload.svg" alt="upload">
               <div class="fs-6 text-secondary">請點擊此處上傳圖片</div>
             </div>
             <input accept="image/*" type='file' id="imgTnp" class="d-none">
@@ -223,7 +223,7 @@
             <div id="remove-img-btn3" class="remove-img-btn d-none"></div>
           </label>
           <div class="text-muted fs-8 mt-2 d-flex flex-row align-items-center">
-            <div class="me-1"><img src="../assets/img/info_icon.svg" alt="info_icon"></div>
+            <div class="me-1"><img src="./assets/img/info_icon.svg" alt="info_icon"></div>
             <div>照片須清晰顯示戶名與帳號</div>
           </div>
         </form>
@@ -249,28 +249,28 @@
           <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
           <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio1">
             <div class="me-2">中信</div>
-            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+            <div class="py-auto"><img src="./assets/img/checked.svg" alt="checked"></div>
           </label>
         </div>
         <div class="canvas-option">
           <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
           <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio2">
             <div class="me-auto">國泰</div>
-            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+            <div class="py-auto"><img src="./assets/img/checked.svg" alt="checked"></div>
           </label>
         </div>
         <div class="canvas-option">
           <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
           <label class="radio-icon-check d-flex justify-content-between align-items-center py-2" for="btnradio3">
             <div>台銀</div>
-            <div class="py-auto"><img src="../assets/img/checked.svg" alt="checked"></div>
+            <div class="py-auto"><img src="./assets/img/checked.svg" alt="checked"></div>
           </label>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="./bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
   <!-- 圖片上傳 -->
   <script>

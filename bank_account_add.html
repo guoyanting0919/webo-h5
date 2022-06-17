@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS -->
-  <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/all.css" rel="stylesheet" type="text/css">
   <title>WEBO - 新增個人帳戶</title>
 </head>
 
@@ -15,7 +15,7 @@
   <!-- title -->
   <div class="title d-flex container-fluid bg-dark text-white">
     <a class="col-4 d-block text-white text-decoration-none" href="bank_account.html"><img class="rotateY"
-        src="../assets/img/arrow_right_white.svg" alt="arrow_right_white"></a>
+        src="./assets/img/arrow_right_white.svg" alt="arrow_right_white"></a>
     <div class="col-4 text-nowrap">
       <h2 class="fs-5 mb-0 text-center">新增個人帳戶</h2>
     </div>
@@ -24,7 +24,7 @@
   <div class="container">
     <div class="card bg-secondary w-100 mb-2" style="width: 18rem;">
       <div class="card-header position-relative py-2">
-        <img class="position-absolute top-50 start-0 translate-middle" src="../assets/img/title_decorate.svg"
+        <img class="position-absolute top-50 start-0 translate-middle" src="./assets/img/title_decorate.svg"
           alt="title_decorate">
         <div class="fw-bold ps-2">填寫銀行帳戶資訊</div>
       </div>
@@ -63,7 +63,7 @@
     </div>
     <div class="card bg-secondary w-100">
       <div class="card-header position-relative py-2">
-        <img class="position-absolute top-50 start-0 translate-middle" src="../assets/img/title_decorate.svg"
+        <img class="position-absolute top-50 start-0 translate-middle" src="./assets/img/title_decorate.svg"
           alt="title_decorate">
         <div class="fw-bold ps-2">請上傳存摺正面照片</div>
       </div>
@@ -71,7 +71,7 @@
         <form runat="server">
           <label for="imgInp" class="form-label text-muted w-100">
             <div id="uploader" class="uploader d-flex flex-column justify-content-center align-items-center">
-              <img src="../assets/img/upload.svg" alt="upload">
+              <img src="./assets/img/upload.svg" alt="upload">
               <div>請點擊此處上傳圖片</div>
             </div>
             <input accept="image/*" type='file' id="imgInp" class="d-none">
@@ -79,7 +79,7 @@
           </label>
         </form>
         <div class="text-muted fs-8 mt-2 d-flex flex-row">
-          <div class="me-1"><img src="../assets/img/info_icon.svg" alt="info_icon"></div>
+          <div class="me-1"><img src="./assets/img/info_icon.svg" alt="info_icon"></div>
           <div>溫馨提示</div>
         </div>
       </div>
@@ -97,7 +97,7 @@
       <div class="d-flex">
         <div class="toast-body d-flex flex-row align-items-center">
           <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
-              src="../assets/img/info.svg" alt="info"></div>
+              src="./assets/img/info.svg" alt="info"></div>
           <div class="msg ms-2 fw-bold">新增成功!</div>
         </div>
         <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -107,7 +107,7 @@
   <!-- Toast 訊息，根據需求使用 end-->
   <div class="mb-2"></div>
 
-  <script src="../bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="./bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <script>
     //#region 圖片上傳預覽
     imgInp.onchange = evt => {
