@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50.162" viewBox="0 0 50 50.162">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.827" y1="0.619" x2="1" y2="0.957" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9df7b"/>
+      <stop offset="1" stop-color="#fffbe1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.917" y1="0.402" x2="0.197" y2="0.614" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8c5f06"/>
+      <stop offset="0.562" stop-color="#fff3a6"/>
+      <stop offset="1" stop-color="#8c5f06"/>
+    </linearGradient>
+    <filter id="路径_64013" x="0" y="0" width="50" height="50.162" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#795810" flood-opacity="0.235"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <ellipse id="椭圆_384" data-name="椭圆 384" cx="16" cy="16.081" rx="16" ry="16.081" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="0.386" y1="0.573" x2="0.579" y2="0.648" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.078"/>
+    </linearGradient>
+    <filter id="路径_64007" x="10.332" y="4.301" width="30" height="27.438" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#b1790a"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_49326" data-name="组 49326" transform="translate(9 2.162)">
+    <g transform="matrix(1, 0, 0, 1, -9, -2.16)" filter="url(#路径_64013)">
+      <path id="路径_64013-2" data-name="路径 64013" d="M16,0A16.081,16.081,0,1,1,0,16.081,16.041,16.041,0,0,1,16,0Z" transform="translate(9 4)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <ellipse id="椭圆_351" data-name="椭圆 351" cx="16" cy="16.081" rx="16" ry="16.081" fill="url(#linear-gradient)"/>
+    <g id="蒙版组_18" data-name="蒙版组 18" clip-path="url(#clip-path)">
+      <path id="路径_83224" data-name="路径 83224" d="M26.865-3.433.225,37.35H32.439V-3.433Z" fill="url(#linear-gradient-4)"/>
+      <g id="钱包" transform="translate(7.332 7.138)">
+        <g transform="matrix(1, 0, 0, 1, -16.33, -9.3)" filter="url(#路径_64007)">
+          <path id="路径_64007-2" data-name="路径 64007" d="M80.834,125.57a1.585,1.585,0,0,1,.2.014,1.339,1.339,0,0,0-.623-.27L67.62,123.261a1.367,1.367,0,0,0-1.565,1.139l-.187,1.173H80.834Zm1.366,2.019a1.368,1.368,0,0,0-1.366-1.373H65.566a1.368,1.368,0,0,0-1.366,1.373v9.72a1.368,1.368,0,0,0,1.366,1.373H80.832a1.368,1.368,0,0,0,1.366-1.373V134.7H76.916a2.449,2.449,0,0,1,0-4.9H82.2v-2.212Z" transform="translate(-47.87 -113.94)" fill="#fff"/>
+        </g>
+        <path id="路径_64008" data-name="路径 64008" d="M676.238,535.7a.688.688,0,1,0,.511-.832A.688.688,0,0,0,676.238,535.7Z" transform="translate(-664.051 -526.627)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
