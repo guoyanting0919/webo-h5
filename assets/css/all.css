@@ -12379,7 +12379,7 @@ input#Bank {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px #f5f5f5 inset;
+  -webkit-box-shadow: 0 0 0 30px #f5f5f5 inset !important;
 }
 
 .form-label {
