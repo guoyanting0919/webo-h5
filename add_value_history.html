@@ -22,35 +22,37 @@
   <!-- title end -->
   <!-- search -->
   <div class="container border-bottom border-light mt-2 bg-white">
-    <div class="row align-items-center g-2 pb-2 ">
+    <div class="row align-items-center g-2 pb-2 flex-nowrap">
       <div class="col-auto collapseBtn">
-        <button class="accordion-button collapsed text-info btn-sm fs-7 rounded-2" type="button"
+        <button class="accordion-button collapsed text-info btn-sm fs-7 rounded-2" type="button" id="status-filter-btn"
           data-bs-toggle="collapse" data-bs-target="#collapseStatus" aria-expanded="true"
           aria-controls="collapseStatus">
           全部
         </button>
       </div>
       <div class="col-auto collapseBtn">
-        <button class="accordion-button collapsed text-info btn-sm fs-7 rounded-2" type="button"
+        <button class="accordion-button collapsed text-info btn-sm fs-7 rounded-2" type="button" id="time-filter-btn"
           data-bs-toggle="collapse" data-bs-target="#collapseTime" aria-expanded="false" aria-controls="collapseTime">
           今日
         </button>
       </div>
       <div class="col-auto">
-        <input type="email" class="form-control form-control-sm  border border-light" id="exampleFormControlInput1"
+        <input type="text" class="form-control form-control-sm  border border-light" id="exampleFormControlInput1"
           placeholder="輸入訂單編號">
       </div>
     </div>
   </div>
   <!-- 搜尋選單 -->
   <div class="container py-0 bg-white border-bottom border-light" id="accordion">
+
+    <!-- 這邊選完自定義日期才會顯示 -->
     <div class="row align-items-center fs-7 py-2">
       <div class="col-auto fs-8 text-gray62">搜尋日期 : 2021-05-01 ~ 2021-05-05</div>
     </div>
 
     <!-- 狀態 -->
     <div class="collapse my-2" id="collapseStatus" data-bs-parent="#accordion">
-      <div class="row g-2 light-gray-btns time-filter-btns">
+      <div class="row g-2 light-gray-btns status-filter-btns">
         <div class="col-3 d-grid"><button class="btn btn-gray text-info  text-nowrap" type="button">全部</button></div>
         <div class="col-3 d-grid"><button class="btn btn-gray text-info text-nowrap" type="button">待付款</button></div>
         <div class="col-3 d-grid"><button class="btn btn-gray text-info active text-nowrap" type="button">成功</button>
@@ -58,6 +60,7 @@
       </div>
     </div>
     <!-- 狀態 end-->
+
     <!-- 日期選擇 -->
     <div class="collapse my-2" id="collapseTime" data-bs-parent="#accordion">
       <div class="row row-cols-4 g-2 light-gray-btns time-filter-btns">
@@ -140,6 +143,34 @@
   <div class="mb-2"></div>
 
   <script src="./bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- 日期選擇 -->
+  <script>
+    const timeBtns = document.querySelectorAll('.time-filter-btns .btn-gray')
+    const timeFilterBtn = document.getElementById('time-filter-btn')
+    timeBtns.forEach((el) => {
+      el.addEventListener('click', function (e) {
+        timeBtns.forEach(el => el.classList.remove('active'))
+        el.classList.add('active')
+        timeFilterBtn.innerText = el.innerText
+
+      })
+    })
+  </script>
+
+  <!-- 日期選擇 -->
+  <script>
+    const statusBtns = document.querySelectorAll('.status-filter-btns .btn-gray')
+    const statusFilterBtn = document.getElementById('status-filter-btn')
+    statusBtns.forEach((el) => {
+      el.addEventListener('click', function (e) {
+        statusBtns.forEach(el => el.classList.remove('active'))
+        el.classList.add('active')
+        statusFilterBtn.innerText = el.innerText
+
+      })
+    })
+  </script>
 </body>
 
 </html>

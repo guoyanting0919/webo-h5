@@ -12500,14 +12500,6 @@ html {
   margin-bottom: 65px;
 }
 
-.custom_bg_img {
-  min-height: 160px;
-  background-image: url("./assets/img/account_bg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .text-shadow {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
@@ -12951,7 +12943,8 @@ body {
   opacity: 0.5;
 }
 
-.time-filter-btns .btn-gray.active {
+.time-filter-btns .btn-gray.active,
+.status-filter-btns .btn-gray.active {
   background: transparent linear-gradient(43deg, #8c5f06 0%, #b48018 100%) 0% 0% no-repeat padding-box !important;
   color: #fff !important;
   border: none !important;

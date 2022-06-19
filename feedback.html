@@ -20,21 +20,6 @@
     </h2>
   </div>
   <!-- title end -->
-  <!-- Modal -->
-  <div class="modal fade" id="showImgModal" tabindex="-1" aria-labelledby="showImgModalLabel" aria-hidden="true">
-    <div class="modal-dialog m-0 bg-black">
-      <div class="modal-content rounded-0 bg-black p-0">
-        <div class="modal-header">
-          <h5 class="modal-title" id="showImgModalLabel"></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body d-flex justify-content-center align-items-center">
-          <img id="dialogImg" class="w-100" src="https://fakeimg.pl/345x147/" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- modal end -->
 
   <div class="container">
 
@@ -47,6 +32,7 @@
             <label for="exampleFormControlInput1" class="form-label">問題類型<span class="text-danger"></span></label>
             <div class="input-group has-validation" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
               aria-controls="offcanvasBottom">
+              <!-- input class list 添加 is-invalid 表示驗證未過  -->
               <input type="text" class="form-control rounded-3 is-invalid" id="inputQutionType" placeholder="請選擇問題類型"
                 aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required>
               <img class="d-block" src="./assets/img/arrow-right.svg" alt=""
@@ -58,7 +44,8 @@
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">問題描述<span class="text-danger"></span></label>
             <div class="input-group has-validation position-relative">
-              <textarea rows="5" type="text" class="form-control rounded-3 " id="textAreaI"
+              <!-- textarea class list 添加 is-invalid 表示驗證未過  -->
+              <textarea rows="5" type="text" class="form-control rounded-3 is-invalid" id="textAreaI"
                 placeholder="請詳細描述您遇到的問題，或者想與我們反饋的意見，填寫內容不少於20字"
                 aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback2" required></textarea>
               <span class="pull-right label label-default position-absolute"
@@ -233,17 +220,6 @@
     })
   </script>
 
-  <!-- 圖片顯示 -->
-  <script>
-    let myModal = new bootstrap.Modal(document.getElementById('showImgModal'), {
-      keyboard: false
-    })
-    const showModal = (url) => {
-      myModal.show()
-      let el = document.getElementById('dialogImg')
-      el.src = url
-    }
-  </script>
 </body>
 
 </html>

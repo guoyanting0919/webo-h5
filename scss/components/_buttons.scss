@@ -126,7 +126,8 @@
     opacity: 0.5;
   }
 }
-.time-filter-btns {
+.time-filter-btns,
+.status-filter-btns {
   .btn-gray.active {
     background: transparent linear-gradient(43deg, #8c5f06 0%, #b48018 100%) 0%
       0% no-repeat padding-box !important;

@@ -47,6 +47,7 @@
     </div>
   </div>
   <!-- Toast 訊息，根據需求使用 end-->
+
   <!-- title -->
   <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
     <a class="back-icon" href="account.html"><img src="./assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
@@ -55,6 +56,7 @@
     </h2>
   </div>
   <!-- title end -->
+
   <!-- 表單 -->
   <div class="container">
     <!-- 戶內轉點 -->
@@ -99,6 +101,8 @@
       </div>
     </div>
     <!-- 戶內轉點 end-->
+
+    <!-- 我的錢包 -->
     <div class="card w-100">
       <div class=" position-relative py-2 d-flex flex-row align-items-center">
         <div class="card-title w-100 d-flex">
@@ -230,6 +234,8 @@
       </div>
       <!-- API list end-->
     </div>
+    <!-- 我的錢包  end -->
+
     <div class="d-grid gap-2 my-3">
       <button class="btn btn-primary btn-lin fs-6" type="button"
         onclick="showToast ('success', '轉點成功!', 'liveToast')">送出</button>
@@ -345,7 +351,7 @@
 
   <script src="./bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <script>
-    //#region 轉點按鈕狀態切換
+    // 轉點按鈕狀態切換
     var buttons = [].slice.call(document.querySelectorAll('.btn-gray'))
     buttons.forEach(function (buttonEl) {
       var button = new bootstrap.Button(buttonEl)
@@ -353,8 +359,8 @@
         button.toggle()
       })
     })
-    //#endregion 轉點按鈕狀態切換
-    //#region 左右互換
+
+    // 左右互換
     function transferPosition() {
       const source = document.querySelector('#source');
       const sourceValue = source.value;
@@ -363,9 +369,8 @@
       source.value = targetValue;
       target.value = sourceValue;
     }
-    //#endregion
 
-    //#region Toast 提示
+    // Toast 提示
     function showToast(classStyle, info, toastId) {
       var toastLiveExample = document.getElementById(toastId)
       var toastIcon = document.querySelector(`#${toastId} .info-circle`)
@@ -375,15 +380,13 @@
       var toast = new bootstrap.Toast(toastLiveExample)
       toast.show()
     }
-    //#endregion Toast 提示
 
-    //#region tooltip
+    // tooltip
     let countdown;
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     tooltipTriggerList.map((tooltipTriggerEl) => {
       const tooltip = new bootstrap.Tooltip(tooltipTriggerEl);
     })
-    //#endregion
 
     // 轉點 switch input
     const selfEl = document.getElementById('self-trans-zone')

@@ -21,13 +21,6 @@ html {
 .mb-nav-bottom {
   margin-bottom: $nav-bottom-height + 15px;
 }
-.custom_bg_img {
-  min-height: 160px;
-  background-image: url("./assets/img/account_bg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .text-shadow {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
