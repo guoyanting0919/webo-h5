@@ -12409,17 +12409,26 @@ input:-webkit-autofill {
   border: 1px solid #e63838;
 }
 
+.nav-pills.hide-scroll-bar {
+  overflow-x: auto;
+}
+
+.nav-pills.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
 .nav-pills.nav {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
 
 .nav-pills .nav-link {
-  color: #fff;
+  color: #989898;
   background: none;
   border: 0;
   padding-right: 0;
   padding-left: 0;
+  padding-bottom: 0;
   border-radius: 0.25rem;
 }
 
@@ -12438,8 +12447,9 @@ input:-webkit-autofill {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #8c5f06;
-  border-bottom: 2px #8c5f06 solid;
+  border-bottom: 3px #8c5f06 solid;
   border-radius: 0;
+  font-weight: 900;
 }
 
 .nav-pills .nav-link.active.btn,

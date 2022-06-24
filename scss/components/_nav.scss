@@ -1,38 +1,48 @@
 @import "../helpers/variables";
 
 .nav-pills {
-    &.nav {
-        flex-wrap: nowrap;
+  &.hide-scroll-bar {
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
     }
-    .nav-link {
-        color: $white;
-        background: none;
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-        @include border-radius($nav-pills-border-radius);
-        img {
-            width: 16px;
-        }
-        &.btn {
-            background: $secondary;
-            color: color-contrast($primary);
-            flex-wrap: nowrap;
-            border: 0;
-        }
+  }
+  &.nav {
+    flex-wrap: nowrap;
+  }
+  .nav-link {
+    color: #989898;
+    background: none;
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    @include border-radius($nav-pills-border-radius);
+    img {
+      width: 16px;
     }
+    &.btn {
+      background: $secondary;
+      color: color-contrast($primary);
+      flex-wrap: nowrap;
+      border: 0;
+    }
+  }
 
-    .nav-link.active,
-    .show > .nav-link {
-        color: $nav-pills-link-active-color;
-        border-bottom: 2px $primary solid;
-        border-radius: 0;
-        @include gradient-bg($nav-pills-link-active-bg);
-        &.btn {
-            background: $primary;
-            color: color-contrast($primary);
-            border: 0;
-            :focus { box-shadow: none; }
-        }
+  .nav-link.active,
+  .show > .nav-link {
+    color: $primary;
+    border-bottom: 3px $primary solid;
+    border-radius: 0;
+    font-weight: 900;
+    @include gradient-bg($nav-pills-link-active-bg);
+    &.btn {
+      background: $primary;
+      color: color-contrast($primary);
+      border: 0;
+      :focus {
+        box-shadow: none;
+      }
     }
+  }
 }
