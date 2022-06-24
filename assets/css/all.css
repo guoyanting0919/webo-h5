@@ -13544,6 +13544,12 @@ body {
   font-weight: 700;
 }
 
+.sk {
+  -webkit-transform: translateY(-14px);
+          transform: translateY(-14px);
+  color: black;
+}
+
 .text-dark {
   color: #573b02 !important;
 }

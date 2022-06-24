@@ -82,27 +82,27 @@
 
     <!-- vip 福利 -->
     <div class="card w-100 mb-3 mt-4" style="width: 18rem;">
-      <div class="card-title">VIP1福利</div>
+      <div class="card-title" id="welfareTitle">VIP1福利</div>
       <div class="card-body pb-0 d-flex flex-wrap align-items-center justify-content-between">
         <div class="vip-desc-item">
           <img src="./assets/img/vip-upgrade-icon.svg" alt="">
           <div class="vip-item-box">
-            <div class="back-num">--</div>
+            <div class="back-num" id="upgradeMoney">--</div>
             <div class="third">升級禮金<br /> &nbsp;</div>
           </div>
         </div>
         <div class="vip-desc-item">
           <img src="./assets/img/vip-month-good.svg" alt="">
           <div class="vip-item-box">
-            <div class="back-num">--</div>
+            <div class="back-num" id="monthWelfare">--</div>
             <div class="third">每月福利<br /> &nbsp;</div>
           </div>
         </div>
         <div class="vip-desc-item">
           <img src="./assets/img/vip-free.svg" alt="">
           <div class="vip-item-box">
-            <div class="back-num">1</div>
-            <div class="third">單週免手續<br />費出款次數</div>
+            <div class="back-num" id="freeTime">1</div>
+            <div class="third" id="freeTimeTxt">單週免手續<br />費出款次數</div>
           </div>
         </div>
       </div>
@@ -111,41 +111,41 @@
 
     <!-- vip 反水 -->
     <div class="card w-100 mb-3 " style="width: 18rem;">
-      <div class="card-title">VIP1返水</div>
+      <div class="card-title" id="backTitle">VIP1返水</div>
       <div class="card-body pb-0 d-flex flex-wrap align-items-center justify-content-between">
         <div class="vip-desc-item">
           <div class="vip-item-box">
-            <div class="back-num">12.3<span>%</span></div>
+            <div class="back-num" id="eleBack">12.3<span>%</span></div>
             <div class="third">電子返水</div>
           </div>
         </div>
         <div class="vip-desc-item">
           <div class="vip-item-box">
-            <div class="back-num">14.3<span>%</span></div>
+            <div class="back-num" id="gameBack">14.3<span>%</span></div>
             <div class="third">電競返水</div>
           </div>
         </div>
         <div class="vip-desc-item">
           <div class="vip-item-box">
-            <div class="back-num">0.31<span>%</span></div>
+            <div class="back-num" id="realBack">0.31<span>%</span></div>
             <div class="third">真人返水</div>
           </div>
         </div>
         <div class="vip-desc-item">
           <div class="vip-item-box">
-            <div class="back-num">0.33<span>%</span></div>
+            <div class="back-num" id="chessBack">0.33<span>%</span></div>
             <div class="third">棋牌返水</div>
           </div>
         </div>
         <div class="vip-desc-item">
           <div class="vip-item-box">
-            <div class="back-num">1.3<span>%</span></div>
+            <div class="back-num" id="sportBack">1.3<span>%</span></div>
             <div class="third">體育返水</div>
           </div>
         </div>
         <div class="vip-desc-item">
           <div class="vip-item-box">
-            <div class="back-num">2.43<span>%</span></div>
+            <div class="back-num" id="lotteryBack">2.43<span>%</span></div>
             <div class="third">彩票返水</div>
           </div>
         </div>
@@ -213,6 +213,97 @@
   <script src="./bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
   <script>
+    const vipMappingList = [
+      {
+        upgradeMoney: '- -',
+        monthWelfare: '- -',
+        freeTime: '1',
+        freeTimeTxt: '單週免手續<br />費出款次數',
+        eleBack: '0.35',
+        gameBack: '0.35',
+        realBack: '0.30',
+        chessBack: '0.30',
+        sportBack: '0.30',
+        lotteryBack: '0.30',
+      },
+      {
+        upgradeMoney: '888',
+        monthWelfare: '888',
+        freeTime: '2',
+        freeTimeTxt: '單週免手續<br />費出款次數',
+        eleBack: '0.45',
+        gameBack: '0.45',
+        realBack: '0.40',
+        chessBack: '0.40',
+        sportBack: '0.40',
+        lotteryBack: '0.40',
+      },
+      {
+        upgradeMoney: '1,288',
+        monthWelfare: '1,688',
+        freeTime: '5',
+        freeTimeTxt: '單週免手續<br />費出款次數',
+        eleBack: '0.50',
+        gameBack: '0.50',
+        realBack: '0.50',
+        chessBack: '0.50',
+        sportBack: '0.50',
+        lotteryBack: '0.50',
+      },
+      {
+        upgradeMoney: '3,888',
+        monthWelfare: '3,888',
+        freeTime: ' <br />',
+        freeTimeTxt: '<div class="sk">出款<br /> 免手續費</div>',
+        eleBack: '0.60',
+        gameBack: '0.60',
+        realBack: '0.60',
+        chessBack: '0.60',
+        sportBack: '0.60',
+        lotteryBack: '0.60',
+      },
+      {
+        upgradeMoney: '8,888',
+        monthWelfare: '9,999',
+        freeTime: ' <br />',
+        freeTimeTxt: '<div class="sk">出款<br /> 免手續費</div>',
+        eleBack: '0.70',
+        gameBack: '0.70',
+        realBack: '0.70',
+        chessBack: '0.70',
+        sportBack: '0.70',
+        lotteryBack: '0.70',
+      }
+    ]
+    const welfareTitle = document.getElementById('welfareTitle')
+    const backTitle = document.getElementById('backTitle')
+    const upgradeMoney = document.getElementById('upgradeMoney')
+    const monthWelfare = document.getElementById('monthWelfare')
+    const freeTime = document.getElementById('freeTime')
+    const freeTimeTxt = document.getElementById('freeTimeTxt')
+    const eleBack = document.getElementById('eleBack')
+    const gameBack = document.getElementById('gameBack')
+    const realBack = document.getElementById('realBack')
+    const chessBack = document.getElementById('chessBack')
+    const sportBack = document.getElementById('sportBack')
+    const lotteryBack = document.getElementById('lotteryBack')
+    const handleVip = (lv) => {
+      welfareTitle.innerText = `VIP${lv + 1}福利`
+      backTitle.innerText = `VIP${lv + 1}反水`
+      upgradeMoney.innerText = vipMappingList[lv].upgradeMoney
+      monthWelfare.innerText = vipMappingList[lv].monthWelfare
+      freeTime.innerHTML = vipMappingList[lv].freeTime
+      freeTimeTxt.innerHTML = vipMappingList[lv].freeTimeTxt
+      eleBack.innerText = vipMappingList[lv].eleBack
+      gameBack.innerText = vipMappingList[lv].gameBack
+      realBack.innerText = vipMappingList[lv].realBack
+      chessBack.innerText = vipMappingList[lv].chessBack
+      sportBack.innerText = vipMappingList[lv].sportBack
+      lotteryBack.innerText = vipMappingList[lv].lotteryBack
+    }
+  </script>
+
+  <script>
     const linePosition = (document.documentElement.scrollWidth - 55) / 2
     const cardWrapEl = document.getElementById('vip-card-wrap')
     const lineWrapEl = document.getElementById('vip-line-wrap')
@@ -258,11 +349,13 @@
       } else {
         lineWrapEl.scrollTo({ left: 0, top: 0, behavior: 'smooth' })
       }
-
+      handleVip(activeIndex)
     }
 
     cardWrapEl.addEventListener('scroll', throttle(handleScroll, 150))
   </script>
+
+
 </body>
 
 </html>
