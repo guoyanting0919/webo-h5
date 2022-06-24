@@ -12183,10 +12183,10 @@ fieldset:disabled .btn {
 .badge_btns {
   width: 95px;
   height: 26px;
-  margin-right: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 12px;
   line-height: 23px;
   background-image: url("../../assets/img/button-wrap.svg");
 }
@@ -12974,6 +12974,29 @@ body {
   padding: 15px;
 }
 
+.welfare-wrap {
+  height: 267px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  font-size: 13px;
+  text-align: center;
+  padding: 33px 13px 15px 13px;
+  margin-top: 32px;
+  color: #626262;
+  background-image: url("../../assets/img/welfare-wrap.svg");
+}
+
+.welfare-wrap .welfare-title {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  top: -20px;
+}
+
 #carousel-compare {
   height: 270px;
 }
@@ -13026,12 +13049,12 @@ body {
 }
 
 .compare-list .list-content .content-item:nth-child(1) {
-  color: #816C4B;
+  color: #816c4b;
   font-size: 13px;
 }
 
 .compare-list .list-content .content-item:nth-child(2) {
-  color: #B58B4A;
+  color: #b58b4a;
   width: 124px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -13093,7 +13116,7 @@ body {
 }
 
 .compare-list .list-title .title-item:nth-child(2)::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -13133,13 +13156,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
-  color: #4A4A4A;
-  border-bottom: 1px solid #EFEFEF;
+  color: #4a4a4a;
+  border-bottom: 1px solid #efefef;
   position: relative;
 }
 
 .qa .qa-item::after {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url("../../assets/img/arrow-right.svg");
   width: 20px;

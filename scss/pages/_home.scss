@@ -1,50 +1,72 @@
-.web-outstandind-wrap{
+.web-outstandind-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
 }
-#carousel-compare{
+
+.welfare-wrap {
+  height: 267px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  font-size: 13px;
+  text-align: center;
+  padding: 33px 13px 15px 13px;
+  margin-top: 32px;
+  color: #626262;
+  background-image: url("../../assets/img/welfare-wrap.svg");
+  .welfare-title {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: -20px;
+  }
+}
+
+#carousel-compare {
   height: 270px;
-  .compare-item{
+  .compare-item {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
   }
-  .compare1{
-    background-image: url('../../assets/img/compare1.png');
+  .compare1 {
+    background-image: url("../../assets/img/compare1.png");
   }
-  .compare2{
-    background-image: url('../../assets/img/compare2.png');
+  .compare2 {
+    background-image: url("../../assets/img/compare2.png");
   }
-  .compare3{
-    background-image: url('../../assets/img/compare3.png');
+  .compare3 {
+    background-image: url("../../assets/img/compare3.png");
   }
-  .compare4{
-    background-image: url('../../assets/img/compare4.png');
+  .compare4 {
+    background-image: url("../../assets/img/compare4.png");
     width: 350px !important;
     margin: auto;
   }
 }
 
-.compare-list{
-  background-image: url('../../assets/img/compare-list-bg.png');
+.compare-list {
+  background-image: url("../../assets/img/compare-list-bg.png");
   margin: 15px;
   background-size: contain;
   height: 228px;
-  .list-content{
+  .list-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    .content-item{
+    .content-item {
       width: 33%;
-      &:nth-child(1){
-        color: #816C4B;
+      &:nth-child(1) {
+        color: #816c4b;
         font-size: 13px;
       }
-      &:nth-child(2){
-        color: #B58B4A;
+      &:nth-child(2) {
+        color: #b58b4a;
         width: 124px;
         flex-shrink: 0;
         background-color: #ffc40033;
@@ -56,7 +78,7 @@
         font-size: 13px;
         padding: 0 8px;
       }
-      &:nth-child(3){
+      &:nth-child(3) {
         width: 124px;
         color: #878787;
         flex-shrink: 0;
@@ -65,16 +87,16 @@
       }
     }
   }
-  .list-title{
+  .list-title {
     display: flex;
     height: 36px;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #816c4b42;
-    .title-item{
+    .title-item {
       width: 33%;
       font-size: 14px;
-      &:nth-child(2){
+      &:nth-child(2) {
         color: $primary;
         font-weight: 700;
         line-height: 36px;
@@ -84,17 +106,17 @@
         padding-left: 8px;
         width: 124px;
         flex-shrink: 0;
-        &::before{
-          content: '';
+        &::before {
+          content: "";
           position: absolute;
           width: 20px;
           height: 20px;
-          background-image: url('../../assets/img/compare-icon.svg');
+          background-image: url("../../assets/img/compare-icon.svg");
           left: 7px;
           top: 7px;
         }
       }
-      &:nth-child(3){
+      &:nth-child(3) {
         color: $secondary;
         width: 124px;
         flex-shrink: 0;
@@ -104,28 +126,28 @@
   }
 }
 
-.qa{
+.qa {
   margin-bottom: 56px !important;
-  .qa-wrap{
+  .qa-wrap {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 0 11px #cfcfcf;
     margin: 15px;
   }
-  .qa-item{
+  .qa-item {
     height: 45px;
     width: 100%;
     padding-left: 20px;
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: #4A4A4A;
-    border-bottom: 1px solid #EFEFEF;
+    color: #4a4a4a;
+    border-bottom: 1px solid #efefef;
     position: relative;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
-      background-image: url('../../assets/img/arrow-right.svg');
+      background-image: url("../../assets/img/arrow-right.svg");
       width: 20px;
       height: 20px;
       right: 10px;

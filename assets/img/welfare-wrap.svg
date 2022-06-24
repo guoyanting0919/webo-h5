@@ -1,0 +1,15 @@
+<svg id="组_50699" data-name="组 50699" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="345" height="267" viewBox="0 0 345 267">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="0.004" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8c5f06"/>
+      <stop offset="0.32" stop-color="#fff3a6"/>
+      <stop offset="1" stop-color="#8c5f06"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff8e6"/>
+    </linearGradient>
+  </defs>
+  <rect id="矩形_15155" data-name="矩形 15155" width="343" height="266" rx="8" transform="translate(1 1)" fill="url(#linear-gradient)"/>
+  <rect id="矩形_17530" data-name="矩形 17530" width="345" height="264" rx="8" fill="url(#linear-gradient-2)"/>
+</svg>
