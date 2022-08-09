@@ -13612,4 +13612,9 @@ body {
 .text-black-4a {
   color: #4a4a4a;
 }
+
+#trans_icon.toggle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 /*# sourceMappingURL=all.css.map */

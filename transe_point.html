@@ -78,10 +78,10 @@
             data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
             <input id="source" class="form-control btn text-center fs-7 fs-6 bg-transparent px-0" type="text"
               aria-label="readonly input example" value="主帳戶錢包" readonly>
-            <img class="d-block" src="./assets/img/arrow-right.svg" alt="">
           </div>
-          <div class="col-2 d-flex align-items-center" onclick="transferPosition()"><img
-              src="./assets/img/trans_icon_gray.svg" alt="trans_icon_gray"></div>
+          <div class="col-2 d-flex align-items-center" onclick="transferPosition()">
+            <img id="trans_icon" src="./assets/img/trans_icon_gray.svg" alt="trans_icon_gray">
+          </div>
           <div class="col-5 d-flex flex-row justify-content-center align-items-center" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasBottom_2" aria-controls="offcanvasBottom_2">
             <input id="target" class="form-control btn text-center fs-7 fs-6 bg-transparent px-0" type="text"
@@ -362,12 +362,8 @@
 
     // 左右互換
     function transferPosition() {
-      const source = document.querySelector('#source');
-      const sourceValue = source.value;
-      const target = document.querySelector('#target');
-      const targetValue = target.value;
-      source.value = targetValue;
-      target.value = sourceValue;
+      const transIcon = document.querySelector('#trans_icon');
+      transIcon.classList.toggle('toggle')
     }
 
     // Toast 提示

@@ -30,3 +30,8 @@
 .text-black-4a {
   color: #4a4a4a;
 }
+#trans_icon {
+  &.toggle {
+    transform: rotate(180deg);
+  }
+}
