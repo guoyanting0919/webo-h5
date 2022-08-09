@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="./assets/css/all.css" rel="stylesheet" type="text/css">
+  <title>WEBO - 我的錢包</title>
+</head>
+
+<body>
+  <!-- Toast 訊息，根據需求使用-->
+  <div
+    class="toast-container position-fixed top-0 end-0 pt-3 d-flex flex-column justify-content-center align-items-center w-100">
+    <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="./assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換成功</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div id="liveToast2" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="./assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換失敗</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div id="liveToast3" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex flex-row align-items-center">
+          <div class="rounded-circle info-circle d-flex align-items-center justify-content-center"><img
+              src="./assets/img/info.svg" alt=""></div>
+          <div class="msg ms-2 fw-bold">更換失敗</div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Toast 訊息，根據需求使用 end-->
+  <!-- title -->
+  <div class="d-flex container-fluid justify-content-center text-black bg-white custom-header">
+    <a class="back-icon" href="account.html"><img src="./assets/img/arrow_right_gray.svg" alt="arrow_right_white"></a>
+    <h2 class="fs-6 mb-0 text-center">
+      我的錢包
+    </h2>
+  </div>
+  <!-- title end -->
+
+  <!-- 表單 -->
+  <div class="container">
+
+    <div class="py-3 mb-3 actions-btns-wrap card w-100 mt-2">
+      <div class="row mx-2">
+        <a class="d-block col-3 d-flex flex-column align-items-center text-secondary text-decoration-none"
+          href="add_value.html">
+          <div><img class="w-100" src="./assets/img/recharge_icon.svg" alt=""></div>
+          <div class="text-nowrap btn-txt">儲值</div>
+        </a>
+        <a class="d-block col-3 d-flex flex-column align-items-center text-secondary text-decoration-none"
+          href="auction.html">
+          <div><img class="w-100" src="./assets/img/auction_icon.svg" alt=""></div>
+          <div class="text-nowrap btn-txt">提款</div>
+        </a>
+        <a class="d-block col-3 d-flex flex-column align-items-center text-secondary text-decoration-none"
+          href="transe_point.html">
+          <div><img class="w-100" src="./assets/img/trans_icon.svg" alt=""></div>
+          <div class="text-nowrap btn-txt">轉點</div>
+        </a>
+        <a class="d-block col-3 d-flex flex-column align-items-center text-secondary text-decoration-none"
+          href="bank_account.html">
+          <div><img class="w-100" src="./assets/img/wallet_icon.svg" alt="wallet"></div>
+          <div class="text-nowrap btn-txt">帳戶管理</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 我的錢包 -->
+    <div class="card w-100">
+      <div class=" position-relative py-2 d-flex flex-row align-items-center">
+        <div class="card-title w-100 d-flex">
+          <div class="me-1">我的錢包</div>
+          <img class="me-auto" src="./assets/img/renew.svg" alt="">
+          <span class="fs-7" data-bs-toggle="modal" data-bs-target="#checkEdit">一鍵回收</span>
+        </div>
+
+      </div>
+      <!-- 主帳戶點數 -->
+      <div class="card-body pt-1">
+        <div class="position-relative d-flex flex-row justify-content-between align-items-center rounded-3  w-100 p-3">
+          <div class="d-flex flex-row align-items-center">
+            <img src="./assets/img/wallet.svg" alt="">
+            <div class="ms-1">主帳戶點數</div>
+          </div>
+          <div class="me-1 text-primary fw-bolder">$ 1,234,567.<span class="fs-7">00</span></div>
+        </div>
+      </div>
+      <!-- 主帳戶點數 end-->
+      <!-- API list -->
+      <div class="card-body pt-0 small row row-cols-3 row-cols-lg-6 g-2 g-lg-3 vh-50 overflow-auto light-gray-btns">
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+        <div class="col d-grid">
+          <button type="button"
+            class="position-relative btn btn-gray d-flex flex-column justify-content-center align-items-center rounded-3 p-2">
+            <img class="btn_active_teal position-absolute start-0 top-0" src="./assets/img/btn_active_teal.svg" alt="">
+            <div>00.00</div>
+            <div class="text-muted">API名稱</div>
+          </button>
+        </div>
+      </div>
+      <!-- API list end-->
+    </div>
+    <!-- 我的錢包  end -->
+
+
+  </div><!-- 表單 end-->
+
+  <!-- 確認窗 modal -->
+  <div class="modal fade" id="checkEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">確認全部回收至主帳戶?</h5>
+        </div>
+        <div class="modal-body py-0">
+          <div class="text-center">
+            是否確認全部平台點數額度回收至主帳戶?
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="w-100 d-grid gap-2">
+            <button onclick="showToast ('success', '回收成功!', 'liveToast')"
+              class="btn btn-primary btn-lin fs-6">確認</button>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-down-close border border-white border-2 rounded-circle"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./bootstrap5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+
+
+    // Toast 提示
+    function showToast(classStyle, info, toastId) {
+      var toastLiveExample = document.getElementById(toastId)
+      var toastIcon = document.querySelector(`#${toastId} .info-circle`)
+      toastIcon.classList.add(`bg-${classStyle}`)
+      var toastMsg = document.querySelector(`#${toastId} .msg`);
+      toastMsg.textContent = info;
+      var toast = new bootstrap.Toast(toastLiveExample)
+      toast.show()
+    }
+
+
+  </script>
+</body>
+
+</html>
