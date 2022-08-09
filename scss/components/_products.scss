@@ -1,15 +1,33 @@
 @import "../helpers/variables";
 $down-space: $down-navbar-height + 50px;
 .products {
-    height: 50vh;
-    overflow: auto;
-    padding-bottom: $down-space; // 根據下方導覽列高度決定
+  height: 50vh;
+  overflow: auto;
+  padding-bottom: $down-space; // 根據下方導覽列高度決定
 }
 .products-inner {
-    min-height: 50vh;
+  min-height: 50vh;
+  .isFix {
+    position: relative;
+    pointer-events: none;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/img/is-fix.svg");
+      background-repeat: no-repeat;
+      right: 50%;
+      top: 50%;
+      transform: translate(50%, -50%);
+      width: 100px;
+      height: 36px;
+    }
+    img {
+      opacity: 0.5;
+    }
+  }
 }
 @include media-breakpoint-up(md) {
-    .products {
-        // height: auto;
-    }
+  .products {
+    // height: auto;
+  }
 }
