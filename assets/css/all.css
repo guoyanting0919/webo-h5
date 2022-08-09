@@ -12991,6 +12991,50 @@ body {
   z-index: 1080;
 }
 
+#loader {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  height: -webkit-fill-available;
+  z-index: 99999;
+  display: none;
+}
+
+#loader.show {
+  display: block;
+}
+
+#loader .loader-wrap {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150px;
+  height: 137px;
+  border-radius: 15px;
+  opacity: 0.7;
+  background: #000;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+#loader img {
+  width: 110px;
+  height: 45px;
+}
+
 .web-outstandind-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
